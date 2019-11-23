@@ -4,75 +4,71 @@
 			"name" : "Top",
 			"pins" : [
 				{
-					"name" : "step_clk",
+					"name" : "dir_out_x",
 					"strict" : false
 				},
 				{
-					"name" : "inverse_speed[3]",
+					"name" : "dir_out_y",
 					"strict" : false
 				},
 				{
-					"name" : "inverse_speed[0]",
+					"name" : "step_clk_x",
 					"strict" : false
 				},
 				{
-					"name" : "inverse_speed[1]",
+					"name" : "step_clk_y",
 					"strict" : false
 				},
 				{
-					"name" : "inverse_speed[2]",
+					"name" : "move_left",
 					"strict" : false
 				},
 				{
-					"name" : "inverse_speed[4]",
+					"name" : "move_up",
 					"strict" : false
 				},
 				{
-					"name" : "inverse_speed[5]",
+					"name" : "inverse_speed_x[3]",
 					"strict" : false
 				},
 				{
-					"name" : "inverse_speed[6]",
+					"name" : "inverse_speed_x[0]",
 					"strict" : false
 				},
 				{
-					"name" : "inverse_speed[7]",
+					"name" : "inverse_speed_x[1]",
 					"strict" : false
 				},
 				{
-					"name" : "inverse_speed[8]",
-					"strict" : false
-				},
-				{
-					"name" : "inverse_speed[9]",
-					"strict" : false
-				},
-				{
-					"name" : "inverse_speed[10]",
-					"strict" : false
-				},
-				{
-					"name" : "inverse_speed[11]",
-					"strict" : false
-				},
-				{
-					"name" : "inverse_speed[12]",
-					"strict" : false
-				},
-				{
-					"name" : "inverse_speed[13]",
-					"strict" : false
-				},
-				{
-					"name" : "inverse_speed[14]",
-					"strict" : false
-				},
-				{
-					"name" : "inverse_speed[15]",
+					"name" : "inverse_speed_x[2]",
 					"strict" : false
 				},
 				{
 					"name" : "clk",
+					"strict" : false
+				},
+				{
+					"name" : "inverse_speed_y[3]",
+					"strict" : false
+				},
+				{
+					"name" : "inverse_speed_y[0]",
+					"strict" : false
+				},
+				{
+					"name" : "inverse_speed_y[1]",
+					"strict" : false
+				},
+				{
+					"name" : "inverse_speed_y[2]",
+					"strict" : false
+				},
+				{
+					"name" : "move_right",
+					"strict" : false
+				},
+				{
+					"name" : "move_down",
 					"strict" : false
 				}
 			]

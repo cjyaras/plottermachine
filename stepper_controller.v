@@ -5,7 +5,7 @@ module stepper_controller(clk, enable, inverse_speed, step_clk);
 	// Speed is in rotations / second
 	
 	input clk, enable;
-	input [15:0] inverse_speed;
+	input [3:0] inverse_speed;
 	reg step_clk;
 	output step_clk;
 	
@@ -20,6 +20,10 @@ module stepper_controller(clk, enable, inverse_speed, step_clk);
 	end
 	
 	always @(posedge clk) begin
+		if (enable && counter_limit != 32'b0) begin
+			step_counter <= step_counter + 1;
+		end
+		
 		if (step_counter >= counter_limit) begin
 			step_clk <= ~step_clk;
 			step_counter <= 32'b0;

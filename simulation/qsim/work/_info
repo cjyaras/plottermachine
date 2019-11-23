@@ -1,0 +1,73 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/intelFPGA_lite/17.1/plottermachine/simulation/qsim
+vhard_block
+Z1 !s110 1574529706
+!i10b 1
+!s100 :InH5T7QllF[m06jPo;Kj1
+I[C[=L=eDgJ[Ec7e3Y^Ea;1
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z3 w1574529706
+Z4 8plottermachine.vo
+Z5 Fplottermachine.vo
+L0 4299
+Z6 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z7 !s108 1574529706.000000
+Z8 !s107 plottermachine.vo|
+Z9 !s90 -work|work|plottermachine.vo|
+!i113 1
+Z10 o-work work
+Z11 tCvgOpt 0
+vstepper_controller
+R1
+!i10b 1
+!s100 AW9jz8Y57jo<<RMEFdcAD0
+IRRoIBn6RUE2a:bT?8T6I?1
+R2
+R0
+R3
+R4
+R5
+L0 31
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+vstepper_controller_vlg_vec_tst
+R1
+!i10b 1
+!s100 goX6ANHZT2lRK0ML^j7SN3
+ILW4A]FQmKKO1GfATMXbfC2
+R2
+R0
+w1574529705
+8Waveform.vwf.vt
+FWaveform.vwf.vt
+L0 29
+R6
+r1
+!s85 0
+31
+R7
+!s107 Waveform.vwf.vt|
+!s90 -work|work|Waveform.vwf.vt|
+!i113 1
+R10
+R11
