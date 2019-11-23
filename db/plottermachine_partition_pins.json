@@ -1,0 +1,81 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "step_clk",
+					"strict" : false
+				},
+				{
+					"name" : "inverse_speed[3]",
+					"strict" : false
+				},
+				{
+					"name" : "inverse_speed[0]",
+					"strict" : false
+				},
+				{
+					"name" : "inverse_speed[1]",
+					"strict" : false
+				},
+				{
+					"name" : "inverse_speed[2]",
+					"strict" : false
+				},
+				{
+					"name" : "inverse_speed[4]",
+					"strict" : false
+				},
+				{
+					"name" : "inverse_speed[5]",
+					"strict" : false
+				},
+				{
+					"name" : "inverse_speed[6]",
+					"strict" : false
+				},
+				{
+					"name" : "inverse_speed[7]",
+					"strict" : false
+				},
+				{
+					"name" : "inverse_speed[8]",
+					"strict" : false
+				},
+				{
+					"name" : "inverse_speed[9]",
+					"strict" : false
+				},
+				{
+					"name" : "inverse_speed[10]",
+					"strict" : false
+				},
+				{
+					"name" : "inverse_speed[11]",
+					"strict" : false
+				},
+				{
+					"name" : "inverse_speed[12]",
+					"strict" : false
+				},
+				{
+					"name" : "inverse_speed[13]",
+					"strict" : false
+				},
+				{
+					"name" : "inverse_speed[14]",
+					"strict" : false
+				},
+				{
+					"name" : "inverse_speed[15]",
+					"strict" : false
+				},
+				{
+					"name" : "clk",
+					"strict" : false
+				}
+			]
+		}
+	]
+}
