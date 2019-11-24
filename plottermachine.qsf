@@ -38,7 +38,7 @@
 
 set_global_assignment -name FAMILY "Cyclone IV E"
 set_global_assignment -name DEVICE EP4CE115F29C7
-set_global_assignment -name TOP_LEVEL_ENTITY plotter_machine
+set_global_assignment -name TOP_LEVEL_ENTITY char_buffer
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION 17.1.0
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "11:05:11  NOVEMBER 23, 2019"
 set_global_assignment -name LAST_QUARTUS_VERSION "17.1.0 Lite Edition"
@@ -47,29 +47,28 @@ set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
 set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
 set_global_assignment -name ERROR_CHECK_FREQUENCY_DIVISOR 1
 set_global_assignment -name NOMINAL_CORE_SUPPLY_VOLTAGE 1.2V
-set_global_assignment -name VERILOG_FILE stepper_controller.v
 set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
 set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
-set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform.vwf
-set_location_assignment PIN_Y2 -to clk
+set_location_assignment PIN_G19 -to out0
+set_location_assignment PIN_F19 -to out1
+set_location_assignment PIN_E19 -to out2
+set_location_assignment PIN_F21 -to out3
+set_location_assignment PIN_F18 -to out4
+set_location_assignment PIN_E18 -to out5
+set_location_assignment PIN_J19 -to out6
+set_location_assignment PIN_H19 -to out7
+set_location_assignment PIN_AF16 -to in0
+set_location_assignment PIN_AF15 -to in1
+set_location_assignment PIN_AE21 -to in2
+set_location_assignment PIN_AC22 -to in3
+set_location_assignment PIN_AF21 -to in4
+set_location_assignment PIN_AD22 -to in5
+set_location_assignment PIN_AD25 -to in6
+set_location_assignment PIN_AE25 -to in7
+set_global_assignment -name VERILOG_FILE char_buffer.v
+set_global_assignment -name VERILOG_FILE stepper_controller.v
 set_global_assignment -name VERILOG_FILE plotter_machine.v
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
-set_location_assignment PIN_H14 -to dir_out_x
-set_location_assignment PIN_H13 -to dir_out_y
-set_location_assignment PIN_J14 -to step_clk_x
-set_location_assignment PIN_J10 -to step_clk_y
-set_location_assignment PIN_AB28 -to inverse_speed_y[0]
-set_location_assignment PIN_AC28 -to inverse_speed_y[1]
-set_location_assignment PIN_AC27 -to inverse_speed_y[2]
-set_location_assignment PIN_AD27 -to inverse_speed_y[3]
-set_location_assignment PIN_AB27 -to inverse_speed_x[0]
-set_location_assignment PIN_AC26 -to inverse_speed_x[1]
-set_location_assignment PIN_AD26 -to inverse_speed_x[2]
-set_location_assignment PIN_AB26 -to inverse_speed_x[3]
-set_location_assignment PIN_R24 -to move_up
-set_location_assignment PIN_N21 -to move_down
-set_location_assignment PIN_M21 -to move_left
-set_location_assignment PIN_M23 -to move_right
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

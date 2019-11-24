@@ -1,0 +1,1 @@
+Warning (10268): Verilog HDL information at char_buffer.v(18): always construct contains both blocking and non-blocking assignments File: C:/Users/cy123/Desktop/plottermachine/char_buffer.v Line: 18

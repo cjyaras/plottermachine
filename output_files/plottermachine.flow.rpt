@@ -1,5 +1,5 @@
 Flow report for plottermachine
-Sat Nov 23 14:39:24 2019
+Sun Nov 24 15:43:23 2019
 Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
 
 
@@ -37,26 +37,26 @@ refer to the applicable agreement for further details.
 
 
 
-+----------------------------------------------------------------------------------+
-; Flow Summary                                                                     ;
-+------------------------------------+---------------------------------------------+
-; Flow Status                        ; Successful - Sat Nov 23 14:39:22 2019       ;
-; Quartus Prime Version              ; 17.1.0 Build 590 10/25/2017 SJ Lite Edition ;
-; Revision Name                      ; plottermachine                              ;
-; Top-level Entity Name              ; plotter_machine                             ;
-; Family                             ; Cyclone IV E                                ;
-; Device                             ; EP4CE115F29C7                               ;
-; Timing Models                      ; Final                                       ;
-; Total logic elements               ; 206 / 114,480 ( < 1 % )                     ;
-;     Total combinational functions  ; 206 / 114,480 ( < 1 % )                     ;
-;     Dedicated logic registers      ; 66 / 114,480 ( < 1 % )                      ;
-; Total registers                    ; 66                                          ;
-; Total pins                         ; 17 / 529 ( 3 % )                            ;
-; Total virtual pins                 ; 0                                           ;
-; Total memory bits                  ; 0 / 3,981,312 ( 0 % )                       ;
-; Embedded Multiplier 9-bit elements ; 0 / 532 ( 0 % )                             ;
-; Total PLLs                         ; 0 / 4 ( 0 % )                               ;
-+------------------------------------+---------------------------------------------+
++-------------------------------------------------------------------------------------------+
+; Flow Summary                                                                              ;
++------------------------------------+------------------------------------------------------+
+; Flow Status                        ; EDA Netlist Writer Failed - Sun Nov 24 15:43:23 2019 ;
+; Quartus Prime Version              ; 17.1.0 Build 590 10/25/2017 SJ Lite Edition          ;
+; Revision Name                      ; plottermachine                                       ;
+; Top-level Entity Name              ; char_buffer                                          ;
+; Family                             ; Cyclone IV E                                         ;
+; Device                             ; EP4CE115F29C7                                        ;
+; Timing Models                      ; Final                                                ;
+; Total logic elements               ; 1,043 / 114,480 ( < 1 % )                            ;
+;     Total combinational functions  ; 662 / 114,480 ( < 1 % )                              ;
+;     Dedicated logic registers      ; 800 / 114,480 ( < 1 % )                              ;
+; Total registers                    ; 800                                                  ;
+; Total pins                         ; 25 / 529 ( 5 % )                                     ;
+; Total virtual pins                 ; 0                                                    ;
+; Total memory bits                  ; 0 / 3,981,312 ( 0 % )                                ;
+; Embedded Multiplier 9-bit elements ; 0 / 532 ( 0 % )                                      ;
+; Total PLLs                         ; 0 / 4 ( 0 % )                                        ;
++------------------------------------+------------------------------------------------------+
 
 
 +-----------------------------------------+
@@ -64,29 +64,29 @@ refer to the applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 11/23/2019 14:38:55 ;
+; Start date & time ; 11/24/2019 15:42:30 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; plottermachine      ;
 +-------------------+---------------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------+
-; Flow Non-Default Global Settings                                                                                             ;
-+-------------------------------------+----------------------------------------+----------------+-----------------+------------+
-; Assignment Name                     ; Value                                  ; Default Value  ; Entity Name     ; Section Id ;
-+-------------------------------------+----------------------------------------+----------------+-----------------+------------+
-; COMPILER_SIGNATURE_ID               ; 154946507248442.157453793513472        ; --             ; --              ; --         ;
-; MAX_CORE_JUNCTION_TEMP              ; 85                                     ; --             ; --              ; --         ;
-; MIN_CORE_JUNCTION_TEMP              ; 0                                      ; --             ; --              ; --         ;
-; NOMINAL_CORE_SUPPLY_VOLTAGE         ; 1.2V                                   ; --             ; --              ; --         ;
-; PARTITION_COLOR                     ; -- (Not supported for targeted family) ; --             ; plotter_machine ; Top        ;
-; PARTITION_FITTER_PRESERVATION_LEVEL ; -- (Not supported for targeted family) ; --             ; plotter_machine ; Top        ;
-; PARTITION_NETLIST_TYPE              ; -- (Not supported for targeted family) ; --             ; plotter_machine ; Top        ;
-; POWER_BOARD_THERMAL_MODEL           ; None (CONSERVATIVE)                    ; --             ; --              ; --         ;
-; POWER_PRESET_COOLING_SOLUTION       ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW  ; --             ; --              ; --         ;
-; PROJECT_OUTPUT_DIRECTORY            ; output_files                           ; --             ; --              ; --         ;
-; TOP_LEVEL_ENTITY                    ; plotter_machine                        ; plottermachine ; --              ; --         ;
-+-------------------------------------+----------------------------------------+----------------+-----------------+------------+
++--------------------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                                         ;
++-------------------------------------+----------------------------------------+----------------+-------------+------------+
+; Assignment Name                     ; Value                                  ; Default Value  ; Entity Name ; Section Id ;
++-------------------------------------+----------------------------------------+----------------+-------------+------------+
+; COMPILER_SIGNATURE_ID               ; 154946504852341.157462815019052        ; --             ; --          ; --         ;
+; MAX_CORE_JUNCTION_TEMP              ; 85                                     ; --             ; --          ; --         ;
+; MIN_CORE_JUNCTION_TEMP              ; 0                                      ; --             ; --          ; --         ;
+; NOMINAL_CORE_SUPPLY_VOLTAGE         ; 1.2V                                   ; --             ; --          ; --         ;
+; PARTITION_COLOR                     ; -- (Not supported for targeted family) ; --             ; char_buffer ; Top        ;
+; PARTITION_FITTER_PRESERVATION_LEVEL ; -- (Not supported for targeted family) ; --             ; char_buffer ; Top        ;
+; PARTITION_NETLIST_TYPE              ; -- (Not supported for targeted family) ; --             ; char_buffer ; Top        ;
+; POWER_BOARD_THERMAL_MODEL           ; None (CONSERVATIVE)                    ; --             ; --          ; --         ;
+; POWER_PRESET_COOLING_SOLUTION       ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW  ; --             ; --          ; --         ;
+; PROJECT_OUTPUT_DIRECTORY            ; output_files                           ; --             ; --          ; --         ;
+; TOP_LEVEL_ENTITY                    ; char_buffer                            ; plottermachine ; --          ; --         ;
++-------------------------------------+----------------------------------------+----------------+-------------+------------+
 
 
 +-------------------------------------------------------------------------------------------------------------------------------+
@@ -94,11 +94,12 @@ refer to the applicable agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:00:10     ; 1.0                     ; 4793 MB             ; 00:00:19                           ;
-; Fitter                    ; 00:00:13     ; 1.0                     ; 5722 MB             ; 00:00:19                           ;
-; Assembler                 ; 00:00:03     ; 1.0                     ; 4701 MB             ; 00:00:03                           ;
-; TimeQuest Timing Analyzer ; 00:00:01     ; 1.0                     ; 4860 MB             ; 00:00:02                           ;
-; Total                     ; 00:00:27     ; --                      ; --                  ; 00:00:43                           ;
+; Analysis & Synthesis      ; 00:00:11     ; 1.0                     ; 4801 MB             ; 00:00:20                           ;
+; Fitter                    ; 00:00:11     ; 1.0                     ; 5724 MB             ; 00:00:15                           ;
+; Assembler                 ; 00:00:03     ; 1.0                     ; 4704 MB             ; 00:00:03                           ;
+; TimeQuest Timing Analyzer ; 00:00:02     ; 1.1                     ; 4867 MB             ; 00:00:02                           ;
+; EDA Netlist Writer        ; 00:00:00     ; 1.0                     ; 4653 MB             ; 00:00:01                           ;
+; Total                     ; 00:00:27     ; --                      ; --                  ; 00:00:41                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -107,10 +108,11 @@ refer to the applicable agreement for further details.
 +---------------------------+------------------+------------+------------+----------------+
 ; Module Name               ; Machine Hostname ; OS Name    ; OS Version ; Processor type ;
 +---------------------------+------------------+------------+------------+----------------+
-; Analysis & Synthesis      ; 202a-pc01        ; Windows 10 ; 10.0       ; x86_64         ;
-; Fitter                    ; 202a-pc01        ; Windows 10 ; 10.0       ; x86_64         ;
-; Assembler                 ; 202a-pc01        ; Windows 10 ; 10.0       ; x86_64         ;
-; TimeQuest Timing Analyzer ; 202a-pc01        ; Windows 10 ; 10.0       ; x86_64         ;
+; Analysis & Synthesis      ; 02h-02           ; Windows 10 ; 10.0       ; x86_64         ;
+; Fitter                    ; 02h-02           ; Windows 10 ; 10.0       ; x86_64         ;
+; Assembler                 ; 02h-02           ; Windows 10 ; 10.0       ; x86_64         ;
+; TimeQuest Timing Analyzer ; 02h-02           ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer        ; 02h-02           ; Windows 10 ; 10.0       ; x86_64         ;
 +---------------------------+------------------+------------+------------+----------------+
 
 
@@ -121,6 +123,7 @@ quartus_map --read_settings_files=on --write_settings_files=off plottermachine -
 quartus_fit --read_settings_files=off --write_settings_files=off plottermachine -c plottermachine
 quartus_asm --read_settings_files=off --write_settings_files=off plottermachine -c plottermachine
 quartus_sta plottermachine -c plottermachine
+quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off plottermachine -c plottermachine --vector_source=C:/Users/cy123/Desktop/plottermachine/output_files/Waveform.vwf --testbench_file=C:/Users/cy123/Desktop/plottermachine/simulation/qsim/output_files/Waveform.vwf.vt
 
 
 

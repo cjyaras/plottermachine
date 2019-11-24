@@ -1,5 +1,5 @@
 EDA Netlist Writer report for plottermachine
-Sat Nov 23 12:21:46 2019
+Sun Nov 24 15:43:23 2019
 Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
 
 
@@ -8,9 +8,7 @@ Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
 ---------------------
   1. Legal Notice
   2. EDA Netlist Writer Summary
-  3. Simulation Settings
-  4. Simulation Generated Files
-  5. EDA Netlist Writer Messages
+  3. EDA Netlist Writer Messages
 
 
 
@@ -33,45 +31,14 @@ refer to the applicable agreement for further details.
 
 
 
-+-------------------------------------------------------------------+
-; EDA Netlist Writer Summary                                        ;
-+---------------------------+---------------------------------------+
-; EDA Netlist Writer Status ; Successful - Sat Nov 23 12:21:46 2019 ;
-; Revision Name             ; plottermachine                        ;
-; Top-level Entity Name     ; stepper_controller                    ;
-; Family                    ; Cyclone IV E                          ;
-; Simulation Files Creation ; Successful                            ;
-+---------------------------+---------------------------------------+
-
-
-+-------------------------------------------------------------------------------------------------------------------------------+
-; Simulation Settings                                                                                                           ;
-+---------------------------------------------------------------------------------------------------+---------------------------+
-; Option                                                                                            ; Setting                   ;
-+---------------------------------------------------------------------------------------------------+---------------------------+
-; Tool Name                                                                                         ; ModelSim-Altera (Verilog) ;
-; Generate functional simulation netlist                                                            ; On                        ;
-; Truncate long hierarchy paths                                                                     ; Off                       ;
-; Map illegal HDL characters                                                                        ; Off                       ;
-; Flatten buses into individual nodes                                                               ; Off                       ;
-; Maintain hierarchy                                                                                ; Off                       ;
-; Bring out device-wide set/reset signals as ports                                                  ; Off                       ;
-; Enable glitch filtering                                                                           ; Off                       ;
-; Do not write top level VHDL entity                                                                ; Off                       ;
-; Disable detection of setup and hold time violations in the input registers of bi-directional pins ; Off                       ;
-; Architecture name in VHDL output netlist                                                          ; structure                 ;
-; Generate third-party EDA tool command script for RTL functional simulation                        ; Off                       ;
-; Generate third-party EDA tool command script for gate-level simulation                            ; Off                       ;
-+---------------------------------------------------------------------------------------------------+---------------------------+
-
-
-+--------------------------------------------------------------------------+
-; Simulation Generated Files                                               ;
-+--------------------------------------------------------------------------+
-; Generated Files                                                          ;
-+--------------------------------------------------------------------------+
-; C:/intelFPGA_lite/17.1/plottermachine/simulation/qsim//plottermachine.vo ;
-+--------------------------------------------------------------------------+
++---------------------------------------------------------------+
+; EDA Netlist Writer Summary                                    ;
++---------------------------+-----------------------------------+
+; EDA Netlist Writer Status ; Failed - Sun Nov 24 15:43:23 2019 ;
+; Revision Name             ; plottermachine                    ;
+; Top-level Entity Name     ; char_buffer                       ;
+; Family                    ; Cyclone IV E                      ;
++---------------------------+-----------------------------------+
 
 
 +-----------------------------+
@@ -93,14 +60,14 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: the sole purpose of programming logic devices manufactured by
     Info: Intel and sold by Intel or its authorized distributors.  Please
     Info: refer to the applicable agreement for further details.
-    Info: Processing started: Sat Nov 23 12:21:45 2019
-Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory=C:/intelFPGA_lite/17.1/plottermachine/simulation/qsim/ plottermachine -c plottermachine
+    Info: Processing started: Sun Nov 24 15:43:23 2019
+Info: Command: quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off plottermachine -c plottermachine --vector_source=C:/Users/cy123/Desktop/plottermachine/output_files/Waveform.vwf --testbench_file=C:/Users/cy123/Desktop/plottermachine/simulation/qsim/output_files/Waveform.vwf.vt
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (204019): Generated file plottermachine.vo in folder "C:/intelFPGA_lite/17.1/plottermachine/simulation/qsim//" for EDA simulation tool
-Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4658 megabytes
-    Info: Processing ended: Sat Nov 23 12:21:46 2019
-    Info: Elapsed time: 00:00:01
-    Info: Total CPU time (on all processors): 00:00:01
+Error (199013): HDL output file name "C:/Users/cy123/Desktop/plottermachine/simulation/qsim/output_files/Waveform.vwf.vt" used with --testbench_file option contains a non-existent directory path
+Error: Quartus Prime EDA Netlist Writer was unsuccessful. 1 error, 1 warning
+    Error: Peak virtual memory: 4653 megabytes
+    Error: Processing ended: Sun Nov 24 15:43:23 2019
+    Error: Elapsed time: 00:00:00
+    Error: Total CPU time (on all processors): 00:00:01
 
 

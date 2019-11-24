@@ -1,5 +1,5 @@
 Analysis & Synthesis report for plottermachine
-Sat Nov 23 14:39:04 2019
+Sun Nov 24 15:42:41 2019
 Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
 
 
@@ -13,14 +13,12 @@ Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
   5. Analysis & Synthesis Source Files Read
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
-  8. General Register Statistics
-  9. Multiplexer Restructuring Statistics (Restructuring Performed)
- 10. Parameter Settings for Inferred Entity Instance: stepper_controller:y_stepper|lpm_mult:Mult0
- 11. Parameter Settings for Inferred Entity Instance: stepper_controller:x_stepper|lpm_mult:Mult0
- 12. lpm_mult Parameter Settings by Entity Instance
- 13. Post-Synthesis Netlist Statistics for Top Partition
- 14. Elapsed Time Per Partition
- 15. Analysis & Synthesis Messages
+  8. Registers Removed During Synthesis
+  9. General Register Statistics
+ 10. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 11. Post-Synthesis Netlist Statistics for Top Partition
+ 12. Elapsed Time Per Partition
+ 13. Analysis & Synthesis Messages
 
 
 
@@ -46,16 +44,16 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sat Nov 23 14:39:04 2019       ;
+; Analysis & Synthesis Status        ; Successful - Sun Nov 24 15:42:41 2019       ;
 ; Quartus Prime Version              ; 17.1.0 Build 590 10/25/2017 SJ Lite Edition ;
 ; Revision Name                      ; plottermachine                              ;
-; Top-level Entity Name              ; plotter_machine                             ;
+; Top-level Entity Name              ; char_buffer                                 ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; 206                                         ;
-;     Total combinational functions  ; 206                                         ;
-;     Dedicated logic registers      ; 66                                          ;
-; Total registers                    ; 66                                          ;
-; Total pins                         ; 17                                          ;
+; Total logic elements               ; 1,462                                       ;
+;     Total combinational functions  ; 662                                         ;
+;     Dedicated logic registers      ; 800                                         ;
+; Total registers                    ; 800                                         ;
+; Total pins                         ; 25                                          ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0                                           ;
 ; Embedded Multiplier 9-bit elements ; 0                                           ;
@@ -69,7 +67,7 @@ refer to the applicable agreement for further details.
 ; Option                                                                     ; Setting            ; Default Value      ;
 +----------------------------------------------------------------------------+--------------------+--------------------+
 ; Device                                                                     ; EP4CE115F29C7      ;                    ;
-; Top-level entity name                                                      ; plotter_machine    ; plottermachine     ;
+; Top-level entity name                                                      ; char_buffer        ; plottermachine     ;
 ; Family name                                                                ; Cyclone IV E       ; Cyclone V          ;
 ; Use smart compilation                                                      ; Off                ; Off                ;
 ; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                 ; On                 ;
@@ -162,83 +160,71 @@ refer to the applicable agreement for further details.
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processors 2-4         ;   0.0%      ;
+;     Processor 2            ;   0.0%      ;
+;     Processor 3            ;   0.0%      ;
+;     Processor 4            ;   0.0%      ;
 +----------------------------+-------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                            ;
-+----------------------------------+-----------------+------------------------+---------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                                              ; Library ;
-+----------------------------------+-----------------+------------------------+---------------------------------------------------------------------------+---------+
-; stepper_controller.v             ; yes             ; User Verilog HDL File  ; C:/intelFPGA_lite/17.1/plottermachine/stepper_controller.v                ;         ;
-; plotter_machine.v                ; yes             ; User Verilog HDL File  ; C:/intelFPGA_lite/17.1/plottermachine/plotter_machine.v                   ;         ;
-; lpm_mult.tdf                     ; yes             ; Megafunction           ; c:/intelfpga_lite/17.1/quartus/libraries/megafunctions/lpm_mult.tdf       ;         ;
-; aglobal171.inc                   ; yes             ; Megafunction           ; c:/intelfpga_lite/17.1/quartus/libraries/megafunctions/aglobal171.inc     ;         ;
-; lpm_add_sub.inc                  ; yes             ; Megafunction           ; c:/intelfpga_lite/17.1/quartus/libraries/megafunctions/lpm_add_sub.inc    ;         ;
-; multcore.inc                     ; yes             ; Megafunction           ; c:/intelfpga_lite/17.1/quartus/libraries/megafunctions/multcore.inc       ;         ;
-; bypassff.inc                     ; yes             ; Megafunction           ; c:/intelfpga_lite/17.1/quartus/libraries/megafunctions/bypassff.inc       ;         ;
-; altshift.inc                     ; yes             ; Megafunction           ; c:/intelfpga_lite/17.1/quartus/libraries/megafunctions/altshift.inc       ;         ;
-; multcore.tdf                     ; yes             ; Megafunction           ; c:/intelfpga_lite/17.1/quartus/libraries/megafunctions/multcore.tdf       ;         ;
-; csa_add.inc                      ; yes             ; Megafunction           ; c:/intelfpga_lite/17.1/quartus/libraries/megafunctions/csa_add.inc        ;         ;
-; mpar_add.inc                     ; yes             ; Megafunction           ; c:/intelfpga_lite/17.1/quartus/libraries/megafunctions/mpar_add.inc       ;         ;
-; muleabz.inc                      ; yes             ; Megafunction           ; c:/intelfpga_lite/17.1/quartus/libraries/megafunctions/muleabz.inc        ;         ;
-; mul_lfrg.inc                     ; yes             ; Megafunction           ; c:/intelfpga_lite/17.1/quartus/libraries/megafunctions/mul_lfrg.inc       ;         ;
-; mul_boothc.inc                   ; yes             ; Megafunction           ; c:/intelfpga_lite/17.1/quartus/libraries/megafunctions/mul_boothc.inc     ;         ;
-; alt_ded_mult.inc                 ; yes             ; Megafunction           ; c:/intelfpga_lite/17.1/quartus/libraries/megafunctions/alt_ded_mult.inc   ;         ;
-; alt_ded_mult_y.inc               ; yes             ; Megafunction           ; c:/intelfpga_lite/17.1/quartus/libraries/megafunctions/alt_ded_mult_y.inc ;         ;
-; dffpipe.inc                      ; yes             ; Megafunction           ; c:/intelfpga_lite/17.1/quartus/libraries/megafunctions/dffpipe.inc        ;         ;
-; mpar_add.tdf                     ; yes             ; Megafunction           ; c:/intelfpga_lite/17.1/quartus/libraries/megafunctions/mpar_add.tdf       ;         ;
-; altshift.tdf                     ; yes             ; Megafunction           ; c:/intelfpga_lite/17.1/quartus/libraries/megafunctions/altshift.tdf       ;         ;
-+----------------------------------+-----------------+------------------------+---------------------------------------------------------------------------+---------+
++---------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                      ;
++----------------------------------+-----------------+------------------------+-----------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                        ; Library ;
++----------------------------------+-----------------+------------------------+-----------------------------------------------------+---------+
+; char_buffer.v                    ; yes             ; User Verilog HDL File  ; C:/Users/cy123/Desktop/plottermachine/char_buffer.v ;         ;
++----------------------------------+-----------------+------------------------+-----------------------------------------------------+---------+
 
 
-+---------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary             ;
-+---------------------------------------------+-----------+
-; Resource                                    ; Usage     ;
-+---------------------------------------------+-----------+
-; Estimated Total logic elements              ; 206       ;
-;                                             ;           ;
-; Total combinational functions               ; 206       ;
-; Logic element usage by number of LUT inputs ;           ;
-;     -- 4 input functions                    ; 50        ;
-;     -- 3 input functions                    ; 84        ;
-;     -- <=2 input functions                  ; 72        ;
-;                                             ;           ;
-; Logic elements by mode                      ;           ;
-;     -- normal mode                          ; 110       ;
-;     -- arithmetic mode                      ; 96        ;
-;                                             ;           ;
-; Total registers                             ; 66        ;
-;     -- Dedicated logic registers            ; 66        ;
-;     -- I/O registers                        ; 0         ;
-;                                             ;           ;
-; I/O pins                                    ; 17        ;
-;                                             ;           ;
-; Embedded Multiplier 9-bit elements          ; 0         ;
-;                                             ;           ;
-; Maximum fan-out node                        ; clk~input ;
-; Maximum fan-out                             ; 66        ;
-; Total fan-out                               ; 789       ;
-; Average fan-out                             ; 2.58      ;
-+---------------------------------------------+-----------+
++----------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                    ;
++---------------------------------------------+------------------+
+; Resource                                    ; Usage            ;
++---------------------------------------------+------------------+
+; Estimated Total logic elements              ; 1,462            ;
+;                                             ;                  ;
+; Total combinational functions               ; 662              ;
+; Logic element usage by number of LUT inputs ;                  ;
+;     -- 4 input functions                    ; 603              ;
+;     -- 3 input functions                    ; 50               ;
+;     -- <=2 input functions                  ; 9                ;
+;                                             ;                  ;
+; Logic elements by mode                      ;                  ;
+;     -- normal mode                          ; 662              ;
+;     -- arithmetic mode                      ; 0                ;
+;                                             ;                  ;
+; Total registers                             ; 800              ;
+;     -- Dedicated logic registers            ; 800              ;
+;     -- I/O registers                        ; 0                ;
+;                                             ;                  ;
+; I/O pins                                    ; 25               ;
+;                                             ;                  ;
+; Embedded Multiplier 9-bit elements          ; 0                ;
+;                                             ;                  ;
+; Maximum fan-out node                        ; CHAR_READY~input ;
+; Maximum fan-out                             ; 800              ;
+; Total fan-out                               ; 5013             ;
+; Average fan-out                             ; 3.32             ;
++---------------------------------------------+------------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                ;
-+-----------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------------------------+--------------------+--------------+
-; Compilation Hierarchy Node        ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                             ; Entity Name        ; Library Name ;
-+-----------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------------------------+--------------------+--------------+
-; |plotter_machine                  ; 206 (0)             ; 66 (0)                    ; 0           ; 0            ; 0       ; 0         ; 17   ; 0            ; |plotter_machine                                                                ; plotter_machine    ; work         ;
-;    |stepper_controller:x_stepper| ; 103 (90)            ; 33 (33)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |plotter_machine|stepper_controller:x_stepper                                   ; stepper_controller ; work         ;
-;       |lpm_mult:Mult0|            ; 13 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |plotter_machine|stepper_controller:x_stepper|lpm_mult:Mult0                    ; lpm_mult           ; work         ;
-;          |multcore:mult_core|     ; 13 (13)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |plotter_machine|stepper_controller:x_stepper|lpm_mult:Mult0|multcore:mult_core ; multcore           ; work         ;
-;    |stepper_controller:y_stepper| ; 103 (90)            ; 33 (33)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |plotter_machine|stepper_controller:y_stepper                                   ; stepper_controller ; work         ;
-;       |lpm_mult:Mult0|            ; 13 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |plotter_machine|stepper_controller:y_stepper|lpm_mult:Mult0                    ; lpm_mult           ; work         ;
-;          |multcore:mult_core|     ; 13 (13)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |plotter_machine|stepper_controller:y_stepper|lpm_mult:Mult0|multcore:mult_core ; multcore           ; work         ;
-+-----------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------------------------+--------------------+--------------+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                      ;
++----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------+-------------+--------------+
+; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name ; Entity Name ; Library Name ;
++----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------+-------------+--------------+
+; |char_buffer               ; 662 (662)           ; 800 (800)                 ; 0           ; 0            ; 0       ; 0         ; 25   ; 0            ; |char_buffer        ; char_buffer ; work         ;
++----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------+-------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++--------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                             ;
++---------------------------------------+----------------------------------------+
+; Register name                         ; Reason for Removal                     ;
++---------------------------------------+----------------------------------------+
+; END_OF_BUFFER~reg0                    ; Stuck at VCC due to stuck port data_in ;
+; Total Number of Removed Registers = 1 ;                                        ;
++---------------------------------------+----------------------------------------+
 
 
 +------------------------------------------------------+
@@ -246,125 +232,23 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 66    ;
+; Total registers                              ; 800   ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
 ; Number of registers using Asynchronous Clear ; 0     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 42    ;
+; Number of registers using Clock Enable       ; 800   ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                               ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------------------+
-; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                     ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------------------+
-; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |plotter_machine|stepper_controller:y_stepper|step_counter[31] ;
-; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |plotter_machine|stepper_controller:x_stepper|step_counter[31] ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------------------+
-
-
-+----------------------------------------------------------------------------------------------+
-; Parameter Settings for Inferred Entity Instance: stepper_controller:y_stepper|lpm_mult:Mult0 ;
-+------------------------------------------------+--------------+------------------------------+
-; Parameter Name                                 ; Value        ; Type                         ;
-+------------------------------------------------+--------------+------------------------------+
-; AUTO_CARRY_CHAINS                              ; ON           ; AUTO_CARRY                   ;
-; IGNORE_CARRY_BUFFERS                           ; OFF          ; IGNORE_CARRY                 ;
-; AUTO_CASCADE_CHAINS                            ; ON           ; AUTO_CASCADE                 ;
-; IGNORE_CASCADE_BUFFERS                         ; OFF          ; IGNORE_CASCADE               ;
-; LPM_WIDTHA                                     ; 17           ; Untyped                      ;
-; LPM_WIDTHB                                     ; 4            ; Untyped                      ;
-; LPM_WIDTHP                                     ; 21           ; Untyped                      ;
-; LPM_WIDTHR                                     ; 21           ; Untyped                      ;
-; LPM_WIDTHS                                     ; 1            ; Untyped                      ;
-; LPM_REPRESENTATION                             ; UNSIGNED     ; Untyped                      ;
-; LPM_PIPELINE                                   ; 0            ; Untyped                      ;
-; LATENCY                                        ; 0            ; Untyped                      ;
-; INPUT_A_IS_CONSTANT                            ; YES          ; Untyped                      ;
-; INPUT_B_IS_CONSTANT                            ; NO           ; Untyped                      ;
-; USE_EAB                                        ; OFF          ; Untyped                      ;
-; MAXIMIZE_SPEED                                 ; 5            ; Untyped                      ;
-; DEVICE_FAMILY                                  ; Cyclone IV E ; Untyped                      ;
-; CARRY_CHAIN                                    ; MANUAL       ; Untyped                      ;
-; APEX20K_TECHNOLOGY_MAPPER                      ; LUT          ; TECH_MAPPER_APEX20K          ;
-; DEDICATED_MULTIPLIER_CIRCUITRY                 ; AUTO         ; Untyped                      ;
-; DEDICATED_MULTIPLIER_MIN_INPUT_WIDTH_FOR_AUTO  ; 0            ; Untyped                      ;
-; DEDICATED_MULTIPLIER_MIN_OUTPUT_WIDTH_FOR_AUTO ; 0            ; Untyped                      ;
-; CBXI_PARAMETER                                 ; NOTHING      ; Untyped                      ;
-; INPUT_A_FIXED_VALUE                            ; Bx           ; Untyped                      ;
-; INPUT_B_FIXED_VALUE                            ; Bx           ; Untyped                      ;
-; USE_AHDL_IMPLEMENTATION                        ; OFF          ; Untyped                      ;
-+------------------------------------------------+--------------+------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+----------------------------------------------------------------------------------------------+
-; Parameter Settings for Inferred Entity Instance: stepper_controller:x_stepper|lpm_mult:Mult0 ;
-+------------------------------------------------+--------------+------------------------------+
-; Parameter Name                                 ; Value        ; Type                         ;
-+------------------------------------------------+--------------+------------------------------+
-; AUTO_CARRY_CHAINS                              ; ON           ; AUTO_CARRY                   ;
-; IGNORE_CARRY_BUFFERS                           ; OFF          ; IGNORE_CARRY                 ;
-; AUTO_CASCADE_CHAINS                            ; ON           ; AUTO_CASCADE                 ;
-; IGNORE_CASCADE_BUFFERS                         ; OFF          ; IGNORE_CASCADE               ;
-; LPM_WIDTHA                                     ; 17           ; Untyped                      ;
-; LPM_WIDTHB                                     ; 4            ; Untyped                      ;
-; LPM_WIDTHP                                     ; 21           ; Untyped                      ;
-; LPM_WIDTHR                                     ; 21           ; Untyped                      ;
-; LPM_WIDTHS                                     ; 1            ; Untyped                      ;
-; LPM_REPRESENTATION                             ; UNSIGNED     ; Untyped                      ;
-; LPM_PIPELINE                                   ; 0            ; Untyped                      ;
-; LATENCY                                        ; 0            ; Untyped                      ;
-; INPUT_A_IS_CONSTANT                            ; YES          ; Untyped                      ;
-; INPUT_B_IS_CONSTANT                            ; NO           ; Untyped                      ;
-; USE_EAB                                        ; OFF          ; Untyped                      ;
-; MAXIMIZE_SPEED                                 ; 5            ; Untyped                      ;
-; DEVICE_FAMILY                                  ; Cyclone IV E ; Untyped                      ;
-; CARRY_CHAIN                                    ; MANUAL       ; Untyped                      ;
-; APEX20K_TECHNOLOGY_MAPPER                      ; LUT          ; TECH_MAPPER_APEX20K          ;
-; DEDICATED_MULTIPLIER_CIRCUITRY                 ; AUTO         ; Untyped                      ;
-; DEDICATED_MULTIPLIER_MIN_INPUT_WIDTH_FOR_AUTO  ; 0            ; Untyped                      ;
-; DEDICATED_MULTIPLIER_MIN_OUTPUT_WIDTH_FOR_AUTO ; 0            ; Untyped                      ;
-; CBXI_PARAMETER                                 ; NOTHING      ; Untyped                      ;
-; INPUT_A_FIXED_VALUE                            ; Bx           ; Untyped                      ;
-; INPUT_B_FIXED_VALUE                            ; Bx           ; Untyped                      ;
-; USE_AHDL_IMPLEMENTATION                        ; OFF          ; Untyped                      ;
-+------------------------------------------------+--------------+------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+-------------------------------------------------------------------------------------+
-; lpm_mult Parameter Settings by Entity Instance                                      ;
-+---------------------------------------+---------------------------------------------+
-; Name                                  ; Value                                       ;
-+---------------------------------------+---------------------------------------------+
-; Number of entity instances            ; 2                                           ;
-; Entity Instance                       ; stepper_controller:y_stepper|lpm_mult:Mult0 ;
-;     -- LPM_WIDTHA                     ; 17                                          ;
-;     -- LPM_WIDTHB                     ; 4                                           ;
-;     -- LPM_WIDTHP                     ; 21                                          ;
-;     -- LPM_REPRESENTATION             ; UNSIGNED                                    ;
-;     -- INPUT_A_IS_CONSTANT            ; YES                                         ;
-;     -- INPUT_B_IS_CONSTANT            ; NO                                          ;
-;     -- USE_EAB                        ; OFF                                         ;
-;     -- DEDICATED_MULTIPLIER_CIRCUITRY ; AUTO                                        ;
-;     -- INPUT_A_FIXED_VALUE            ; Bx                                          ;
-;     -- INPUT_B_FIXED_VALUE            ; Bx                                          ;
-; Entity Instance                       ; stepper_controller:x_stepper|lpm_mult:Mult0 ;
-;     -- LPM_WIDTHA                     ; 17                                          ;
-;     -- LPM_WIDTHB                     ; 4                                           ;
-;     -- LPM_WIDTHP                     ; 21                                          ;
-;     -- LPM_REPRESENTATION             ; UNSIGNED                                    ;
-;     -- INPUT_A_IS_CONSTANT            ; YES                                         ;
-;     -- INPUT_B_IS_CONSTANT            ; NO                                          ;
-;     -- USE_EAB                        ; OFF                                         ;
-;     -- DEDICATED_MULTIPLIER_CIRCUITRY ; AUTO                                        ;
-;     -- INPUT_A_FIXED_VALUE            ; Bx                                          ;
-;     -- INPUT_B_FIXED_VALUE            ; Bx                                          ;
-+---------------------------------------+---------------------------------------------+
++------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                           ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
+; 128:1              ; 8 bits    ; 680 LEs       ; 528 LEs              ; 152 LEs                ; No         ; |char_buffer|Mux0          ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
 
 
 +-----------------------------------------------------+
@@ -372,22 +256,18 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; boundary_port         ; 17                          ;
-; cycloneiii_ff         ; 66                          ;
-;     ENA               ; 42                          ;
-;     plain             ; 24                          ;
-; cycloneiii_lcell_comb ; 208                         ;
-;     arith             ; 96                          ;
-;         2 data inputs ; 62                          ;
-;         3 data inputs ; 34                          ;
-;     normal            ; 112                         ;
-;         1 data inputs ; 4                           ;
-;         2 data inputs ; 8                           ;
+; boundary_port         ; 25                          ;
+; cycloneiii_ff         ; 800                         ;
+;     ENA               ; 800                         ;
+; cycloneiii_lcell_comb ; 663                         ;
+;     normal            ; 663                         ;
+;         0 data inputs ; 1                           ;
+;         2 data inputs ; 9                           ;
 ;         3 data inputs ; 50                          ;
-;         4 data inputs ; 50                          ;
+;         4 data inputs ; 603                         ;
 ;                       ;                             ;
-; Max LUT depth         ; 5.40                        ;
-; Average LUT depth     ; 4.44                        ;
+; Max LUT depth         ; 8.00                        ;
+; Average LUT depth     ; 5.61                        ;
 +-----------------------+-----------------------------+
 
 
@@ -396,7 +276,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:00     ;
+; Top            ; 00:00:01     ;
 +----------------+--------------+
 
 
@@ -406,44 +286,30 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
-    Info: Processing started: Sat Nov 23 14:38:54 2019
+    Info: Processing started: Sun Nov 24 15:42:30 2019
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off plottermachine -c plottermachine
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
+Info (12021): Found 1 design units, including 1 entities, in source file char_buffer.v
+    Info (12023): Found entity 1: char_buffer File: C:/Users/cy123/Desktop/plottermachine/char_buffer.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file stepper_controller.v
-    Info (12023): Found entity 1: stepper_controller File: C:/intelFPGA_lite/17.1/plottermachine/stepper_controller.v Line: 1
+    Info (12023): Found entity 1: stepper_controller File: C:/Users/cy123/Desktop/plottermachine/stepper_controller.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file plotter_machine.v
-    Info (12023): Found entity 1: plotter_machine File: C:/intelFPGA_lite/17.1/plottermachine/plotter_machine.v Line: 1
-Info (12127): Elaborating entity "plotter_machine" for the top level hierarchy
-Info (12128): Elaborating entity "stepper_controller" for hierarchy "stepper_controller:y_stepper" File: C:/intelFPGA_lite/17.1/plottermachine/plotter_machine.v Line: 9
-Info (278001): Inferred 2 megafunctions from design logic
-    Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "stepper_controller:y_stepper|Mult0" File: C:/intelFPGA_lite/17.1/plottermachine/stepper_controller.v Line: 15
-    Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "stepper_controller:x_stepper|Mult0" File: C:/intelFPGA_lite/17.1/plottermachine/stepper_controller.v Line: 15
-Info (12130): Elaborated megafunction instantiation "stepper_controller:y_stepper|lpm_mult:Mult0" File: C:/intelFPGA_lite/17.1/plottermachine/stepper_controller.v Line: 15
-Info (12133): Instantiated megafunction "stepper_controller:y_stepper|lpm_mult:Mult0" with the following parameter: File: C:/intelFPGA_lite/17.1/plottermachine/stepper_controller.v Line: 15
-    Info (12134): Parameter "LPM_WIDTHA" = "17"
-    Info (12134): Parameter "LPM_WIDTHB" = "4"
-    Info (12134): Parameter "LPM_WIDTHP" = "21"
-    Info (12134): Parameter "LPM_WIDTHR" = "21"
-    Info (12134): Parameter "LPM_WIDTHS" = "1"
-    Info (12134): Parameter "LPM_REPRESENTATION" = "UNSIGNED"
-    Info (12134): Parameter "INPUT_A_IS_CONSTANT" = "YES"
-    Info (12134): Parameter "INPUT_B_IS_CONSTANT" = "NO"
-    Info (12134): Parameter "MAXIMIZE_SPEED" = "5"
-Info (12131): Elaborated megafunction instantiation "stepper_controller:y_stepper|lpm_mult:Mult0|multcore:mult_core", which is child of megafunction instantiation "stepper_controller:y_stepper|lpm_mult:Mult0" File: c:/intelfpga_lite/17.1/quartus/libraries/megafunctions/lpm_mult.tdf Line: 308
-Info (12131): Elaborated megafunction instantiation "stepper_controller:y_stepper|lpm_mult:Mult0|multcore:mult_core|mpar_add:padder", which is child of megafunction instantiation "stepper_controller:y_stepper|lpm_mult:Mult0" File: c:/intelfpga_lite/17.1/quartus/libraries/megafunctions/multcore.tdf Line: 228
-Info (12131): Elaborated megafunction instantiation "stepper_controller:y_stepper|lpm_mult:Mult0|altshift:external_latency_ffs", which is child of megafunction instantiation "stepper_controller:y_stepper|lpm_mult:Mult0" File: c:/intelfpga_lite/17.1/quartus/libraries/megafunctions/lpm_mult.tdf Line: 351
+    Info (12023): Found entity 1: plotter_machine File: C:/Users/cy123/Desktop/plottermachine/plotter_machine.v Line: 1
+Info (12127): Elaborating entity "char_buffer" for the top level hierarchy
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "END_OF_BUFFER" is stuck at VCC File: C:/Users/cy123/Desktop/plottermachine/char_buffer.v Line: 6
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 223 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 13 input pins
-    Info (21059): Implemented 4 output pins
-    Info (21061): Implemented 206 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4793 megabytes
-    Info: Processing ended: Sat Nov 23 14:39:04 2019
-    Info: Elapsed time: 00:00:10
-    Info: Total CPU time (on all processors): 00:00:19
+Info (21057): Implemented 1487 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 16 input pins
+    Info (21059): Implemented 9 output pins
+    Info (21061): Implemented 1462 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 3 warnings
+    Info: Peak virtual memory: 4801 megabytes
+    Info: Processing ended: Sun Nov 24 15:42:41 2019
+    Info: Elapsed time: 00:00:11
+    Info: Total CPU time (on all processors): 00:00:20
 
 

@@ -4,71 +4,99 @@
 			"name" : "Top",
 			"pins" : [
 				{
-					"name" : "dir_out_x",
+					"name" : "curr_character[0]",
 					"strict" : false
 				},
 				{
-					"name" : "dir_out_y",
+					"name" : "curr_character[1]",
 					"strict" : false
 				},
 				{
-					"name" : "step_clk_x",
+					"name" : "curr_character[2]",
 					"strict" : false
 				},
 				{
-					"name" : "step_clk_y",
+					"name" : "curr_character[3]",
 					"strict" : false
 				},
 				{
-					"name" : "move_left",
+					"name" : "curr_character[4]",
 					"strict" : false
 				},
 				{
-					"name" : "move_up",
+					"name" : "curr_character[5]",
 					"strict" : false
 				},
 				{
-					"name" : "inverse_speed_x[3]",
+					"name" : "curr_character[6]",
 					"strict" : false
 				},
 				{
-					"name" : "inverse_speed_x[0]",
+					"name" : "curr_character[7]",
 					"strict" : false
 				},
 				{
-					"name" : "inverse_speed_x[1]",
+					"name" : "index[3]",
 					"strict" : false
 				},
 				{
-					"name" : "inverse_speed_x[2]",
+					"name" : "index[2]",
 					"strict" : false
 				},
 				{
-					"name" : "clk",
+					"name" : "index[1]",
 					"strict" : false
 				},
 				{
-					"name" : "inverse_speed_y[3]",
+					"name" : "index[0]",
 					"strict" : false
 				},
 				{
-					"name" : "inverse_speed_y[0]",
+					"name" : "index[5]",
 					"strict" : false
 				},
 				{
-					"name" : "inverse_speed_y[1]",
+					"name" : "index[6]",
 					"strict" : false
 				},
 				{
-					"name" : "inverse_speed_y[2]",
+					"name" : "index[4]",
 					"strict" : false
 				},
 				{
-					"name" : "move_right",
+					"name" : "next_character[0]",
 					"strict" : false
 				},
 				{
-					"name" : "move_down",
+					"name" : "CHAR_READY",
+					"strict" : false
+				},
+				{
+					"name" : "next_character[1]",
+					"strict" : false
+				},
+				{
+					"name" : "next_character[2]",
+					"strict" : false
+				},
+				{
+					"name" : "next_character[3]",
+					"strict" : false
+				},
+				{
+					"name" : "next_character[4]",
+					"strict" : false
+				},
+				{
+					"name" : "next_character[5]",
+					"strict" : false
+				},
+				{
+					"name" : "next_character[6]",
+					"strict" : false
+				},
+				{
+					"name" : "next_character[7]",
 					"strict" : false
 				}
 			]
