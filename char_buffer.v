@@ -7,6 +7,7 @@ module char_buffer(next_character, CHAR_READY, index, curr_character, END_OF_BUF
 	
 	reg [799:0] buffer;
 	reg END_OF_BUFFER;
+	reg [6:0] curr_write_location;
 	
 	assign curr_character = buffer[8*index +: 8];
 	

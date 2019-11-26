@@ -1,1 +1,4 @@
-Warning (10268): Verilog HDL information at char_buffer.v(18): always construct contains both blocking and non-blocking assignments File: C:/Users/cy123/Desktop/plottermachine/char_buffer.v Line: 18
+Warning (10273): Verilog HDL warning at regfile.v(28): extended using "x" or "z" File: C:/intelFPGA_lite/17.1/plottermachine/regfile.v Line: 28
+Warning (10273): Verilog HDL warning at regfile.v(29): extended using "x" or "z" File: C:/intelFPGA_lite/17.1/plottermachine/regfile.v Line: 29
+Info (10281): Verilog HDL Declaration information at eight_bit_block_adder.v(5): object "P" differs only in case from object "p" in the same scope File: C:/intelFPGA_lite/17.1/plottermachine/eight_bit_block_adder.v Line: 5
+Info (10281): Verilog HDL Declaration information at eight_bit_block_adder.v(5): object "G" differs only in case from object "g" in the same scope File: C:/intelFPGA_lite/17.1/plottermachine/eight_bit_block_adder.v Line: 5

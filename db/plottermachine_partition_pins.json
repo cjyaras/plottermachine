@@ -36,39 +36,43 @@
 					"strict" : false
 				},
 				{
-					"name" : "index[3]",
+					"name" : "debug_output[0]",
 					"strict" : false
 				},
 				{
-					"name" : "index[2]",
+					"name" : "debug_output[1]",
 					"strict" : false
 				},
 				{
-					"name" : "index[1]",
+					"name" : "debug_output[2]",
 					"strict" : false
 				},
 				{
-					"name" : "index[0]",
+					"name" : "debug_output[3]",
 					"strict" : false
 				},
 				{
-					"name" : "index[5]",
+					"name" : "debug_output[4]",
 					"strict" : false
 				},
 				{
-					"name" : "index[6]",
+					"name" : "debug_output[5]",
 					"strict" : false
 				},
 				{
-					"name" : "index[4]",
+					"name" : "debug_output[6]",
+					"strict" : false
+				},
+				{
+					"name" : "choose[1]",
+					"strict" : false
+				},
+				{
+					"name" : "choose[0]",
 					"strict" : false
 				},
 				{
 					"name" : "next_character[0]",
-					"strict" : false
-				},
-				{
-					"name" : "CHAR_READY",
 					"strict" : false
 				},
 				{
@@ -92,11 +96,59 @@
 					"strict" : false
 				},
 				{
-					"name" : "next_character[6]",
+					"name" : "REACHED_END",
 					"strict" : false
 				},
 				{
-					"name" : "next_character[7]",
+					"name" : "CHAR_READY",
+					"strict" : false
+				},
+				{
+					"name" : "choose[2]",
+					"strict" : false
+				},
+				{
+					"name" : "choose[3]",
+					"strict" : false
+				},
+				{
+					"name" : "choose[4]",
+					"strict" : false
+				},
+				{
+					"name" : "choose[5]",
+					"strict" : false
+				},
+				{
+					"name" : "choose[6]",
+					"strict" : false
+				},
+				{
+					"name" : "choose[7]",
+					"strict" : false
+				},
+				{
+					"name" : "choose[8]",
+					"strict" : false
+				},
+				{
+					"name" : "choose[9]",
+					"strict" : false
+				},
+				{
+					"name" : "choose[10]",
+					"strict" : false
+				},
+				{
+					"name" : "choose[11]",
+					"strict" : false
+				},
+				{
+					"name" : "choose[12]",
+					"strict" : false
+				},
+				{
+					"name" : "choose[13]",
 					"strict" : false
 				}
 			]

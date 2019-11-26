@@ -1,0 +1,89 @@
+
+\documentclass[letterpaper]{article} % Feel free to change this
+\usepackage[margin=1in]{geometry}
+
+\begin{document}
+
+\title{ECE 350: Digital Systems Project Checkpoint 4}
+\author{John Yaras} % Change this to your name
+\date{\today} % Change this to the date you are submitting
+\maketitle
+
+\section*{Duke Community Standard}
+
+By submitting this \LaTeX{} document, I affirm that
+\begin{enumerate}
+    \item I understand that each \texttt{git} commit I create in this repository is a submission
+    \item I affirm that each submission complies with the Duke Community Standard and the guidelines set forth for this assignment
+    \item I further acknowledge that any content not included in this commit under the version control system cannot be considered as a part of my submission.
+    \item Finally, I understand that a submission is considered submitted when it has been pushed to the server.
+\end{enumerate} 
+
+\section*{Summary}
+The program counter and register file operate on the rising edge of the clock, whereas the two memory units operate on the falling edge. Decoding of instructions is done at each stage in the pipeline separately, as opposed to a single decoding for the entire processor. Full bypassing is implemented for all instructions, stalling is only necessary for a read after a \texttt{lw} instruction. Branches are assumed to not be taken, but is corrected at execute stage, resulting in flushing two instructions. Most jumps (\texttt{j, jal, jr }(no \texttt{lw} dependence)) are done at decode stage, resulting in flushing a single instruction.\\~\\
+Some relevant statistics:
+\begin{center}
+\begin{tabular}{|l|c|} \hline
+Total Logic Elements & 4669 \\ \hline
+Total Combinational Functions & 4598 \\ \hline
+Dedicated Logic Registers & 1504 \\ \hline
+Total Registers & 1504 \\ \hline
+Total Memory Bits & 262144 \\ \hline
+\end{tabular}
+\end{center}
+
+\section*{Missing Instructions and Issues}
+Most notably, the division operation is not implemented - since it needs more than one cycle of stalling, the bypassing of values into instructions behind \texttt{div} in the pipeline proved to be problematic and difficult to solve without an excessive amount of additional hardware. \\~\\
+Overflow detection for multiplication is not operational, since I chose to use my own multiplier, which has non-functioning overflow detection. \\~\\
+Finally, \texttt{jr} does not always work with registers that are not \texttt{\$ra} (when bypassing values from two instructions ahead) for the reason that \texttt{\$ra} sometimes must take place at the memory stage (explained later), and in this case the MW latch only stores \texttt{\$ra} as the most recently updated value, since this is almost always the register used in conjunction with \texttt{jr}. In a similar vein, writing to \texttt{\$rstatus} is not always predictable; I only focused on bypassing the value of \texttt{\$rstatus} from \texttt{setx} instructions, since this is the proper way to record exceptions. \\~\\
+In essence, as long as \texttt{jr}, \texttt{\$ra}, and \texttt{\$rstatus} are not used ``improperly'', there are no issues.
+
+\section*{Individual Modules}
+\subsection*{Register File}
+The register file contains 32 registers, each made up of 32 D-flip flops. When writing to the register file, a 5:32 decoder is used for enabling the write enable of a single register to be written to. When reading, two decoders are connected to an array of tri-state buffers, resulting in two read ports.
+\subsection*{ALU}
+The ALU contains a two-level carry look-ahead adder (more precisely 4 8-bit adder blocks) for adding and subtraction. Shifting is done via barrel shifters, where the \texttt{sra} uses the most significant bit of the input to determine the upper bits after shifting. Inequalities are checked using the subtractor. The other ALU operations are the obvious implementation.
+\subsection*{Multiplier}
+The multiplier is implemented via a Wallace tree, modified for signed multiplication. The longest path in the Wallace tree is a chain of 8 full adders followed by the same CLA adder as above, so multiplication is done in a single clock cycle - no stalling is necessary for \texttt{mult}.
+
+\section*{Instructions}
+\subsection*{R-type}
+All of these operations take place at the execute stage. \texttt{\$rs} and \texttt{\$rt} are read into the DX pipeline latch from the register file at the decode stage if the writeback stage isn't writing to either of the values, in which case the write back value is forwarded. At the execute stage, further bypassing is performed if an instruction ahead in the pipeline is writing to a relevant register. Stalling for \texttt{lw} is detected when the R-type instruction is in the decode stage. If we have \texttt{mult}, then the output of the multiplier is routed to the XM pipeline latch, otherwise the ALU output is routed. On exceptions, the r-type instruction is replaced with \texttt{setx}, where $T$ is the exception number.
+
+\subsection*{\texttt{addi}}
+Performed exactly like \texttt{add}, except the N value is sign extended and fed to B input of the ALU. On exception, the \texttt{addi} is replaced with a \texttt{setx}, where $T=2$.
+
+\subsection*{\texttt{sw}}
+Same bypassing is utilized as in \texttt{addi}, except no stalling is necessary when immediately before a \texttt{lw} when \texttt{rd} of the \texttt{lw} is equal to \texttt{rd} of \texttt{sw}.
+\subsection*{\texttt{lw}}
+Same bypassing is utilized as in \texttt{addi}, the value received from data memory to be put in \texttt{\$rd} is stored in the MW latch.
+\subsection*{\texttt{j}}
+This will always occur at the decode stage, and flush out one instruction after it to recover the correct PC.
+\subsection*{\texttt{jal}}
+This will always occur at the decode stage, and flush out one instruction after it to recover the correct PC. The new value of \texttt{\$ra} is written at writeback stage.
+\subsection*{\texttt{jr}}
+\texttt{jr} usually takes place at the decode stage, unless there is a dependence on a value further ahead in the pipeline, in which case the jump is delayed till the memory stage. If the jump occurs at decode, then the instruction is flushed out as to not be detected as a jump at memory. The value of \texttt{jr} may be bypassed from any instruction writing to \texttt{\$rd}, unless we have the case outlined in the issues section.
+\subsection*{\texttt{bne, blt}}
+Branching occurs at the execute stage, where the respective conditions are checked with ALU subtraction, with the same full bypassing as all the instructions above. Branches are always assumed to be not taken until execute stage, so when the branch is determined to be actually taken at execute, we flush out the previous two instructions and correct the PC. I chose this implementation because even though branches are very common, if the software is written in such a way, branches are usually \textit{not} taken. Consider the following C code:
+\begin{verbatim}
+for (int i = 0; i < 10; i++) {
+   // do something
+}
+\end{verbatim}
+Loops are the most common use of branches, and so these are the most important cases to optimize. In MIPS we can translate this as
+\begin{verbatim}
+addi $t0, $r0, 9
+addi $s0, $r0, 0 # This is i
+loop:
+blt $t0, $s0, end
+# Do something
+addi $s0, $s0, 1
+j loop
+end:
+\end{verbatim}
+and so other than when we reach $i=10$, we do not take the branch.
+\subsection*{\texttt{bex}}
+Similar to other branching, this occurs at the execute stage, however bypassing into \texttt{\$rstatus} is only valid from a \texttt{setx} instruction (exceptions should not be set with any other instruction). This allows for exceptions from ALU operations to be bypassed into \texttt{bex}, since we replace overflowed operations with \texttt{setx}.
+\subsection*{\texttt{setx}}
+The value of $T$ is (unsigned) extended to 32 bits and written to \texttt{\$rstatus}.
+\end{document}
