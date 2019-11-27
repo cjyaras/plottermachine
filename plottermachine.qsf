@@ -95,37 +95,20 @@ set_global_assignment -name VERILOG_FILE char_buffer.v
 set_global_assignment -name VERILOG_FILE stepper_controller.v
 set_global_assignment -name VERILOG_FILE plotter_machine.v
 set_global_assignment -name VERILOG_FILE character_reading.v
-set_location_assignment PIN_AD25 -to REACHED_END
 set_location_assignment PIN_Y2 -to clk
-set_location_assignment PIN_H19 -to curr_character[7]
-set_location_assignment PIN_J19 -to curr_character[6]
 set_location_assignment PIN_E18 -to curr_character[5]
 set_location_assignment PIN_F18 -to curr_character[4]
 set_location_assignment PIN_F21 -to curr_character[3]
 set_location_assignment PIN_E19 -to curr_character[2]
 set_location_assignment PIN_F19 -to curr_character[1]
 set_location_assignment PIN_G19 -to curr_character[0]
-set_location_assignment PIN_AF16 -to next_character[0]
-set_location_assignment PIN_AF15 -to next_character[1]
-set_location_assignment PIN_AE21 -to next_character[2]
-set_location_assignment PIN_AC22 -to next_character[3]
-set_location_assignment PIN_AF21 -to next_character[4]
-set_location_assignment PIN_AD22 -to next_character[5]
-set_location_assignment PIN_AE25 -to CHAR_READY
-set_location_assignment PIN_AB28 -to choose[0]
-set_location_assignment PIN_AC28 -to choose[1]
-set_location_assignment PIN_AC27 -to choose[2]
-set_location_assignment PIN_AD27 -to choose[3]
-set_location_assignment PIN_AB27 -to choose[4]
-set_location_assignment PIN_AC26 -to choose[5]
-set_location_assignment PIN_AD26 -to choose[6]
-set_location_assignment PIN_AB26 -to choose[7]
-set_location_assignment PIN_AC25 -to choose[8]
-set_location_assignment PIN_AB25 -to choose[9]
-set_location_assignment PIN_AC24 -to choose[10]
-set_location_assignment PIN_AB24 -to choose[11]
-set_location_assignment PIN_AB23 -to choose[12]
-set_location_assignment PIN_AA24 -to choose[13]
+set_location_assignment PIN_AE25 -to next_character[0]
+set_location_assignment PIN_AD25 -to next_character[1]
+set_location_assignment PIN_AD22 -to next_character[2]
+set_location_assignment PIN_AF21 -to next_character[3]
+set_location_assignment PIN_AC22 -to next_character[4]
+set_location_assignment PIN_AE21 -to next_character[5]
+set_location_assignment PIN_AF16 -to CHAR_READY
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
@@ -136,4 +119,14 @@ set_location_assignment PIN_E24 -to debug_output[3]
 set_location_assignment PIN_H21 -to debug_output[4]
 set_location_assignment PIN_G20 -to debug_output[5]
 set_location_assignment PIN_G22 -to debug_output[6]
+set_location_assignment PIN_G21 -to debug_output[7]
+set_location_assignment PIN_AB28 -to select[0]
+set_location_assignment PIN_AC28 -to select[1]
+set_location_assignment PIN_AC27 -to select[2]
+set_location_assignment PIN_AD27 -to select[3]
+set_location_assignment PIN_AF15 -to EOF
+set_location_assignment PIN_H15 -to index[3]
+set_location_assignment PIN_G16 -to index[2]
+set_location_assignment PIN_G15 -to index[1]
+set_location_assignment PIN_F15 -to index[0]
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

@@ -28,14 +28,6 @@
 					"strict" : false
 				},
 				{
-					"name" : "curr_character[6]",
-					"strict" : false
-				},
-				{
-					"name" : "curr_character[7]",
-					"strict" : false
-				},
-				{
 					"name" : "debug_output[0]",
 					"strict" : false
 				},
@@ -64,11 +56,55 @@
 					"strict" : false
 				},
 				{
-					"name" : "choose[1]",
+					"name" : "debug_output[7]",
 					"strict" : false
 				},
 				{
-					"name" : "choose[0]",
+					"name" : "index[0]",
+					"strict" : false
+				},
+				{
+					"name" : "index[1]",
+					"strict" : false
+				},
+				{
+					"name" : "index[2]",
+					"strict" : false
+				},
+				{
+					"name" : "index[3]",
+					"strict" : false
+				},
+				{
+					"name" : "index[4]",
+					"strict" : false
+				},
+				{
+					"name" : "index[5]",
+					"strict" : false
+				},
+				{
+					"name" : "index[6]",
+					"strict" : false
+				},
+				{
+					"name" : "index[7]",
+					"strict" : false
+				},
+				{
+					"name" : "index[8]",
+					"strict" : false
+				},
+				{
+					"name" : "index[9]",
+					"strict" : false
+				},
+				{
+					"name" : "index[10]",
+					"strict" : false
+				},
+				{
+					"name" : "index[11]",
 					"strict" : false
 				},
 				{
@@ -96,59 +132,31 @@
 					"strict" : false
 				},
 				{
-					"name" : "REACHED_END",
-					"strict" : false
-				},
-				{
 					"name" : "CHAR_READY",
 					"strict" : false
 				},
 				{
-					"name" : "choose[2]",
+					"name" : "EOF",
 					"strict" : false
 				},
 				{
-					"name" : "choose[3]",
+					"name" : "clk",
 					"strict" : false
 				},
 				{
-					"name" : "choose[4]",
+					"name" : "select[0]",
 					"strict" : false
 				},
 				{
-					"name" : "choose[5]",
+					"name" : "select[1]",
 					"strict" : false
 				},
 				{
-					"name" : "choose[6]",
+					"name" : "select[2]",
 					"strict" : false
 				},
 				{
-					"name" : "choose[7]",
-					"strict" : false
-				},
-				{
-					"name" : "choose[8]",
-					"strict" : false
-				},
-				{
-					"name" : "choose[9]",
-					"strict" : false
-				},
-				{
-					"name" : "choose[10]",
-					"strict" : false
-				},
-				{
-					"name" : "choose[11]",
-					"strict" : false
-				},
-				{
-					"name" : "choose[12]",
-					"strict" : false
-				},
-				{
-					"name" : "choose[13]",
+					"name" : "select[3]",
 					"strict" : false
 				}
 			]

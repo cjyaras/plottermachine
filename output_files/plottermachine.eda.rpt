@@ -1,5 +1,5 @@
 EDA Netlist Writer report for plottermachine
-Sun Nov 24 15:43:23 2019
+Tue Nov 26 22:18:56 2019
 Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
 
 
@@ -34,9 +34,9 @@ refer to the applicable agreement for further details.
 +---------------------------------------------------------------+
 ; EDA Netlist Writer Summary                                    ;
 +---------------------------+-----------------------------------+
-; EDA Netlist Writer Status ; Failed - Sun Nov 24 15:43:23 2019 ;
+; EDA Netlist Writer Status ; Failed - Tue Nov 26 22:18:56 2019 ;
 ; Revision Name             ; plottermachine                    ;
-; Top-level Entity Name     ; char_buffer                       ;
+; Top-level Entity Name     ; character_reading                 ;
 ; Family                    ; Cyclone IV E                      ;
 +---------------------------+-----------------------------------+
 
@@ -60,14 +60,15 @@ Info: Running Quartus Prime EDA Netlist Writer
     Info: the sole purpose of programming logic devices manufactured by
     Info: Intel and sold by Intel or its authorized distributors.  Please
     Info: refer to the applicable agreement for further details.
-    Info: Processing started: Sun Nov 24 15:43:23 2019
-Info: Command: quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off plottermachine -c plottermachine --vector_source=C:/Users/cy123/Desktop/plottermachine/output_files/Waveform.vwf --testbench_file=C:/Users/cy123/Desktop/plottermachine/simulation/qsim/output_files/Waveform.vwf.vt
+    Info: Processing started: Tue Nov 26 22:18:55 2019
+Info: Command: quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off plottermachine -c plottermachine --vector_source=C:/intelFPGA_lite/17.1/plottermachine/output_files/Waveform.vwf --testbench_file=C:/intelFPGA_lite/17.1/plottermachine/simulation/qsim/output_files/Waveform.vwf.vt
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Error (199013): HDL output file name "C:/Users/cy123/Desktop/plottermachine/simulation/qsim/output_files/Waveform.vwf.vt" used with --testbench_file option contains a non-existent directory path
-Error: Quartus Prime EDA Netlist Writer was unsuccessful. 1 error, 1 warning
-    Error: Peak virtual memory: 4653 megabytes
-    Error: Processing ended: Sun Nov 24 15:43:23 2019
-    Error: Elapsed time: 00:00:00
+Error (199013): HDL output file name "C:/intelFPGA_lite/17.1/plottermachine/simulation/qsim/output_files/Waveform.vwf.vt" used with --testbench_file option contains a non-existent directory path
+Error (199014): Vector source file C:/intelFPGA_lite/17.1/plottermachine/output_files/Waveform.vwf specified with --testbench_vector_input_file option does not exist
+Error: Quartus Prime EDA Netlist Writer was unsuccessful. 2 errors, 1 warning
+    Error: Peak virtual memory: 4648 megabytes
+    Error: Processing ended: Tue Nov 26 22:18:56 2019
+    Error: Elapsed time: 00:00:01
     Error: Total CPU time (on all processors): 00:00:01
 
 
