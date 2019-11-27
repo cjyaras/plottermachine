@@ -1,39 +1,65 @@
 # do plottermachine.do
 # ** Warning: (vlib-34) Library already exists at "work".
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 12:21:46 on Nov 23,2019
+# Start time: 13:14:11 on Nov 27,2019
 # vlog -work work plottermachine.vo 
-# -- Compiling module stepper_controller
+# -- Compiling module counter
 # -- Compiling module hard_block
 # 
 # Top level modules:
-# 	stepper_controller
-# End time: 12:21:46 on Nov 23,2019, Elapsed time: 0:00:00
+# 	counter
+# End time: 13:14:11 on Nov 27,2019, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 12:21:46 on Nov 23,2019
+# Start time: 13:14:11 on Nov 27,2019
 # vlog -work work Waveform.vwf.vt 
-# -- Compiling module stepper_controller_vlg_vec_tst
+# -- Compiling module counter_vlg_vec_tst
 # 
 # Top level modules:
-# 	stepper_controller_vlg_vec_tst
-# End time: 12:21:46 on Nov 23,2019, Elapsed time: 0:00:00
+# 	counter_vlg_vec_tst
+# End time: 13:14:11 on Nov 27,2019, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vsim -novopt -c -t 1ps -L cycloneive_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate_ver -L altera_lnsim_ver work.stepper_controller_vlg_vec_tst 
-# Start time: 12:21:46 on Nov 23,2019
-# Loading work.stepper_controller_vlg_vec_tst
-# Loading work.stepper_controller
+# vsim -novopt -c -t 1ps -L cycloneive_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate_ver -L altera_lnsim_ver work.character_reading_vlg_vec_tst 
+# Start time: 13:14:11 on Nov 27,2019
+# Loading work.character_reading_vlg_vec_tst
+# Loading work.character_reading
 # Loading work.hard_block
 # Loading cycloneive_ver.cycloneive_io_obuf
 # Loading cycloneive_ver.cycloneive_io_ibuf
+# Loading cycloneive_ver.cycloneive_lcell_comb
 # Loading cycloneive_ver.cycloneive_clkctrl
 # Loading cycloneive_ver.cycloneive_mux41
 # Loading cycloneive_ver.cycloneive_ena_reg
-# Loading cycloneive_ver.cycloneive_lcell_comb
 # Loading altera_ver.dffeas
+# Loading cycloneive_ver.cycloneive_ram_block
+# Loading cycloneive_ver.cycloneive_ram_register
+# Loading cycloneive_ver.cycloneive_ram_pulse_generator
+# Loading instances from plottermachine_v.sdo
+# ** Error (suppressible): (vsim-SDF-3250) plottermachine_v.sdo(141): Failed to find INSTANCE '\cnt[0] '.
+# ** Error (suppressible): (vsim-SDF-3250) plottermachine_v.sdo(132): Failed to find INSTANCE '\cnt[0]~18 '.
+# ** Error (suppressible): (vsim-SDF-3250) plottermachine_v.sdo(170): Failed to find INSTANCE '\cnt[1] '.
+# ** Error (suppressible): (vsim-SDF-3250) plottermachine_v.sdo(155): Failed to find INSTANCE '\cnt[1]~6 '.
+# ** Error (suppressible): (vsim-SDF-3250) plottermachine_v.sdo(198): Failed to find INSTANCE '\cnt[2] '.
+# ** Error (suppressible): (vsim-SDF-3250) plottermachine_v.sdo(184): Failed to find INSTANCE '\cnt[2]~8 '.
+# ** Error (suppressible): (vsim-SDF-3250) plottermachine_v.sdo(226): Failed to find INSTANCE '\cnt[3] '.
+# ** Error (suppressible): (vsim-SDF-3250) plottermachine_v.sdo(212): Failed to find INSTANCE '\cnt[3]~10 '.
+# ** Error (suppressible): (vsim-SDF-3250) plottermachine_v.sdo(254): Failed to find INSTANCE '\cnt[4] '.
+# ** Error (suppressible): (vsim-SDF-3250) plottermachine_v.sdo(240): Failed to find INSTANCE '\cnt[4]~12 '.
+# ** Error (suppressible): (vsim-SDF-3250) plottermachine_v.sdo(282): Failed to find INSTANCE '\cnt[5] '.
+# ** Error (suppressible): (vsim-SDF-3250) plottermachine_v.sdo(268): Failed to find INSTANCE '\cnt[5]~14 '.
+# ** Error (suppressible): (vsim-SDF-3250) plottermachine_v.sdo(307): Failed to find INSTANCE '\cnt[6] '.
+# ** Error (suppressible): (vsim-SDF-3250) plottermachine_v.sdo(296): Failed to find INSTANCE '\cnt[6]~16 '.
+# ** Error (suppressible): (vsim-SDF-3250) plottermachine_v.sdo(44): Failed to find INSTANCE '\out[0]~output '.
+# ** Error (suppressible): (vsim-SDF-3250) plottermachine_v.sdo(54): Failed to find INSTANCE '\out[1]~output '.
+# ** Error (suppressible): (vsim-SDF-3250) plottermachine_v.sdo(64): Failed to find INSTANCE '\out[2]~output '.
+# ** Error (suppressible): (vsim-SDF-3250) plottermachine_v.sdo(74): Failed to find INSTANCE '\out[3]~output '.
+# ** Error (suppressible): (vsim-SDF-3250) plottermachine_v.sdo(84): Failed to find INSTANCE '\out[4]~output '.
+# ** Error (suppressible): (vsim-SDF-3250) plottermachine_v.sdo(94): Failed to find INSTANCE '\out[5]~output '.
+# ** Error (suppressible): (vsim-SDF-3250) plottermachine_v.sdo(104): Failed to find INSTANCE '\out[6]~output '.
+# ** Error (suppressible): (vsim-SDF-3894) : Errors occured in reading and resolving instances from compiled SDF file(s).
 # Loading altera_ver.PRIM_GDFF_LOW
-# after#26
-# ** Note: $finish    : Waveform.vwf.vt(48)
-#    Time: 100 us  Iteration: 0  Instance: /stepper_controller_vlg_vec_tst
-# End time: 12:21:47 on Nov 23,2019, Elapsed time: 0:00:01
-# Errors: 0, Warnings: 0
+# ** Error: (vsim-SDF-3445) Failed to parse SDF file "plottermachine_v.sdo".
+#    Time: 0 ps  Iteration: 0  Instance: /character_reading_vlg_vec_tst File: Waveform.vwf.vt
+# Error loading design
+# End time: 13:14:11 on Nov 27,2019, Elapsed time: 0:00:00
+# Errors: 23, Warnings: 0

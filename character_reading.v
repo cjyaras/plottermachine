@@ -14,8 +14,8 @@ module character_reading(clk, EOF, next_character, CHAR_READY, select, curr_char
 		index = 12'b0;
 	end
 
-	always @(negedge CHAR_READY) begin
-		index = index + 1b'1;
+	always @(CHAR_READY) begin
+		index = index + 1'b1;
 	end
 	
 	wire [31:0] dmem_output;

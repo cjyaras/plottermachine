@@ -18,141 +18,36 @@
 // the top level entity of the current Quartus project .The user can use this   
 // testbench to simulate his design using a third-party simulation tool .       
 // *****************************************************************************
-// Generated on "11/23/2019 12:21:45"
+// Generated on "11/27/2019 13:14:09"
                                                                                 
-// Verilog Test Bench (with test vectors) for design :                          stepper_controller
+// Verilog Test Bench (with test vectors) for design :                          counter
 // 
 // Simulation tool : 3rd Party
 // 
 
 `timescale 1 ps/ 1 ps
-module stepper_controller_vlg_vec_tst();
+module counter_vlg_vec_tst();
 // constants                                           
 // general purpose registers
 reg clk;
-reg enable;
-reg [15:0] inverse_speed;
 // wires                                               
-wire step_clk;
+wire [6:0] out;
 
 // assign statements (if any)                          
-stepper_controller i1 (
+counter i1 (
 // port map - connection between master ports and signals/registers   
 	.clk(clk),
-	.enable(enable),
-	.inverse_speed(inverse_speed),
-	.step_clk(step_clk)
+	.out(out)
 );
 initial 
 begin 
-#100000000 $finish;
+#1000000 $finish;
 end 
 
 // clk
 initial
 begin
-	repeat(49)
-	begin
-		clk = 1'b0;
-		clk = #10000 1'b1;
-		# 10000;
-	end
 	clk = 1'b0;
-	clk = #10000 1'b1;
-	# 9000;
-	repeat(4950)
-	begin
-		clk = 1'b0;
-		clk = #10000 1'b1;
-		# 10000;
-	end
-	clk = 1'b0;
-end 
-
-// enable
-initial
-begin
-	enable = 1'b1;
-end 
-// inverse_speed[ 15 ]
-initial
-begin
-	inverse_speed[15] = 1'b0;
-end 
-// inverse_speed[ 14 ]
-initial
-begin
-	inverse_speed[14] = 1'b0;
-end 
-// inverse_speed[ 13 ]
-initial
-begin
-	inverse_speed[13] = 1'b0;
-end 
-// inverse_speed[ 12 ]
-initial
-begin
-	inverse_speed[12] = 1'b0;
-end 
-// inverse_speed[ 11 ]
-initial
-begin
-	inverse_speed[11] = 1'b0;
-end 
-// inverse_speed[ 10 ]
-initial
-begin
-	inverse_speed[10] = 1'b0;
-end 
-// inverse_speed[ 9 ]
-initial
-begin
-	inverse_speed[9] = 1'b0;
-end 
-// inverse_speed[ 8 ]
-initial
-begin
-	inverse_speed[8] = 1'b0;
-end 
-// inverse_speed[ 7 ]
-initial
-begin
-	inverse_speed[7] = 1'b0;
-end 
-// inverse_speed[ 6 ]
-initial
-begin
-	inverse_speed[6] = 1'b0;
-end 
-// inverse_speed[ 5 ]
-initial
-begin
-	inverse_speed[5] = 1'b0;
-end 
-// inverse_speed[ 4 ]
-initial
-begin
-	inverse_speed[4] = 1'b0;
-end 
-// inverse_speed[ 3 ]
-initial
-begin
-	inverse_speed[3] = 1'b0;
-end 
-// inverse_speed[ 2 ]
-initial
-begin
-	inverse_speed[2] = 1'b0;
-end 
-// inverse_speed[ 1 ]
-initial
-begin
-	inverse_speed[1] = 1'b0;
-end 
-// inverse_speed[ 0 ]
-initial
-begin
-	inverse_speed[0] = 1'b1;
 end 
 endmodule
 

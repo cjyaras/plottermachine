@@ -4,139 +4,35 @@
 			"name" : "Top",
 			"pins" : [
 				{
-					"name" : "curr_character[0]",
+					"name" : "slow_clk",
 					"strict" : false
 				},
 				{
-					"name" : "curr_character[1]",
+					"name" : "out",
 					"strict" : false
 				},
 				{
-					"name" : "curr_character[2]",
+					"name" : "debug",
 					"strict" : false
 				},
 				{
-					"name" : "curr_character[3]",
+					"name" : "index_out[0]",
 					"strict" : false
 				},
 				{
-					"name" : "curr_character[4]",
+					"name" : "index_out[1]",
 					"strict" : false
 				},
 				{
-					"name" : "curr_character[5]",
+					"name" : "index_out[2]",
 					"strict" : false
 				},
 				{
-					"name" : "debug_output[0]",
+					"name" : "index_out[3]",
 					"strict" : false
 				},
 				{
-					"name" : "debug_output[1]",
-					"strict" : false
-				},
-				{
-					"name" : "debug_output[2]",
-					"strict" : false
-				},
-				{
-					"name" : "debug_output[3]",
-					"strict" : false
-				},
-				{
-					"name" : "debug_output[4]",
-					"strict" : false
-				},
-				{
-					"name" : "debug_output[5]",
-					"strict" : false
-				},
-				{
-					"name" : "debug_output[6]",
-					"strict" : false
-				},
-				{
-					"name" : "debug_output[7]",
-					"strict" : false
-				},
-				{
-					"name" : "index[0]",
-					"strict" : false
-				},
-				{
-					"name" : "index[1]",
-					"strict" : false
-				},
-				{
-					"name" : "index[2]",
-					"strict" : false
-				},
-				{
-					"name" : "index[3]",
-					"strict" : false
-				},
-				{
-					"name" : "index[4]",
-					"strict" : false
-				},
-				{
-					"name" : "index[5]",
-					"strict" : false
-				},
-				{
-					"name" : "index[6]",
-					"strict" : false
-				},
-				{
-					"name" : "index[7]",
-					"strict" : false
-				},
-				{
-					"name" : "index[8]",
-					"strict" : false
-				},
-				{
-					"name" : "index[9]",
-					"strict" : false
-				},
-				{
-					"name" : "index[10]",
-					"strict" : false
-				},
-				{
-					"name" : "index[11]",
-					"strict" : false
-				},
-				{
-					"name" : "next_character[0]",
-					"strict" : false
-				},
-				{
-					"name" : "next_character[1]",
-					"strict" : false
-				},
-				{
-					"name" : "next_character[2]",
-					"strict" : false
-				},
-				{
-					"name" : "next_character[3]",
-					"strict" : false
-				},
-				{
-					"name" : "next_character[4]",
-					"strict" : false
-				},
-				{
-					"name" : "next_character[5]",
-					"strict" : false
-				},
-				{
-					"name" : "CHAR_READY",
-					"strict" : false
-				},
-				{
-					"name" : "EOF",
+					"name" : "data",
 					"strict" : false
 				},
 				{

@@ -1,16 +1,16 @@
-Fitter Status : Successful - Tue Nov 26 22:13:31 2019
+Fitter Status : Successful - Wed Nov 27 15:07:12 2019
 Quartus Prime Version : 17.1.0 Build 590 10/25/2017 SJ Lite Edition
 Revision Name : plottermachine
-Top-level Entity Name : character_reading
+Top-level Entity Name : receive_data
 Family : Cyclone IV E
 Device : EP4CE115F29C7
 Timing Models : Final
-Total logic elements : 24 / 114,480 ( < 1 % )
-    Total combinational functions : 24 / 114,480 ( < 1 % )
-    Dedicated logic registers : 0 / 114,480 ( 0 % )
-Total registers : 0
-Total pins : 39 / 529 ( 7 % )
+Total logic elements : 61 / 114,480 ( < 1 % )
+    Total combinational functions : 60 / 114,480 ( < 1 % )
+    Dedicated logic registers : 37 / 114,480 ( < 1 % )
+Total registers : 37
+Total pins : 13 / 529 ( 2 % )
 Total virtual pins : 0
-Total memory bits : 24,576 / 3,981,312 ( < 1 % )
+Total memory bits : 16 / 3,981,312 ( < 1 % )
 Embedded Multiplier 9-bit elements : 0 / 532 ( 0 % )
 Total PLLs : 0 / 4 ( 0 % )
