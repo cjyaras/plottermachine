@@ -4,35 +4,87 @@
 			"name" : "Top",
 			"pins" : [
 				{
-					"name" : "slow_clk",
+					"name" : "dmem_q[0]",
 					"strict" : false
 				},
 				{
-					"name" : "out",
+					"name" : "dmem_q[1]",
 					"strict" : false
 				},
 				{
-					"name" : "debug",
+					"name" : "dmem_q[2]",
 					"strict" : false
 				},
 				{
-					"name" : "index_out[0]",
+					"name" : "dmem_q[3]",
 					"strict" : false
 				},
 				{
-					"name" : "index_out[1]",
+					"name" : "dmem_q[4]",
 					"strict" : false
 				},
 				{
-					"name" : "index_out[2]",
+					"name" : "dmem_q[5]",
 					"strict" : false
 				},
 				{
-					"name" : "index_out[3]",
+					"name" : "dmem_q[6]",
 					"strict" : false
 				},
 				{
-					"name" : "data",
+					"name" : "dmem_q[7]",
+					"strict" : false
+				},
+				{
+					"name" : "done",
+					"strict" : false
+				},
+				{
+					"name" : "index[0]",
+					"strict" : false
+				},
+				{
+					"name" : "index[1]",
+					"strict" : false
+				},
+				{
+					"name" : "index[2]",
+					"strict" : false
+				},
+				{
+					"name" : "index[3]",
+					"strict" : false
+				},
+				{
+					"name" : "index[4]",
+					"strict" : false
+				},
+				{
+					"name" : "index[5]",
+					"strict" : false
+				},
+				{
+					"name" : "index[6]",
+					"strict" : false
+				},
+				{
+					"name" : "index[7]",
+					"strict" : false
+				},
+				{
+					"name" : "index[8]",
+					"strict" : false
+				},
+				{
+					"name" : "index[9]",
+					"strict" : false
+				},
+				{
+					"name" : "index[10]",
+					"strict" : false
+				},
+				{
+					"name" : "index[11]",
 					"strict" : false
 				},
 				{
@@ -53,6 +105,10 @@
 				},
 				{
 					"name" : "select[3]",
+					"strict" : false
+				},
+				{
+					"name" : "rx",
 					"strict" : false
 				}
 			]

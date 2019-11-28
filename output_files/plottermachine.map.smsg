@@ -1,4 +1,1 @@
-Warning (10273): Verilog HDL warning at regfile.v(28): extended using "x" or "z" File: C:/plottermachine/regfile.v Line: 28
-Warning (10273): Verilog HDL warning at regfile.v(29): extended using "x" or "z" File: C:/plottermachine/regfile.v Line: 29
-Info (10281): Verilog HDL Declaration information at eight_bit_block_adder.v(5): object "P" differs only in case from object "p" in the same scope File: C:/plottermachine/eight_bit_block_adder.v Line: 5
-Info (10281): Verilog HDL Declaration information at eight_bit_block_adder.v(5): object "G" differs only in case from object "g" in the same scope File: C:/plottermachine/eight_bit_block_adder.v Line: 5
+Warning (10268): Verilog HDL information at uart_wrapper.v(12): always construct contains both blocking and non-blocking assignments File: C:/Users/Can/Desktop/plottermachine/uart_wrapper.v Line: 12
