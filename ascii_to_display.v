@@ -17,5 +17,6 @@ module ascii_to_display(clk, in, out);
 			8'd55  : out <= 7'h70;      // 7
 			8'd56  : out <= 7'h7F;      // 8
 			8'd57  : out <= 7'h77;      // 9
+		endcase
 	end
 endmodule

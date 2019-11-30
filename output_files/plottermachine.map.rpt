@@ -1,5 +1,5 @@
 Analysis & Synthesis report for plottermachine
-Thu Nov 28 00:53:46 2019
+Fri Nov 29 21:17:58 2019
 Quartus Prime Version 16.0.0 Build 211 04/27/2016 SJ Lite Edition
 
 
@@ -13,21 +13,11 @@ Quartus Prime Version 16.0.0 Build 211 04/27/2016 SJ Lite Edition
   5. Analysis & Synthesis Source Files Read
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
-  8. Analysis & Synthesis RAM Summary
-  9. State Machine - |uart_wrapper|delay
- 10. State Machine - |uart_wrapper|uart_rx:receiver|r_SM_Main
- 11. Registers Removed During Synthesis
- 12. General Register Statistics
- 13. Inverted Register Statistics
- 14. Multiplexer Restructuring Statistics (Restructuring Performed)
- 15. Source assignments for dmem:my_dmem|altsyncram:altsyncram_component|altsyncram_m4i1:auto_generated
- 16. Parameter Settings for User Entity Instance: uart_rx:receiver
- 17. Parameter Settings for User Entity Instance: dmem:my_dmem|altsyncram:altsyncram_component
- 18. altsyncram Parameter Settings by Entity Instance
- 19. Port Connectivity Checks: "dmem:my_dmem"
- 20. Post-Synthesis Netlist Statistics for Top Partition
- 21. Elapsed Time Per Partition
- 22. Analysis & Synthesis Messages
+  8. General Register Statistics
+  9. Parameter Settings for Inferred Entity Instance: lpm_divide:Div0
+ 10. Post-Synthesis Netlist Statistics for Top Partition
+ 11. Elapsed Time Per Partition
+ 12. Analysis & Synthesis Messages
 
 
 
@@ -54,18 +44,18 @@ agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Thu Nov 28 00:53:46 2019       ;
+; Analysis & Synthesis Status        ; Successful - Fri Nov 29 21:17:58 2019       ;
 ; Quartus Prime Version              ; 16.0.0 Build 211 04/27/2016 SJ Lite Edition ;
 ; Revision Name                      ; plottermachine                              ;
-; Top-level Entity Name              ; uart_wrapper                                ;
+; Top-level Entity Name              ; test_divide                                 ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; 118                                         ;
-;     Total combinational functions  ; 117                                         ;
-;     Dedicated logic registers      ; 65                                          ;
-; Total registers                    ; 65                                          ;
-; Total pins                         ; 27                                          ;
+; Total logic elements               ; 1,114                                       ;
+;     Total combinational functions  ; 1,114                                       ;
+;     Dedicated logic registers      ; 0                                           ;
+; Total registers                    ; 0                                           ;
+; Total pins                         ; 96                                          ;
 ; Total virtual pins                 ; 0                                           ;
-; Total memory bits                  ; 32,768                                      ;
+; Total memory bits                  ; 0                                           ;
 ; Embedded Multiplier 9-bit elements ; 0                                           ;
 ; Total PLLs                         ; 0                                           ;
 +------------------------------------+---------------------------------------------+
@@ -77,7 +67,7 @@ agreement for further details.
 ; Option                                                                     ; Setting            ; Default Value      ;
 +----------------------------------------------------------------------------+--------------------+--------------------+
 ; Device                                                                     ; EP4CE115F29C7      ;                    ;
-; Top-level entity name                                                      ; uart_wrapper       ; plottermachine     ;
+; Top-level entity name                                                      ; test_divide        ; plottermachine     ;
 ; Family name                                                                ; Cyclone IV E       ; Cyclone V          ;
 ; Use smart compilation                                                      ; Off                ; Off                ;
 ; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                 ; On                 ;
@@ -171,128 +161,75 @@ agreement for further details.
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processors 2-4         ;   0.0%      ;
+;     Processor 2            ;   0.0%      ;
+;     Processor 3            ;   0.0%      ;
+;     Processor 4            ;   0.0%      ;
 +----------------------------+-------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                  ;
-+----------------------------------+-----------------+------------------------------+---------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                              ; Library ;
-+----------------------------------+-----------------+------------------------------+---------------------------------------------------------------------------+---------+
-; uart_rx.v                        ; yes             ; User Verilog HDL File        ; C:/Users/Can/Desktop/plottermachine/uart_rx.v                             ;         ;
-; dmem.v                           ; yes             ; User Wizard-Generated File   ; C:/Users/Can/Desktop/plottermachine/dmem.v                                ;         ;
-; uart_wrapper.v                   ; yes             ; User Verilog HDL File        ; C:/Users/Can/Desktop/plottermachine/uart_wrapper.v                        ;         ;
-; altsyncram.tdf                   ; yes             ; Megafunction                 ; c:/altera_lite/16.0/quartus/libraries/megafunctions/altsyncram.tdf        ;         ;
-; stratix_ram_block.inc            ; yes             ; Megafunction                 ; c:/altera_lite/16.0/quartus/libraries/megafunctions/stratix_ram_block.inc ;         ;
-; lpm_mux.inc                      ; yes             ; Megafunction                 ; c:/altera_lite/16.0/quartus/libraries/megafunctions/lpm_mux.inc           ;         ;
-; lpm_decode.inc                   ; yes             ; Megafunction                 ; c:/altera_lite/16.0/quartus/libraries/megafunctions/lpm_decode.inc        ;         ;
-; aglobal160.inc                   ; yes             ; Megafunction                 ; c:/altera_lite/16.0/quartus/libraries/megafunctions/aglobal160.inc        ;         ;
-; a_rdenreg.inc                    ; yes             ; Megafunction                 ; c:/altera_lite/16.0/quartus/libraries/megafunctions/a_rdenreg.inc         ;         ;
-; altrom.inc                       ; yes             ; Megafunction                 ; c:/altera_lite/16.0/quartus/libraries/megafunctions/altrom.inc            ;         ;
-; altram.inc                       ; yes             ; Megafunction                 ; c:/altera_lite/16.0/quartus/libraries/megafunctions/altram.inc            ;         ;
-; altdpram.inc                     ; yes             ; Megafunction                 ; c:/altera_lite/16.0/quartus/libraries/megafunctions/altdpram.inc          ;         ;
-; db/altsyncram_m4i1.tdf           ; yes             ; Auto-Generated Megafunction  ; C:/Users/Can/Desktop/plottermachine/db/altsyncram_m4i1.tdf                ;         ;
-+----------------------------------+-----------------+------------------------------+---------------------------------------------------------------------------+---------+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                 ;
++----------------------------------+-----------------+------------------------------+------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                             ; Library ;
++----------------------------------+-----------------+------------------------------+------------------------------------------------------------------------------------------+---------+
+; test_divide.v                    ; yes             ; User Verilog HDL File        ; C:/Users/Can/OneDrive - Duke University/ECE350/plottermachine/test_divide.v              ;         ;
+; lpm_divide.tdf                   ; yes             ; Megafunction                 ; c:/altera_lite/16.0/quartus/libraries/megafunctions/lpm_divide.tdf                       ;         ;
+; abs_divider.inc                  ; yes             ; Megafunction                 ; c:/altera_lite/16.0/quartus/libraries/megafunctions/abs_divider.inc                      ;         ;
+; sign_div_unsign.inc              ; yes             ; Megafunction                 ; c:/altera_lite/16.0/quartus/libraries/megafunctions/sign_div_unsign.inc                  ;         ;
+; aglobal160.inc                   ; yes             ; Megafunction                 ; c:/altera_lite/16.0/quartus/libraries/megafunctions/aglobal160.inc                       ;         ;
+; db/lpm_divide_hkm.tdf            ; yes             ; Auto-Generated Megafunction  ; C:/Users/Can/OneDrive - Duke University/ECE350/plottermachine/db/lpm_divide_hkm.tdf      ;         ;
+; db/sign_div_unsign_9nh.tdf       ; yes             ; Auto-Generated Megafunction  ; C:/Users/Can/OneDrive - Duke University/ECE350/plottermachine/db/sign_div_unsign_9nh.tdf ;         ;
+; db/alt_u_div_6af.tdf             ; yes             ; Auto-Generated Megafunction  ; C:/Users/Can/OneDrive - Duke University/ECE350/plottermachine/db/alt_u_div_6af.tdf       ;         ;
+; db/add_sub_7pc.tdf               ; yes             ; Auto-Generated Megafunction  ; C:/Users/Can/OneDrive - Duke University/ECE350/plottermachine/db/add_sub_7pc.tdf         ;         ;
+; db/add_sub_8pc.tdf               ; yes             ; Auto-Generated Megafunction  ; C:/Users/Can/OneDrive - Duke University/ECE350/plottermachine/db/add_sub_8pc.tdf         ;         ;
++----------------------------------+-----------------+------------------------------+------------------------------------------------------------------------------------------+---------+
 
 
-+---------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary             ;
-+---------------------------------------------+-----------+
-; Resource                                    ; Usage     ;
-+---------------------------------------------+-----------+
-; Estimated Total logic elements              ; 118       ;
-;                                             ;           ;
-; Total combinational functions               ; 117       ;
-; Logic element usage by number of LUT inputs ;           ;
-;     -- 4 input functions                    ; 38        ;
-;     -- 3 input functions                    ; 21        ;
-;     -- <=2 input functions                  ; 58        ;
-;                                             ;           ;
-; Logic elements by mode                      ;           ;
-;     -- normal mode                          ; 75        ;
-;     -- arithmetic mode                      ; 42        ;
-;                                             ;           ;
-; Total registers                             ; 65        ;
-;     -- Dedicated logic registers            ; 65        ;
-;     -- I/O registers                        ; 0         ;
-;                                             ;           ;
-; I/O pins                                    ; 27        ;
-; Total memory bits                           ; 32768     ;
-;                                             ;           ;
-; Embedded Multiplier 9-bit elements          ; 0         ;
-;                                             ;           ;
-; Maximum fan-out node                        ; clk~input ;
-; Maximum fan-out                             ; 60        ;
-; Total fan-out                               ; 701       ;
-; Average fan-out                             ; 2.87      ;
-+---------------------------------------------+-----------+
++-----------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary               ;
++---------------------------------------------+-------------+
+; Resource                                    ; Usage       ;
++---------------------------------------------+-------------+
+; Estimated Total logic elements              ; 1,114       ;
+;                                             ;             ;
+; Total combinational functions               ; 1114        ;
+; Logic element usage by number of LUT inputs ;             ;
+;     -- 4 input functions                    ; 516         ;
+;     -- 3 input functions                    ; 547         ;
+;     -- <=2 input functions                  ; 51          ;
+;                                             ;             ;
+; Logic elements by mode                      ;             ;
+;     -- normal mode                          ; 589         ;
+;     -- arithmetic mode                      ; 525         ;
+;                                             ;             ;
+; Total registers                             ; 0           ;
+;     -- Dedicated logic registers            ; 0           ;
+;     -- I/O registers                        ; 0           ;
+;                                             ;             ;
+; I/O pins                                    ; 96          ;
+;                                             ;             ;
+; Embedded Multiplier 9-bit elements          ; 0           ;
+;                                             ;             ;
+; Maximum fan-out node                        ; b[31]~input ;
+; Maximum fan-out                             ; 38          ;
+; Total fan-out                               ; 3875        ;
+; Average fan-out                             ; 2.97        ;
++---------------------------------------------+-------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                ;
-+-------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------------------------------------------+-----------------+--------------+
-; Compilation Hierarchy Node                ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                       ; Entity Name     ; Library Name ;
-+-------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------------------------------------------+-----------------+--------------+
-; |uart_wrapper                             ; 117 (30)          ; 65 (14)      ; 32768       ; 0            ; 0       ; 0         ; 27   ; 0            ; |uart_wrapper                                                                             ; uart_wrapper    ; work         ;
-;    |dmem:my_dmem|                         ; 0 (0)             ; 0 (0)        ; 32768       ; 0            ; 0       ; 0         ; 0    ; 0            ; |uart_wrapper|dmem:my_dmem                                                                ; dmem            ; work         ;
-;       |altsyncram:altsyncram_component|   ; 0 (0)             ; 0 (0)        ; 32768       ; 0            ; 0       ; 0         ; 0    ; 0            ; |uart_wrapper|dmem:my_dmem|altsyncram:altsyncram_component                                ; altsyncram      ; work         ;
-;          |altsyncram_m4i1:auto_generated| ; 0 (0)             ; 0 (0)        ; 32768       ; 0            ; 0       ; 0         ; 0    ; 0            ; |uart_wrapper|dmem:my_dmem|altsyncram:altsyncram_component|altsyncram_m4i1:auto_generated ; altsyncram_m4i1 ; work         ;
-;    |uart_rx:receiver|                     ; 87 (87)           ; 51 (51)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |uart_wrapper|uart_rx:receiver                                                            ; uart_rx         ; work         ;
-+-------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------------------------------------------+-----------------+--------------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                                                          ;
++----------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------------------------------------------------------------------------------------------------+---------------------+--------------+
+; Compilation Hierarchy Node             ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                                ; Entity Name         ; Library Name ;
++----------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------------------------------------------------------------------------------------------------+---------------------+--------------+
+; |test_divide                           ; 1114 (0)          ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 96   ; 0            ; |test_divide                                                                                                                       ; test_divide         ; work         ;
+;    |lpm_divide:Div0|                   ; 1114 (0)          ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |test_divide|lpm_divide:Div0                                                                                                       ; lpm_divide          ; work         ;
+;       |lpm_divide_hkm:auto_generated|  ; 1114 (0)          ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |test_divide|lpm_divide:Div0|lpm_divide_hkm:auto_generated                                                                         ; lpm_divide_hkm      ; work         ;
+;          |sign_div_unsign_9nh:divider| ; 1114 (0)          ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |test_divide|lpm_divide:Div0|lpm_divide_hkm:auto_generated|sign_div_unsign_9nh:divider                                             ; sign_div_unsign_9nh ; work         ;
+;             |alt_u_div_6af:divider|    ; 1114 (1113)       ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |test_divide|lpm_divide:Div0|lpm_divide_hkm:auto_generated|sign_div_unsign_9nh:divider|alt_u_div_6af:divider                       ; alt_u_div_6af       ; work         ;
+;                |add_sub_8pc:add_sub_1| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |test_divide|lpm_divide:Div0|lpm_divide_hkm:auto_generated|sign_div_unsign_9nh:divider|alt_u_div_6af:divider|add_sub_8pc:add_sub_1 ; add_sub_8pc         ; work         ;
++----------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------------------------------------------------------------------------------------------------+---------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
-
-
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis RAM Summary                                                                                                                                                        ;
-+----------------------------------------------------------------------------------------+------+-------------+--------------+--------------+--------------+--------------+--------+------+
-; Name                                                                                   ; Type ; Mode        ; Port A Depth ; Port A Width ; Port B Depth ; Port B Width ; Size   ; MIF  ;
-+----------------------------------------------------------------------------------------+------+-------------+--------------+--------------+--------------+--------------+--------+------+
-; dmem:my_dmem|altsyncram:altsyncram_component|altsyncram_m4i1:auto_generated|ALTSYNCRAM ; AUTO ; Single Port ; 4096         ; 32           ; --           ; --           ; 131072 ; None ;
-+----------------------------------------------------------------------------------------+------+-------------+--------------+--------------+--------------+--------------+--------+------+
-
-
-Encoding Type:  One-Hot
-+-------------------------------------+
-; State Machine - |uart_wrapper|delay ;
-+----------------+--------------------+
-; Name           ; delay.00000000     ;
-+----------------+--------------------+
-; delay.00000001 ; 0                  ;
-; delay.00000000 ; 1                  ;
-+----------------+--------------------+
-
-
-Encoding Type:  One-Hot
-+------------------------------------------------------------------------------------------------------------------------------------------------+
-; State Machine - |uart_wrapper|uart_rx:receiver|r_SM_Main                                                                                       ;
-+--------------------------+-------------------------+--------------------------+--------------------------+---------------+---------------------+
-; Name                     ; r_SM_Main.s_RX_STOP_BIT ; r_SM_Main.s_RX_DATA_BITS ; r_SM_Main.s_RX_START_BIT ; r_SM_Main.000 ; r_SM_Main.s_CLEANUP ;
-+--------------------------+-------------------------+--------------------------+--------------------------+---------------+---------------------+
-; r_SM_Main.000            ; 0                       ; 0                        ; 0                        ; 0             ; 0                   ;
-; r_SM_Main.s_RX_START_BIT ; 0                       ; 0                        ; 1                        ; 1             ; 0                   ;
-; r_SM_Main.s_RX_DATA_BITS ; 0                       ; 1                        ; 0                        ; 1             ; 0                   ;
-; r_SM_Main.s_RX_STOP_BIT  ; 1                       ; 0                        ; 0                        ; 1             ; 0                   ;
-; r_SM_Main.s_CLEANUP      ; 0                       ; 0                        ; 0                        ; 1             ; 1                   ;
-+--------------------------+-------------------------+--------------------------+--------------------------+---------------+---------------------+
-
-
-+------------------------------------------------------------+
-; Registers Removed During Synthesis                         ;
-+---------------------------------------+--------------------+
-; Register name                         ; Reason for Removal ;
-+---------------------------------------+--------------------+
-; delay~5                               ; Lost fanout        ;
-; delay~6                               ; Lost fanout        ;
-; delay~7                               ; Lost fanout        ;
-; delay~8                               ; Lost fanout        ;
-; delay~9                               ; Lost fanout        ;
-; delay~10                              ; Lost fanout        ;
-; delay~11                              ; Lost fanout        ;
-; uart_rx:receiver|r_SM_Main~2          ; Lost fanout        ;
-; uart_rx:receiver|r_SM_Main~3          ; Lost fanout        ;
-; Total Number of Removed Registers = 9 ;                    ;
-+---------------------------------------+--------------------+
 
 
 +------------------------------------------------------+
@@ -300,146 +237,37 @@ Encoding Type:  One-Hot
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 65    ;
-; Number of registers using Synchronous Clear  ; 44    ;
+; Total registers                              ; 0     ;
+; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
 ; Number of registers using Asynchronous Clear ; 0     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 32    ;
+; Number of registers using Clock Enable       ; 0     ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
 
-+--------------------------------------------------+
-; Inverted Register Statistics                     ;
-+----------------------------------------+---------+
-; Inverted Register                      ; Fan out ;
-+----------------------------------------+---------+
-; uart_rx:receiver|r_Rx_Data             ; 12      ;
-; uart_rx:receiver|r_Rx_Data_R           ; 1       ;
-; Total number of inverted registers = 2 ;         ;
-+----------------------------------------+---------+
-
-
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                 ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------------+
-; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                       ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------------+
-; 7:1                ; 32 bits   ; 128 LEs       ; 32 LEs               ; 96 LEs                 ; Yes        ; |uart_wrapper|uart_rx:receiver|r_Clock_Count[12] ;
-; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |uart_wrapper|delay                              ;
-; 3:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; No         ; |uart_wrapper|uart_rx:receiver|r_Bit_Index       ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------------+
-
-
-+----------------------------------------------------------------------------------------------------+
-; Source assignments for dmem:my_dmem|altsyncram:altsyncram_component|altsyncram_m4i1:auto_generated ;
-+---------------------------------+--------------------+------+--------------------------------------+
-; Assignment                      ; Value              ; From ; To                                   ;
-+---------------------------------+--------------------+------+--------------------------------------+
-; OPTIMIZE_POWER_DURING_SYNTHESIS ; NORMAL_COMPILATION ; -    ; -                                    ;
-+---------------------------------+--------------------+------+--------------------------------------+
-
-
-+---------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: uart_rx:receiver ;
-+----------------+-------+--------------------------------------+
-; Parameter Name ; Value ; Type                                 ;
-+----------------+-------+--------------------------------------+
-; CLKS_PER_BIT   ; 5209  ; Signed Integer                       ;
-+----------------+-------+--------------------------------------+
++------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: lpm_divide:Div0 ;
++------------------------+----------------+------------------------+
+; Parameter Name         ; Value          ; Type                   ;
++------------------------+----------------+------------------------+
+; LPM_WIDTHN             ; 32             ; Untyped                ;
+; LPM_WIDTHD             ; 32             ; Untyped                ;
+; LPM_NREPRESENTATION    ; UNSIGNED       ; Untyped                ;
+; LPM_DREPRESENTATION    ; UNSIGNED       ; Untyped                ;
+; LPM_PIPELINE           ; 0              ; Untyped                ;
+; LPM_REMAINDERPOSITIVE  ; TRUE           ; Untyped                ;
+; MAXIMIZE_SPEED         ; 5              ; Untyped                ;
+; CBXI_PARAMETER         ; lpm_divide_hkm ; Untyped                ;
+; CARRY_CHAIN            ; MANUAL         ; Untyped                ;
+; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                ;
+; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY             ;
+; IGNORE_CARRY_BUFFERS   ; OFF            ; IGNORE_CARRY           ;
+; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE           ;
+; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE         ;
++------------------------+----------------+------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+-------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: dmem:my_dmem|altsyncram:altsyncram_component ;
-+------------------------------------+----------------------+-------------------------------+
-; Parameter Name                     ; Value                ; Type                          ;
-+------------------------------------+----------------------+-------------------------------+
-; BYTE_SIZE_BLOCK                    ; 8                    ; Untyped                       ;
-; AUTO_CARRY_CHAINS                  ; ON                   ; AUTO_CARRY                    ;
-; IGNORE_CARRY_BUFFERS               ; OFF                  ; IGNORE_CARRY                  ;
-; AUTO_CASCADE_CHAINS                ; ON                   ; AUTO_CASCADE                  ;
-; IGNORE_CASCADE_BUFFERS             ; OFF                  ; IGNORE_CASCADE                ;
-; WIDTH_BYTEENA                      ; 1                    ; Untyped                       ;
-; OPERATION_MODE                     ; SINGLE_PORT          ; Untyped                       ;
-; WIDTH_A                            ; 32                   ; Signed Integer                ;
-; WIDTHAD_A                          ; 12                   ; Signed Integer                ;
-; NUMWORDS_A                         ; 4096                 ; Signed Integer                ;
-; OUTDATA_REG_A                      ; UNREGISTERED         ; Untyped                       ;
-; ADDRESS_ACLR_A                     ; NONE                 ; Untyped                       ;
-; OUTDATA_ACLR_A                     ; NONE                 ; Untyped                       ;
-; WRCONTROL_ACLR_A                   ; NONE                 ; Untyped                       ;
-; INDATA_ACLR_A                      ; NONE                 ; Untyped                       ;
-; BYTEENA_ACLR_A                     ; NONE                 ; Untyped                       ;
-; WIDTH_B                            ; 1                    ; Untyped                       ;
-; WIDTHAD_B                          ; 1                    ; Untyped                       ;
-; NUMWORDS_B                         ; 1                    ; Untyped                       ;
-; INDATA_REG_B                       ; CLOCK1               ; Untyped                       ;
-; WRCONTROL_WRADDRESS_REG_B          ; CLOCK1               ; Untyped                       ;
-; RDCONTROL_REG_B                    ; CLOCK1               ; Untyped                       ;
-; ADDRESS_REG_B                      ; CLOCK1               ; Untyped                       ;
-; OUTDATA_REG_B                      ; UNREGISTERED         ; Untyped                       ;
-; BYTEENA_REG_B                      ; CLOCK1               ; Untyped                       ;
-; INDATA_ACLR_B                      ; NONE                 ; Untyped                       ;
-; WRCONTROL_ACLR_B                   ; NONE                 ; Untyped                       ;
-; ADDRESS_ACLR_B                     ; NONE                 ; Untyped                       ;
-; OUTDATA_ACLR_B                     ; NONE                 ; Untyped                       ;
-; RDCONTROL_ACLR_B                   ; NONE                 ; Untyped                       ;
-; BYTEENA_ACLR_B                     ; NONE                 ; Untyped                       ;
-; WIDTH_BYTEENA_A                    ; 1                    ; Signed Integer                ;
-; WIDTH_BYTEENA_B                    ; 1                    ; Untyped                       ;
-; RAM_BLOCK_TYPE                     ; AUTO                 ; Untyped                       ;
-; BYTE_SIZE                          ; 8                    ; Untyped                       ;
-; READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE            ; Untyped                       ;
-; READ_DURING_WRITE_MODE_PORT_A      ; NEW_DATA_NO_NBE_READ ; Untyped                       ;
-; READ_DURING_WRITE_MODE_PORT_B      ; NEW_DATA_NO_NBE_READ ; Untyped                       ;
-; INIT_FILE                          ; dmem.mif             ; Untyped                       ;
-; INIT_FILE_LAYOUT                   ; PORT_A               ; Untyped                       ;
-; MAXIMUM_DEPTH                      ; 0                    ; Untyped                       ;
-; CLOCK_ENABLE_INPUT_A               ; BYPASS               ; Untyped                       ;
-; CLOCK_ENABLE_INPUT_B               ; NORMAL               ; Untyped                       ;
-; CLOCK_ENABLE_OUTPUT_A              ; BYPASS               ; Untyped                       ;
-; CLOCK_ENABLE_OUTPUT_B              ; NORMAL               ; Untyped                       ;
-; CLOCK_ENABLE_CORE_A                ; USE_INPUT_CLKEN      ; Untyped                       ;
-; CLOCK_ENABLE_CORE_B                ; USE_INPUT_CLKEN      ; Untyped                       ;
-; ENABLE_ECC                         ; FALSE                ; Untyped                       ;
-; ECC_PIPELINE_STAGE_ENABLED         ; FALSE                ; Untyped                       ;
-; WIDTH_ECCSTATUS                    ; 3                    ; Untyped                       ;
-; DEVICE_FAMILY                      ; Cyclone IV E         ; Untyped                       ;
-; CBXI_PARAMETER                     ; altsyncram_m4i1      ; Untyped                       ;
-+------------------------------------+----------------------+-------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+------------------------------------------------------------------------------------------+
-; altsyncram Parameter Settings by Entity Instance                                         ;
-+-------------------------------------------+----------------------------------------------+
-; Name                                      ; Value                                        ;
-+-------------------------------------------+----------------------------------------------+
-; Number of entity instances                ; 1                                            ;
-; Entity Instance                           ; dmem:my_dmem|altsyncram:altsyncram_component ;
-;     -- OPERATION_MODE                     ; SINGLE_PORT                                  ;
-;     -- WIDTH_A                            ; 32                                           ;
-;     -- NUMWORDS_A                         ; 4096                                         ;
-;     -- OUTDATA_REG_A                      ; UNREGISTERED                                 ;
-;     -- WIDTH_B                            ; 1                                            ;
-;     -- NUMWORDS_B                         ; 1                                            ;
-;     -- ADDRESS_REG_B                      ; CLOCK1                                       ;
-;     -- OUTDATA_REG_B                      ; UNREGISTERED                                 ;
-;     -- RAM_BLOCK_TYPE                     ; AUTO                                         ;
-;     -- READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE                                    ;
-+-------------------------------------------+----------------------------------------------+
-
-
-+-----------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "dmem:my_dmem"                                                                              ;
-+-------------+--------+----------+-------------------------------------------------------------------------------------+
-; Port        ; Type   ; Severity ; Details                                                                             ;
-+-------------+--------+----------+-------------------------------------------------------------------------------------+
-; data[31..8] ; Input  ; Info     ; Stuck at GND                                                                        ;
-; q[31..8]    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+-------------+--------+----------+-------------------------------------------------------------------------------------+
 
 
 +-----------------------------------------------------+
@@ -447,23 +275,19 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; boundary_port         ; 27                          ;
-; cycloneiii_ff         ; 65                          ;
-;     ENA SCLR          ; 32                          ;
-;     SCLR              ; 12                          ;
-;     plain             ; 21                          ;
-; cycloneiii_lcell_comb ; 117                         ;
-;     arith             ; 42                          ;
-;         2 data inputs ; 42                          ;
-;     normal            ; 75                          ;
-;         1 data inputs ; 4                           ;
-;         2 data inputs ; 12                          ;
-;         3 data inputs ; 21                          ;
-;         4 data inputs ; 38                          ;
-; cycloneiii_ram_block  ; 8                           ;
+; boundary_port         ; 96                          ;
+; cycloneiii_lcell_comb ; 1146                        ;
+;     arith             ; 525                         ;
+;         3 data inputs ; 525                         ;
+;     normal            ; 621                         ;
+;         0 data inputs ; 30                          ;
+;         1 data inputs ; 32                          ;
+;         2 data inputs ; 21                          ;
+;         3 data inputs ; 22                          ;
+;         4 data inputs ; 516                         ;
 ;                       ;                             ;
-; Max LUT depth         ; 6.00                        ;
-; Average LUT depth     ; 3.36                        ;
+; Max LUT depth         ; 121.50                      ;
+; Average LUT depth     ; 114.67                      ;
 +-----------------------+-----------------------------+
 
 
@@ -472,7 +296,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:00     ;
+; Top            ; 00:00:03     ;
 +----------------+--------------+
 
 
@@ -482,101 +306,59 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 16.0.0 Build 211 04/27/2016 SJ Lite Edition
-    Info: Processing started: Thu Nov 28 00:53:35 2019
+    Info: Processing started: Fri Nov 29 21:17:43 2019
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off plottermachine -c plottermachine
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file uart_rx.v
-    Info (12023): Found entity 1: uart_rx File: C:/Users/Can/Desktop/plottermachine/uart_rx.v Line: 14
+    Info (12023): Found entity 1: uart_rx File: C:/Users/Can/OneDrive - Duke University/ECE350/plottermachine/uart_rx.v Line: 14
 Info (12021): Found 1 design units, including 1 entities, in source file dmem.v
-    Info (12023): Found entity 1: dmem File: C:/Users/Can/Desktop/plottermachine/dmem.v Line: 40
-Info (12021): Found 1 design units, including 1 entities, in source file char_buffer.v
-    Info (12023): Found entity 1: char_buffer File: C:/Users/Can/Desktop/plottermachine/char_buffer.v Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file character_reading.v
-    Info (12023): Found entity 1: character_reading File: C:/Users/Can/Desktop/plottermachine/character_reading.v Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file generate_signal.v
-    Info (12023): Found entity 1: generate_signal File: C:/Users/Can/Desktop/plottermachine/generate_signal.v Line: 1
+    Info (12023): Found entity 1: dmem File: C:/Users/Can/OneDrive - Duke University/ECE350/plottermachine/dmem.v Line: 40
 Info (12021): Found 1 design units, including 1 entities, in source file stepper_controller.v
-    Info (12023): Found entity 1: stepper_controller File: C:/Users/Can/Desktop/plottermachine/stepper_controller.v Line: 1
+    Info (12023): Found entity 1: stepper_controller File: C:/Users/Can/OneDrive - Duke University/ECE350/plottermachine/stepper_controller.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file plotter_machine.v
-    Info (12023): Found entity 1: plotter_machine File: C:/Users/Can/Desktop/plottermachine/plotter_machine.v Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file receive_data.v
-    Info (12023): Found entity 1: receive_data File: C:/Users/Can/Desktop/plottermachine/receive_data.v Line: 1
+    Info (12023): Found entity 1: plotter_machine File: C:/Users/Can/OneDrive - Duke University/ECE350/plottermachine/plotter_machine.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file uart_wrapper.v
-    Info (12023): Found entity 1: uart_wrapper File: C:/Users/Can/Desktop/plottermachine/uart_wrapper.v Line: 1
-Warning (10222): Verilog HDL Parameter Declaration warning at uart_rx.v(23): Parameter Declaration in module "uart_rx" behaves as a Local Parameter Declaration because the module has a Module Parameter Port List File: C:/Users/Can/Desktop/plottermachine/uart_rx.v Line: 23
-Warning (10222): Verilog HDL Parameter Declaration warning at uart_rx.v(24): Parameter Declaration in module "uart_rx" behaves as a Local Parameter Declaration because the module has a Module Parameter Port List File: C:/Users/Can/Desktop/plottermachine/uart_rx.v Line: 24
-Warning (10222): Verilog HDL Parameter Declaration warning at uart_rx.v(25): Parameter Declaration in module "uart_rx" behaves as a Local Parameter Declaration because the module has a Module Parameter Port List File: C:/Users/Can/Desktop/plottermachine/uart_rx.v Line: 25
-Warning (10222): Verilog HDL Parameter Declaration warning at uart_rx.v(26): Parameter Declaration in module "uart_rx" behaves as a Local Parameter Declaration because the module has a Module Parameter Port List File: C:/Users/Can/Desktop/plottermachine/uart_rx.v Line: 26
-Warning (10222): Verilog HDL Parameter Declaration warning at uart_rx.v(27): Parameter Declaration in module "uart_rx" behaves as a Local Parameter Declaration because the module has a Module Parameter Port List File: C:/Users/Can/Desktop/plottermachine/uart_rx.v Line: 27
-Critical Warning (10846): Verilog HDL Instantiation warning at char_buffer.v(12): instance has no name File: C:/Users/Can/Desktop/plottermachine/char_buffer.v Line: 12
-Critical Warning (10846): Verilog HDL Instantiation warning at character_reading.v(40): instance has no name File: C:/Users/Can/Desktop/plottermachine/character_reading.v Line: 40
-Critical Warning (10846): Verilog HDL Instantiation warning at receive_data.v(43): instance has no name File: C:/Users/Can/Desktop/plottermachine/receive_data.v Line: 43
-Info (12127): Elaborating entity "uart_wrapper" for the top level hierarchy
-Warning (10230): Verilog HDL assignment warning at uart_wrapper.v(15): truncated value with size 32 to match size of target (12) File: C:/Users/Can/Desktop/plottermachine/uart_wrapper.v Line: 15
-Info (12128): Elaborating entity "uart_rx" for hierarchy "uart_rx:receiver" File: C:/Users/Can/Desktop/plottermachine/uart_wrapper.v Line: 34
-Warning (10230): Verilog HDL assignment warning at uart_rx.v(102): truncated value with size 32 to match size of target (3) File: C:/Users/Can/Desktop/plottermachine/uart_rx.v Line: 102
-Info (12128): Elaborating entity "dmem" for hierarchy "dmem:my_dmem" File: C:/Users/Can/Desktop/plottermachine/uart_wrapper.v Line: 35
-Info (12128): Elaborating entity "altsyncram" for hierarchy "dmem:my_dmem|altsyncram:altsyncram_component" File: C:/Users/Can/Desktop/plottermachine/dmem.v Line: 86
-Info (12130): Elaborated megafunction instantiation "dmem:my_dmem|altsyncram:altsyncram_component" File: C:/Users/Can/Desktop/plottermachine/dmem.v Line: 86
-Info (12133): Instantiated megafunction "dmem:my_dmem|altsyncram:altsyncram_component" with the following parameter: File: C:/Users/Can/Desktop/plottermachine/dmem.v Line: 86
-    Info (12134): Parameter "clock_enable_input_a" = "BYPASS"
-    Info (12134): Parameter "clock_enable_output_a" = "BYPASS"
-    Info (12134): Parameter "init_file" = "dmem.mif"
-    Info (12134): Parameter "intended_device_family" = "Cyclone IV E"
-    Info (12134): Parameter "lpm_hint" = "ENABLE_RUNTIME_MOD=NO"
-    Info (12134): Parameter "lpm_type" = "altsyncram"
-    Info (12134): Parameter "numwords_a" = "4096"
-    Info (12134): Parameter "operation_mode" = "SINGLE_PORT"
-    Info (12134): Parameter "outdata_aclr_a" = "NONE"
-    Info (12134): Parameter "outdata_reg_a" = "UNREGISTERED"
-    Info (12134): Parameter "power_up_uninitialized" = "FALSE"
-    Info (12134): Parameter "read_during_write_mode_port_a" = "NEW_DATA_NO_NBE_READ"
-    Info (12134): Parameter "widthad_a" = "12"
-    Info (12134): Parameter "width_a" = "32"
-    Info (12134): Parameter "width_byteena_a" = "1"
-Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_m4i1.tdf
-    Info (12023): Found entity 1: altsyncram_m4i1 File: C:/Users/Can/Desktop/plottermachine/db/altsyncram_m4i1.tdf Line: 28
-Info (12128): Elaborating entity "altsyncram_m4i1" for hierarchy "dmem:my_dmem|altsyncram:altsyncram_component|altsyncram_m4i1:auto_generated" File: c:/altera_lite/16.0/quartus/libraries/megafunctions/altsyncram.tdf Line: 792
-Warning (14284): Synthesized away the following node(s):
-    Warning (14285): Synthesized away the following RAM node(s):
-        Warning (14320): Synthesized away node "dmem:my_dmem|altsyncram:altsyncram_component|altsyncram_m4i1:auto_generated|q_a[8]" File: C:/Users/Can/Desktop/plottermachine/db/altsyncram_m4i1.tdf Line: 229
-        Warning (14320): Synthesized away node "dmem:my_dmem|altsyncram:altsyncram_component|altsyncram_m4i1:auto_generated|q_a[9]" File: C:/Users/Can/Desktop/plottermachine/db/altsyncram_m4i1.tdf Line: 253
-        Warning (14320): Synthesized away node "dmem:my_dmem|altsyncram:altsyncram_component|altsyncram_m4i1:auto_generated|q_a[10]" File: C:/Users/Can/Desktop/plottermachine/db/altsyncram_m4i1.tdf Line: 277
-        Warning (14320): Synthesized away node "dmem:my_dmem|altsyncram:altsyncram_component|altsyncram_m4i1:auto_generated|q_a[11]" File: C:/Users/Can/Desktop/plottermachine/db/altsyncram_m4i1.tdf Line: 301
-        Warning (14320): Synthesized away node "dmem:my_dmem|altsyncram:altsyncram_component|altsyncram_m4i1:auto_generated|q_a[12]" File: C:/Users/Can/Desktop/plottermachine/db/altsyncram_m4i1.tdf Line: 325
-        Warning (14320): Synthesized away node "dmem:my_dmem|altsyncram:altsyncram_component|altsyncram_m4i1:auto_generated|q_a[13]" File: C:/Users/Can/Desktop/plottermachine/db/altsyncram_m4i1.tdf Line: 349
-        Warning (14320): Synthesized away node "dmem:my_dmem|altsyncram:altsyncram_component|altsyncram_m4i1:auto_generated|q_a[14]" File: C:/Users/Can/Desktop/plottermachine/db/altsyncram_m4i1.tdf Line: 373
-        Warning (14320): Synthesized away node "dmem:my_dmem|altsyncram:altsyncram_component|altsyncram_m4i1:auto_generated|q_a[15]" File: C:/Users/Can/Desktop/plottermachine/db/altsyncram_m4i1.tdf Line: 397
-        Warning (14320): Synthesized away node "dmem:my_dmem|altsyncram:altsyncram_component|altsyncram_m4i1:auto_generated|q_a[16]" File: C:/Users/Can/Desktop/plottermachine/db/altsyncram_m4i1.tdf Line: 421
-        Warning (14320): Synthesized away node "dmem:my_dmem|altsyncram:altsyncram_component|altsyncram_m4i1:auto_generated|q_a[17]" File: C:/Users/Can/Desktop/plottermachine/db/altsyncram_m4i1.tdf Line: 445
-        Warning (14320): Synthesized away node "dmem:my_dmem|altsyncram:altsyncram_component|altsyncram_m4i1:auto_generated|q_a[18]" File: C:/Users/Can/Desktop/plottermachine/db/altsyncram_m4i1.tdf Line: 469
-        Warning (14320): Synthesized away node "dmem:my_dmem|altsyncram:altsyncram_component|altsyncram_m4i1:auto_generated|q_a[19]" File: C:/Users/Can/Desktop/plottermachine/db/altsyncram_m4i1.tdf Line: 493
-        Warning (14320): Synthesized away node "dmem:my_dmem|altsyncram:altsyncram_component|altsyncram_m4i1:auto_generated|q_a[20]" File: C:/Users/Can/Desktop/plottermachine/db/altsyncram_m4i1.tdf Line: 517
-        Warning (14320): Synthesized away node "dmem:my_dmem|altsyncram:altsyncram_component|altsyncram_m4i1:auto_generated|q_a[21]" File: C:/Users/Can/Desktop/plottermachine/db/altsyncram_m4i1.tdf Line: 541
-        Warning (14320): Synthesized away node "dmem:my_dmem|altsyncram:altsyncram_component|altsyncram_m4i1:auto_generated|q_a[22]" File: C:/Users/Can/Desktop/plottermachine/db/altsyncram_m4i1.tdf Line: 565
-        Warning (14320): Synthesized away node "dmem:my_dmem|altsyncram:altsyncram_component|altsyncram_m4i1:auto_generated|q_a[23]" File: C:/Users/Can/Desktop/plottermachine/db/altsyncram_m4i1.tdf Line: 589
-        Warning (14320): Synthesized away node "dmem:my_dmem|altsyncram:altsyncram_component|altsyncram_m4i1:auto_generated|q_a[24]" File: C:/Users/Can/Desktop/plottermachine/db/altsyncram_m4i1.tdf Line: 613
-        Warning (14320): Synthesized away node "dmem:my_dmem|altsyncram:altsyncram_component|altsyncram_m4i1:auto_generated|q_a[25]" File: C:/Users/Can/Desktop/plottermachine/db/altsyncram_m4i1.tdf Line: 637
-        Warning (14320): Synthesized away node "dmem:my_dmem|altsyncram:altsyncram_component|altsyncram_m4i1:auto_generated|q_a[26]" File: C:/Users/Can/Desktop/plottermachine/db/altsyncram_m4i1.tdf Line: 661
-        Warning (14320): Synthesized away node "dmem:my_dmem|altsyncram:altsyncram_component|altsyncram_m4i1:auto_generated|q_a[27]" File: C:/Users/Can/Desktop/plottermachine/db/altsyncram_m4i1.tdf Line: 685
-        Warning (14320): Synthesized away node "dmem:my_dmem|altsyncram:altsyncram_component|altsyncram_m4i1:auto_generated|q_a[28]" File: C:/Users/Can/Desktop/plottermachine/db/altsyncram_m4i1.tdf Line: 709
-        Warning (14320): Synthesized away node "dmem:my_dmem|altsyncram:altsyncram_component|altsyncram_m4i1:auto_generated|q_a[29]" File: C:/Users/Can/Desktop/plottermachine/db/altsyncram_m4i1.tdf Line: 733
-        Warning (14320): Synthesized away node "dmem:my_dmem|altsyncram:altsyncram_component|altsyncram_m4i1:auto_generated|q_a[30]" File: C:/Users/Can/Desktop/plottermachine/db/altsyncram_m4i1.tdf Line: 757
-        Warning (14320): Synthesized away node "dmem:my_dmem|altsyncram:altsyncram_component|altsyncram_m4i1:auto_generated|q_a[31]" File: C:/Users/Can/Desktop/plottermachine/db/altsyncram_m4i1.tdf Line: 781
+    Info (12023): Found entity 1: uart_wrapper File: C:/Users/Can/OneDrive - Duke University/ECE350/plottermachine/uart_wrapper.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file ascii_to_display.v
+    Info (12023): Found entity 1: ascii_to_display File: C:/Users/Can/OneDrive - Duke University/ECE350/plottermachine/ascii_to_display.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file test_divide.v
+    Info (12023): Found entity 1: test_divide File: C:/Users/Can/OneDrive - Duke University/ECE350/plottermachine/test_divide.v Line: 1
+Warning (10222): Verilog HDL Parameter Declaration warning at uart_rx.v(23): Parameter Declaration in module "uart_rx" behaves as a Local Parameter Declaration because the module has a Module Parameter Port List File: C:/Users/Can/OneDrive - Duke University/ECE350/plottermachine/uart_rx.v Line: 23
+Warning (10222): Verilog HDL Parameter Declaration warning at uart_rx.v(24): Parameter Declaration in module "uart_rx" behaves as a Local Parameter Declaration because the module has a Module Parameter Port List File: C:/Users/Can/OneDrive - Duke University/ECE350/plottermachine/uart_rx.v Line: 24
+Warning (10222): Verilog HDL Parameter Declaration warning at uart_rx.v(25): Parameter Declaration in module "uart_rx" behaves as a Local Parameter Declaration because the module has a Module Parameter Port List File: C:/Users/Can/OneDrive - Duke University/ECE350/plottermachine/uart_rx.v Line: 25
+Warning (10222): Verilog HDL Parameter Declaration warning at uart_rx.v(26): Parameter Declaration in module "uart_rx" behaves as a Local Parameter Declaration because the module has a Module Parameter Port List File: C:/Users/Can/OneDrive - Duke University/ECE350/plottermachine/uart_rx.v Line: 26
+Warning (10222): Verilog HDL Parameter Declaration warning at uart_rx.v(27): Parameter Declaration in module "uart_rx" behaves as a Local Parameter Declaration because the module has a Module Parameter Port List File: C:/Users/Can/OneDrive - Duke University/ECE350/plottermachine/uart_rx.v Line: 27
+Info (12127): Elaborating entity "test_divide" for the top level hierarchy
+Info (278001): Inferred 1 megafunctions from design logic
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "Div0" File: C:/Users/Can/OneDrive - Duke University/ECE350/plottermachine/test_divide.v Line: 5
+Info (12130): Elaborated megafunction instantiation "lpm_divide:Div0" File: C:/Users/Can/OneDrive - Duke University/ECE350/plottermachine/test_divide.v Line: 5
+Info (12133): Instantiated megafunction "lpm_divide:Div0" with the following parameter: File: C:/Users/Can/OneDrive - Duke University/ECE350/plottermachine/test_divide.v Line: 5
+    Info (12134): Parameter "LPM_WIDTHN" = "32"
+    Info (12134): Parameter "LPM_WIDTHD" = "32"
+    Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
+    Info (12134): Parameter "LPM_DREPRESENTATION" = "UNSIGNED"
+Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_divide_hkm.tdf
+    Info (12023): Found entity 1: lpm_divide_hkm File: C:/Users/Can/OneDrive - Duke University/ECE350/plottermachine/db/lpm_divide_hkm.tdf Line: 25
+Info (12021): Found 1 design units, including 1 entities, in source file db/sign_div_unsign_9nh.tdf
+    Info (12023): Found entity 1: sign_div_unsign_9nh File: C:/Users/Can/OneDrive - Duke University/ECE350/plottermachine/db/sign_div_unsign_9nh.tdf Line: 25
+Info (12021): Found 1 design units, including 1 entities, in source file db/alt_u_div_6af.tdf
+    Info (12023): Found entity 1: alt_u_div_6af File: C:/Users/Can/OneDrive - Duke University/ECE350/plottermachine/db/alt_u_div_6af.tdf Line: 27
+Info (12021): Found 1 design units, including 1 entities, in source file db/add_sub_7pc.tdf
+    Info (12023): Found entity 1: add_sub_7pc File: C:/Users/Can/OneDrive - Duke University/ECE350/plottermachine/db/add_sub_7pc.tdf Line: 23
+Info (12021): Found 1 design units, including 1 entities, in source file db/add_sub_8pc.tdf
+    Info (12023): Found entity 1: add_sub_8pc File: C:/Users/Can/OneDrive - Duke University/ECE350/plottermachine/db/add_sub_8pc.tdf Line: 23
 Info (286030): Timing-Driven Synthesis is running
-Info (17049): 9 registers lost all their fanouts during netlist optimizations.
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 153 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 6 input pins
-    Info (21059): Implemented 21 output pins
-    Info (21061): Implemented 118 logic cells
-    Info (21064): Implemented 8 RAM segments
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 37 warnings
-    Info: Peak virtual memory: 4998 megabytes
-    Info: Processing ended: Thu Nov 28 00:53:46 2019
-    Info: Elapsed time: 00:00:11
-    Info: Total CPU time (on all processors): 00:00:25
+Info (21057): Implemented 1210 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 64 input pins
+    Info (21059): Implemented 32 output pins
+    Info (21061): Implemented 1114 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 6 warnings
+    Info: Peak virtual memory: 5003 megabytes
+    Info: Processing ended: Fri Nov 29 21:17:58 2019
+    Info: Elapsed time: 00:00:15
+    Info: Total CPU time (on all processors): 00:00:29
 
 

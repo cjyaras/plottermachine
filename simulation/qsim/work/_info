@@ -155,3 +155,43 @@ R16
 !i113 1
 R10
 R11
+vtest_divide
+Z22 !s110 1575080461
+!i10b 1
+!s100 oZmLN7LA5]5c5GXVd?dE?0
+I?Z@k^8Xj:n28=moQ5aQ?B2
+R1
+Z23 dC:/Users/Can/OneDrive - Duke University/ECE350/plottermachine/simulation/qsim
+w1575080459
+R3
+R4
+L0 32
+Z24 OV;L;10.4d;61
+r1
+!s85 0
+31
+!s108 1575080460.000000
+R8
+R9
+!i113 1
+R10
+vtest_divide_vlg_vec_tst
+R22
+!i10b 1
+!s100 bZIWbAAjZZ9CCjO]2lOkb0
+Im5PzQ3<H`]TK?m3dVC>@U0
+R1
+R23
+w1575080457
+R12
+R13
+L0 30
+R24
+r1
+!s85 0
+31
+!s108 1575080461.000000
+R15
+R16
+!i113 1
+R10
