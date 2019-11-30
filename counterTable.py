@@ -4,31 +4,35 @@ header = "WIDTH = 32;\nDEPTH = 4096;\nADDRESS_RADIX = DEC;\nDATA_RADIX = BIN;\nC
 
 offsetSin = 1000
 offsetCos = 1360
-offsetCounter = 1720 # 1000 + sine (360) + cosine (360)
+offsetFx = 1720
+offsetFy = 2080
 
-mult = 10e8
+multAngle = 2e8
 radi = math.pi / 180
 
-# C = clock freq
-# M = turn freq
-# counter limit = C / (2 * M)
-
-# first, find fm,x and fm,y then calculate counter limit
+fm = 200
+fc = 50e6
+counterLimit = fc / (2 * fm) # do not use this anywhere
 
 f = open("dmem.mif","w+")
 
 f.write(header)
 
 for i in range(360) :
-	sinInBinary = "{0:032b}".format(round(mult * math.sin(radi * i)) & 0xffffffff)
+	sinInBinary = "{0:032b}".format(round(multAngle * math.sin(radi * i)) & 0xffffffff)
 	f.write("%d : %s ;\n" % (offsetSin + i, sinInBinary))
 
 for i in range(360) :
-	cosInBinary = "{0:032b}".format(round(mult * math.cos(radi * i)) & 0xffffffff)
+	cosInBinary = "{0:032b}".format(round(multAngle * math.cos(radi * i)) & 0xffffffff)
 	f.write("%d : %s ;\n" % (offsetCos + i, cosInBinary))
 
 for i in range(360) :
-	f.write("%d : \n" % (offsetCounter + i))
+	fx = "{0:032b}".format(abs(round(fm * math.sin(radi * i))) & 0xffffffff)
+	f.write("%d : %s ;\n" % (offsetFx + i, fx))
+
+for i in range(360) :
+	fy = "{0:032b}".format(abs(round(fm * math.cos(radi * i))) & 0xffffffff)
+	f.write("%d : %s ;\n" % (offsetFy + i, fy))
 
 f.write("END;\n")
 
