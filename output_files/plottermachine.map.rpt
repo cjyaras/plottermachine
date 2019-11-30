@@ -1,6 +1,6 @@
 Analysis & Synthesis report for plottermachine
-Fri Nov 29 21:17:58 2019
-Quartus Prime Version 16.0.0 Build 211 04/27/2016 SJ Lite Edition
+Sat Nov 30 13:39:53 2019
+Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
 
 
 ---------------------
@@ -14,46 +14,47 @@ Quartus Prime Version 16.0.0 Build 211 04/27/2016 SJ Lite Edition
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
   8. General Register Statistics
-  9. Parameter Settings for Inferred Entity Instance: lpm_divide:Div0
- 10. Post-Synthesis Netlist Statistics for Top Partition
- 11. Elapsed Time Per Partition
- 12. Analysis & Synthesis Messages
+  9. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 10. Port Connectivity Checks: "stepper_controller:x_stepper"
+ 11. Port Connectivity Checks: "stepper_controller:y_stepper"
+ 12. Post-Synthesis Netlist Statistics for Top Partition
+ 13. Elapsed Time Per Partition
+ 14. Analysis & Synthesis Messages
 
 
 
 ----------------
 ; Legal Notice ;
 ----------------
-Copyright (C) 1991-2016 Altera Corporation. All rights reserved.
-Your use of Altera Corporation's design tools, logic functions 
+Copyright (C) 2017  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
 and other software and tools, and its AMPP partner logic 
 functions, and any output files from any of the foregoing 
 (including device programming or simulation files), and any 
 associated documentation or information are expressly subject 
-to the terms and conditions of the Altera Program License 
-Subscription Agreement, the Altera Quartus Prime License Agreement,
-the Altera MegaCore Function License Agreement, or other 
-applicable license agreement, including, without limitation, 
-that your use is for the sole purpose of programming logic 
-devices manufactured by Altera and sold by Altera or its 
-authorized distributors.  Please refer to the applicable 
-agreement for further details.
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details.
 
 
 
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Fri Nov 29 21:17:58 2019       ;
-; Quartus Prime Version              ; 16.0.0 Build 211 04/27/2016 SJ Lite Edition ;
+; Analysis & Synthesis Status        ; Successful - Sat Nov 30 13:39:53 2019       ;
+; Quartus Prime Version              ; 17.1.0 Build 590 10/25/2017 SJ Lite Edition ;
 ; Revision Name                      ; plottermachine                              ;
-; Top-level Entity Name              ; test_divide                                 ;
+; Top-level Entity Name              ; plotter_machine                             ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; 1,114                                       ;
-;     Total combinational functions  ; 1,114                                       ;
-;     Dedicated logic registers      ; 0                                           ;
-; Total registers                    ; 0                                           ;
-; Total pins                         ; 96                                          ;
+; Total logic elements               ; 155                                         ;
+;     Total combinational functions  ; 155                                         ;
+;     Dedicated logic registers      ; 66                                          ;
+; Total registers                    ; 66                                          ;
+; Total pins                         ; 8                                           ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0                                           ;
 ; Embedded Multiplier 9-bit elements ; 0                                           ;
@@ -67,7 +68,7 @@ agreement for further details.
 ; Option                                                                     ; Setting            ; Default Value      ;
 +----------------------------------------------------------------------------+--------------------+--------------------+
 ; Device                                                                     ; EP4CE115F29C7      ;                    ;
-; Top-level entity name                                                      ; test_divide        ; plottermachine     ;
+; Top-level entity name                                                      ; plotter_machine    ; plottermachine     ;
 ; Family name                                                                ; Cyclone IV E       ; Cyclone V          ;
 ; Use smart compilation                                                      ; Off                ; Off                ;
 ; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                 ; On                 ;
@@ -75,7 +76,7 @@ agreement for further details.
 ; Restructure Multiplexers                                                   ; Auto               ; Auto               ;
 ; Create Debugging Nodes for IP Cores                                        ; Off                ; Off                ;
 ; Preserve fewer node names                                                  ; On                 ; On                 ;
-; Disable OpenCore Plus hardware evaluation                                  ; Off                ; Off                ;
+; Intel FPGA IP Evaluation Mode                                              ; Enable             ; Enable             ;
 ; Verilog Version                                                            ; Verilog_2001       ; Verilog_2001       ;
 ; VHDL Version                                                               ; VHDL_1993          ; VHDL_1993          ;
 ; State Machine Processing                                                   ; Auto               ; Auto               ;
@@ -128,7 +129,7 @@ agreement for further details.
 ; Report Connectivity Checks                                                 ; On                 ; On                 ;
 ; Ignore Maximum Fan-Out Assignments                                         ; Off                ; Off                ;
 ; Synchronization Register Chain Length                                      ; 2                  ; 2                  ;
-; PowerPlay Power Optimization During Synthesis                              ; Normal compilation ; Normal compilation ;
+; Power Optimization During Synthesis                                        ; Normal compilation ; Normal compilation ;
 ; HDL message level                                                          ; Level2             ; Level2             ;
 ; Suppress Register Optimization Related Messages                            ; Off                ; Off                ;
 ; Number of Removed Registers Reported in Synthesis Report                   ; 5000               ; 5000               ;
@@ -144,7 +145,6 @@ agreement for further details.
 ; Analysis & Synthesis Message Level                                         ; Medium             ; Medium             ;
 ; Disable Register Merging Across Hierarchies                                ; Auto               ; Auto               ;
 ; Resource Aware Inference For Block RAM                                     ; On                 ; On                 ;
-; Synthesis Seed                                                             ; 1                  ; 1                  ;
 +----------------------------------------------------------------------------+--------------------+--------------------+
 
 
@@ -153,7 +153,7 @@ agreement for further details.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 8           ;
+; Number detected on machine ; 4           ;
 ; Maximum allowed            ; 4           ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
@@ -161,74 +161,61 @@ agreement for further details.
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   0.0%      ;
-;     Processor 3            ;   0.0%      ;
-;     Processor 4            ;   0.0%      ;
+;     Processors 2-4         ;   0.0%      ;
 +----------------------------+-------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                                 ;
-+----------------------------------+-----------------+------------------------------+------------------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                             ; Library ;
-+----------------------------------+-----------------+------------------------------+------------------------------------------------------------------------------------------+---------+
-; test_divide.v                    ; yes             ; User Verilog HDL File        ; C:/Users/Can/OneDrive - Duke University/ECE350/plottermachine/test_divide.v              ;         ;
-; lpm_divide.tdf                   ; yes             ; Megafunction                 ; c:/altera_lite/16.0/quartus/libraries/megafunctions/lpm_divide.tdf                       ;         ;
-; abs_divider.inc                  ; yes             ; Megafunction                 ; c:/altera_lite/16.0/quartus/libraries/megafunctions/abs_divider.inc                      ;         ;
-; sign_div_unsign.inc              ; yes             ; Megafunction                 ; c:/altera_lite/16.0/quartus/libraries/megafunctions/sign_div_unsign.inc                  ;         ;
-; aglobal160.inc                   ; yes             ; Megafunction                 ; c:/altera_lite/16.0/quartus/libraries/megafunctions/aglobal160.inc                       ;         ;
-; db/lpm_divide_hkm.tdf            ; yes             ; Auto-Generated Megafunction  ; C:/Users/Can/OneDrive - Duke University/ECE350/plottermachine/db/lpm_divide_hkm.tdf      ;         ;
-; db/sign_div_unsign_9nh.tdf       ; yes             ; Auto-Generated Megafunction  ; C:/Users/Can/OneDrive - Duke University/ECE350/plottermachine/db/sign_div_unsign_9nh.tdf ;         ;
-; db/alt_u_div_6af.tdf             ; yes             ; Auto-Generated Megafunction  ; C:/Users/Can/OneDrive - Duke University/ECE350/plottermachine/db/alt_u_div_6af.tdf       ;         ;
-; db/add_sub_7pc.tdf               ; yes             ; Auto-Generated Megafunction  ; C:/Users/Can/OneDrive - Duke University/ECE350/plottermachine/db/add_sub_7pc.tdf         ;         ;
-; db/add_sub_8pc.tdf               ; yes             ; Auto-Generated Megafunction  ; C:/Users/Can/OneDrive - Duke University/ECE350/plottermachine/db/add_sub_8pc.tdf         ;         ;
-+----------------------------------+-----------------+------------------------------+------------------------------------------------------------------------------------------+---------+
++--------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                         ;
++----------------------------------+-----------------+------------------------+----------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path           ; Library ;
++----------------------------------+-----------------+------------------------+----------------------------------------+---------+
+; stepper_controller.v             ; yes             ; User Verilog HDL File  ; C:/plottermachine/stepper_controller.v ;         ;
+; plotter_machine.v                ; yes             ; User Verilog HDL File  ; C:/plottermachine/plotter_machine.v    ;         ;
++----------------------------------+-----------------+------------------------+----------------------------------------+---------+
 
 
-+-----------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary               ;
-+---------------------------------------------+-------------+
-; Resource                                    ; Usage       ;
-+---------------------------------------------+-------------+
-; Estimated Total logic elements              ; 1,114       ;
-;                                             ;             ;
-; Total combinational functions               ; 1114        ;
-; Logic element usage by number of LUT inputs ;             ;
-;     -- 4 input functions                    ; 516         ;
-;     -- 3 input functions                    ; 547         ;
-;     -- <=2 input functions                  ; 51          ;
-;                                             ;             ;
-; Logic elements by mode                      ;             ;
-;     -- normal mode                          ; 589         ;
-;     -- arithmetic mode                      ; 525         ;
-;                                             ;             ;
-; Total registers                             ; 0           ;
-;     -- Dedicated logic registers            ; 0           ;
-;     -- I/O registers                        ; 0           ;
-;                                             ;             ;
-; I/O pins                                    ; 96          ;
-;                                             ;             ;
-; Embedded Multiplier 9-bit elements          ; 0           ;
-;                                             ;             ;
-; Maximum fan-out node                        ; b[31]~input ;
-; Maximum fan-out                             ; 38          ;
-; Total fan-out                               ; 3875        ;
-; Average fan-out                             ; 2.97        ;
-+---------------------------------------------+-------------+
++---------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary             ;
++---------------------------------------------+-----------+
+; Resource                                    ; Usage     ;
++---------------------------------------------+-----------+
+; Estimated Total logic elements              ; 155       ;
+;                                             ;           ;
+; Total combinational functions               ; 155       ;
+; Logic element usage by number of LUT inputs ;           ;
+;     -- 4 input functions                    ; 42        ;
+;     -- 3 input functions                    ; 20        ;
+;     -- <=2 input functions                  ; 93        ;
+;                                             ;           ;
+; Logic elements by mode                      ;           ;
+;     -- normal mode                          ; 93        ;
+;     -- arithmetic mode                      ; 62        ;
+;                                             ;           ;
+; Total registers                             ; 66        ;
+;     -- Dedicated logic registers            ; 66        ;
+;     -- I/O registers                        ; 0         ;
+;                                             ;           ;
+; I/O pins                                    ; 8         ;
+;                                             ;           ;
+; Embedded Multiplier 9-bit elements          ; 0         ;
+;                                             ;           ;
+; Maximum fan-out node                        ; clk~input ;
+; Maximum fan-out                             ; 66        ;
+; Total fan-out                               ; 583       ;
+; Average fan-out                             ; 2.46      ;
++---------------------------------------------+-----------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                                                          ;
-+----------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------------------------------------------------------------------------------------------------+---------------------+--------------+
-; Compilation Hierarchy Node             ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                                ; Entity Name         ; Library Name ;
-+----------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------------------------------------------------------------------------------------------------+---------------------+--------------+
-; |test_divide                           ; 1114 (0)          ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 96   ; 0            ; |test_divide                                                                                                                       ; test_divide         ; work         ;
-;    |lpm_divide:Div0|                   ; 1114 (0)          ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |test_divide|lpm_divide:Div0                                                                                                       ; lpm_divide          ; work         ;
-;       |lpm_divide_hkm:auto_generated|  ; 1114 (0)          ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |test_divide|lpm_divide:Div0|lpm_divide_hkm:auto_generated                                                                         ; lpm_divide_hkm      ; work         ;
-;          |sign_div_unsign_9nh:divider| ; 1114 (0)          ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |test_divide|lpm_divide:Div0|lpm_divide_hkm:auto_generated|sign_div_unsign_9nh:divider                                             ; sign_div_unsign_9nh ; work         ;
-;             |alt_u_div_6af:divider|    ; 1114 (1113)       ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |test_divide|lpm_divide:Div0|lpm_divide_hkm:auto_generated|sign_div_unsign_9nh:divider|alt_u_div_6af:divider                       ; alt_u_div_6af       ; work         ;
-;                |add_sub_8pc:add_sub_1| ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |test_divide|lpm_divide:Div0|lpm_divide_hkm:auto_generated|sign_div_unsign_9nh:divider|alt_u_div_6af:divider|add_sub_8pc:add_sub_1 ; add_sub_8pc         ; work         ;
-+----------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------------------------------------------------------------------------------------------------+---------------------+--------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                              ;
++-----------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------+--------------------+--------------+
+; Compilation Hierarchy Node        ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                           ; Entity Name        ; Library Name ;
++-----------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------+--------------------+--------------+
+; |plotter_machine                  ; 155 (0)             ; 66 (0)                    ; 0           ; 0            ; 0       ; 0         ; 8    ; 0            ; |plotter_machine                              ; plotter_machine    ; work         ;
+;    |stepper_controller:x_stepper| ; 78 (78)             ; 33 (33)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |plotter_machine|stepper_controller:x_stepper ; stepper_controller ; work         ;
+;    |stepper_controller:y_stepper| ; 77 (77)             ; 33 (33)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |plotter_machine|stepper_controller:y_stepper ; stepper_controller ; work         ;
++-----------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------------+--------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
@@ -237,37 +224,59 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 0     ;
+; Total registers                              ; 66    ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
 ; Number of registers using Asynchronous Clear ; 0     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Clock Enable       ; 27    ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
 
-+------------------------------------------------------------------+
-; Parameter Settings for Inferred Entity Instance: lpm_divide:Div0 ;
-+------------------------+----------------+------------------------+
-; Parameter Name         ; Value          ; Type                   ;
-+------------------------+----------------+------------------------+
-; LPM_WIDTHN             ; 32             ; Untyped                ;
-; LPM_WIDTHD             ; 32             ; Untyped                ;
-; LPM_NREPRESENTATION    ; UNSIGNED       ; Untyped                ;
-; LPM_DREPRESENTATION    ; UNSIGNED       ; Untyped                ;
-; LPM_PIPELINE           ; 0              ; Untyped                ;
-; LPM_REMAINDERPOSITIVE  ; TRUE           ; Untyped                ;
-; MAXIMIZE_SPEED         ; 5              ; Untyped                ;
-; CBXI_PARAMETER         ; lpm_divide_hkm ; Untyped                ;
-; CARRY_CHAIN            ; MANUAL         ; Untyped                ;
-; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                ;
-; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY             ;
-; IGNORE_CARRY_BUFFERS   ; OFF            ; IGNORE_CARRY           ;
-; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE           ;
-; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE         ;
-+------------------------+----------------+------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                               ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                     ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------------------+
+; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |plotter_machine|stepper_controller:y_stepper|step_counter[31] ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; Yes        ; |plotter_machine|stepper_controller:x_stepper|step_counter[31] ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------------------+
+
+
++----------------------------------------------------------+
+; Port Connectivity Checks: "stepper_controller:x_stepper" ;
++-----------------------+-------+----------+---------------+
+; Port                  ; Type  ; Severity ; Details       ;
++-----------------------+-------+----------+---------------+
+; counter_limit[17..14] ; Input ; Info     ; Stuck at VCC  ;
+; counter_limit[31..18] ; Input ; Info     ; Stuck at GND  ;
+; counter_limit[11..8]  ; Input ; Info     ; Stuck at GND  ;
+; counter_limit[6..5]   ; Input ; Info     ; Stuck at GND  ;
+; counter_limit[3..0]   ; Input ; Info     ; Stuck at GND  ;
+; counter_limit[13]     ; Input ; Info     ; Stuck at GND  ;
+; counter_limit[12]     ; Input ; Info     ; Stuck at VCC  ;
+; counter_limit[7]      ; Input ; Info     ; Stuck at VCC  ;
+; counter_limit[4]      ; Input ; Info     ; Stuck at VCC  ;
++-----------------------+-------+----------+---------------+
+
+
++----------------------------------------------------------+
+; Port Connectivity Checks: "stepper_controller:y_stepper" ;
++-----------------------+-------+----------+---------------+
+; Port                  ; Type  ; Severity ; Details       ;
++-----------------------+-------+----------+---------------+
+; counter_limit[13..12] ; Input ; Info     ; Stuck at VCC  ;
+; counter_limit[9..6]   ; Input ; Info     ; Stuck at VCC  ;
+; counter_limit[31..18] ; Input ; Info     ; Stuck at GND  ;
+; counter_limit[16..14] ; Input ; Info     ; Stuck at GND  ;
+; counter_limit[11..10] ; Input ; Info     ; Stuck at GND  ;
+; counter_limit[3..1]   ; Input ; Info     ; Stuck at GND  ;
+; counter_limit[17]     ; Input ; Info     ; Stuck at VCC  ;
+; counter_limit[5]      ; Input ; Info     ; Stuck at GND  ;
+; counter_limit[4]      ; Input ; Info     ; Stuck at VCC  ;
+; counter_limit[0]      ; Input ; Info     ; Stuck at VCC  ;
++-----------------------+-------+----------+---------------+
 
 
 +-----------------------------------------------------+
@@ -275,19 +284,21 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; boundary_port         ; 96                          ;
-; cycloneiii_lcell_comb ; 1146                        ;
-;     arith             ; 525                         ;
-;         3 data inputs ; 525                         ;
-;     normal            ; 621                         ;
-;         0 data inputs ; 30                          ;
-;         1 data inputs ; 32                          ;
-;         2 data inputs ; 21                          ;
-;         3 data inputs ; 22                          ;
-;         4 data inputs ; 516                         ;
+; boundary_port         ; 8                           ;
+; cycloneiii_ff         ; 66                          ;
+;     ENA               ; 27                          ;
+;     plain             ; 39                          ;
+; cycloneiii_lcell_comb ; 155                         ;
+;     arith             ; 62                          ;
+;         2 data inputs ; 62                          ;
+;     normal            ; 93                          ;
+;         1 data inputs ; 2                           ;
+;         2 data inputs ; 29                          ;
+;         3 data inputs ; 20                          ;
+;         4 data inputs ; 42                          ;
 ;                       ;                             ;
-; Max LUT depth         ; 121.50                      ;
-; Average LUT depth     ; 114.67                      ;
+; Max LUT depth         ; 6.00                        ;
+; Average LUT depth     ; 4.49                        ;
 +-----------------------+-----------------------------+
 
 
@@ -296,7 +307,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:03     ;
+; Top            ; 00:00:00     ;
 +----------------+--------------+
 
 
@@ -305,60 +316,41 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-------------------------------+
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
-    Info: Version 16.0.0 Build 211 04/27/2016 SJ Lite Edition
-    Info: Processing started: Fri Nov 29 21:17:43 2019
+    Info: Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
+    Info: Processing started: Sat Nov 30 13:39:43 2019
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off plottermachine -c plottermachine
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file uart_rx.v
-    Info (12023): Found entity 1: uart_rx File: C:/Users/Can/OneDrive - Duke University/ECE350/plottermachine/uart_rx.v Line: 14
+    Info (12023): Found entity 1: uart_rx File: C:/plottermachine/uart_rx.v Line: 14
 Info (12021): Found 1 design units, including 1 entities, in source file dmem.v
-    Info (12023): Found entity 1: dmem File: C:/Users/Can/OneDrive - Duke University/ECE350/plottermachine/dmem.v Line: 40
+    Info (12023): Found entity 1: dmem File: C:/plottermachine/dmem.v Line: 40
 Info (12021): Found 1 design units, including 1 entities, in source file stepper_controller.v
-    Info (12023): Found entity 1: stepper_controller File: C:/Users/Can/OneDrive - Duke University/ECE350/plottermachine/stepper_controller.v Line: 1
+    Info (12023): Found entity 1: stepper_controller File: C:/plottermachine/stepper_controller.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file plotter_machine.v
-    Info (12023): Found entity 1: plotter_machine File: C:/Users/Can/OneDrive - Duke University/ECE350/plottermachine/plotter_machine.v Line: 1
+    Info (12023): Found entity 1: plotter_machine File: C:/plottermachine/plotter_machine.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file uart_wrapper.v
-    Info (12023): Found entity 1: uart_wrapper File: C:/Users/Can/OneDrive - Duke University/ECE350/plottermachine/uart_wrapper.v Line: 1
+    Info (12023): Found entity 1: uart_wrapper File: C:/plottermachine/uart_wrapper.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file ascii_to_display.v
-    Info (12023): Found entity 1: ascii_to_display File: C:/Users/Can/OneDrive - Duke University/ECE350/plottermachine/ascii_to_display.v Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file test_divide.v
-    Info (12023): Found entity 1: test_divide File: C:/Users/Can/OneDrive - Duke University/ECE350/plottermachine/test_divide.v Line: 1
-Warning (10222): Verilog HDL Parameter Declaration warning at uart_rx.v(23): Parameter Declaration in module "uart_rx" behaves as a Local Parameter Declaration because the module has a Module Parameter Port List File: C:/Users/Can/OneDrive - Duke University/ECE350/plottermachine/uart_rx.v Line: 23
-Warning (10222): Verilog HDL Parameter Declaration warning at uart_rx.v(24): Parameter Declaration in module "uart_rx" behaves as a Local Parameter Declaration because the module has a Module Parameter Port List File: C:/Users/Can/OneDrive - Duke University/ECE350/plottermachine/uart_rx.v Line: 24
-Warning (10222): Verilog HDL Parameter Declaration warning at uart_rx.v(25): Parameter Declaration in module "uart_rx" behaves as a Local Parameter Declaration because the module has a Module Parameter Port List File: C:/Users/Can/OneDrive - Duke University/ECE350/plottermachine/uart_rx.v Line: 25
-Warning (10222): Verilog HDL Parameter Declaration warning at uart_rx.v(26): Parameter Declaration in module "uart_rx" behaves as a Local Parameter Declaration because the module has a Module Parameter Port List File: C:/Users/Can/OneDrive - Duke University/ECE350/plottermachine/uart_rx.v Line: 26
-Warning (10222): Verilog HDL Parameter Declaration warning at uart_rx.v(27): Parameter Declaration in module "uart_rx" behaves as a Local Parameter Declaration because the module has a Module Parameter Port List File: C:/Users/Can/OneDrive - Duke University/ECE350/plottermachine/uart_rx.v Line: 27
-Info (12127): Elaborating entity "test_divide" for the top level hierarchy
-Info (278001): Inferred 1 megafunctions from design logic
-    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "Div0" File: C:/Users/Can/OneDrive - Duke University/ECE350/plottermachine/test_divide.v Line: 5
-Info (12130): Elaborated megafunction instantiation "lpm_divide:Div0" File: C:/Users/Can/OneDrive - Duke University/ECE350/plottermachine/test_divide.v Line: 5
-Info (12133): Instantiated megafunction "lpm_divide:Div0" with the following parameter: File: C:/Users/Can/OneDrive - Duke University/ECE350/plottermachine/test_divide.v Line: 5
-    Info (12134): Parameter "LPM_WIDTHN" = "32"
-    Info (12134): Parameter "LPM_WIDTHD" = "32"
-    Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
-    Info (12134): Parameter "LPM_DREPRESENTATION" = "UNSIGNED"
-Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_divide_hkm.tdf
-    Info (12023): Found entity 1: lpm_divide_hkm File: C:/Users/Can/OneDrive - Duke University/ECE350/plottermachine/db/lpm_divide_hkm.tdf Line: 25
-Info (12021): Found 1 design units, including 1 entities, in source file db/sign_div_unsign_9nh.tdf
-    Info (12023): Found entity 1: sign_div_unsign_9nh File: C:/Users/Can/OneDrive - Duke University/ECE350/plottermachine/db/sign_div_unsign_9nh.tdf Line: 25
-Info (12021): Found 1 design units, including 1 entities, in source file db/alt_u_div_6af.tdf
-    Info (12023): Found entity 1: alt_u_div_6af File: C:/Users/Can/OneDrive - Duke University/ECE350/plottermachine/db/alt_u_div_6af.tdf Line: 27
-Info (12021): Found 1 design units, including 1 entities, in source file db/add_sub_7pc.tdf
-    Info (12023): Found entity 1: add_sub_7pc File: C:/Users/Can/OneDrive - Duke University/ECE350/plottermachine/db/add_sub_7pc.tdf Line: 23
-Info (12021): Found 1 design units, including 1 entities, in source file db/add_sub_8pc.tdf
-    Info (12023): Found entity 1: add_sub_8pc File: C:/Users/Can/OneDrive - Duke University/ECE350/plottermachine/db/add_sub_8pc.tdf Line: 23
+    Info (12023): Found entity 1: ascii_to_display File: C:/plottermachine/ascii_to_display.v Line: 1
+Warning (10222): Verilog HDL Parameter Declaration warning at uart_rx.v(23): Parameter Declaration in module "uart_rx" behaves as a Local Parameter Declaration because the module has a Module Parameter Port List File: C:/plottermachine/uart_rx.v Line: 23
+Warning (10222): Verilog HDL Parameter Declaration warning at uart_rx.v(24): Parameter Declaration in module "uart_rx" behaves as a Local Parameter Declaration because the module has a Module Parameter Port List File: C:/plottermachine/uart_rx.v Line: 24
+Warning (10222): Verilog HDL Parameter Declaration warning at uart_rx.v(25): Parameter Declaration in module "uart_rx" behaves as a Local Parameter Declaration because the module has a Module Parameter Port List File: C:/plottermachine/uart_rx.v Line: 25
+Warning (10222): Verilog HDL Parameter Declaration warning at uart_rx.v(26): Parameter Declaration in module "uart_rx" behaves as a Local Parameter Declaration because the module has a Module Parameter Port List File: C:/plottermachine/uart_rx.v Line: 26
+Warning (10222): Verilog HDL Parameter Declaration warning at uart_rx.v(27): Parameter Declaration in module "uart_rx" behaves as a Local Parameter Declaration because the module has a Module Parameter Port List File: C:/plottermachine/uart_rx.v Line: 27
+Info (12127): Elaborating entity "plotter_machine" for the top level hierarchy
+Info (12128): Elaborating entity "stepper_controller" for hierarchy "stepper_controller:y_stepper" File: C:/plottermachine/plotter_machine.v Line: 9
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 1210 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 64 input pins
-    Info (21059): Implemented 32 output pins
-    Info (21061): Implemented 1114 logic cells
+Info (21057): Implemented 163 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 4 input pins
+    Info (21059): Implemented 4 output pins
+    Info (21061): Implemented 155 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 6 warnings
-    Info: Peak virtual memory: 5003 megabytes
-    Info: Processing ended: Fri Nov 29 21:17:58 2019
-    Info: Elapsed time: 00:00:15
-    Info: Total CPU time (on all processors): 00:00:29
+    Info: Peak virtual memory: 4782 megabytes
+    Info: Processing ended: Sat Nov 30 13:39:53 2019
+    Info: Elapsed time: 00:00:10
+    Info: Total CPU time (on all processors): 00:00:20
 
 
