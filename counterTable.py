@@ -27,11 +27,11 @@ for i in range(360) :
 	f.write("%d : %s ;\n" % (offsetCos + i, cosInBinary))
 
 for i in range(360) :
-	fx = "{0:032b}".format(abs(round(fm * math.sin(radi * i))) & 0xffffffff)
+	fx = "{0:032b}".format(abs(round(fm * math.sin(radi * i))))
 	f.write("%d : %s ;\n" % (offsetFx + i, fx))
 
 for i in range(360) :
-	fy = "{0:032b}".format(abs(round(fm * math.cos(radi * i))) & 0xffffffff)
+	fy = "{0:032b}".format(abs(round(fm * math.cos(radi * i))))
 	f.write("%d : %s ;\n" % (offsetFy + i, fy))
 
 f.write("END;\n")
