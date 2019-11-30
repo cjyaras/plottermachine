@@ -12,7 +12,6 @@ radi = math.pi / 180
 
 fm = 200
 fc = 50e6
-counterLimit = fc / (2 * fm) # do not use this anywhere
 
 f = open("dmem.mif","w+")
 
@@ -27,12 +26,20 @@ for i in range(360) :
 	f.write("%d : %s ;\n" % (offsetCos + i, cosInBinary))
 
 for i in range(360) :
-	fx = "{0:032b}".format(abs(round(fm * math.sin(radi * i))))
-	f.write("%d : %s ;\n" % (offsetFx + i, fx))
+	if round(fm * math.sin(radi * i)) == 0 :
+		fx = "{0:032b}".format(abs(round(fm * math.sin(radi * i))))
+		f.write("%d : %s ;\n" % (offsetFx + i, fx))
+	else :
+		fx = "{0:032b}".format(round(fc / (2 * abs(fm * math.sin(radi * i)))))
+		f.write("%d : %s ;\n" % (offsetFx + i, fx))
 
 for i in range(360) :
-	fy = "{0:032b}".format(abs(round(fm * math.cos(radi * i))))
-	f.write("%d : %s ;\n" % (offsetFy + i, fy))
+	if round(fm * math.cos(radi * i)) == 0 :
+		fy = "{0:032b}".format(abs(round(fm * math.cos(radi * i))))
+		f.write("%d : %s ;\n" % (offsetFy + i, fy))
+	else :
+		fy = "{0:032b}".format(round(fc / (2 * abs(fm * math.cos(radi * i)))))
+		f.write("%d : %s ;\n" % (offsetFy + i, fy))
 
 f.write("END;\n")
 
