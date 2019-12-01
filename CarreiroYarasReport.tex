@@ -66,4 +66,57 @@
 %What improvements you would make / new features you would add if you had more time
 %Pictures of your project
 
+\begin{figure}[ht!]
+\begin{center}
+\begin{circuitikz}
+\ctikzset{multipoles/thickness=3}
+\ctikzset{multipoles/dipchip/width=2}
+\draw (0,0) node[dipchip, num pins=16, hide numbers, no topmark, external pins width=0](C){SMD};
+\node [right, font=\tiny] at (C.bpin 1) {ENABLE};
+\node [right, font=\tiny] at (C.bpin 2) {M0};
+\node [right, font=\tiny] at (C.bpin 3) {M1};
+\node [right, font=\tiny] at (C.bpin 4) {M2};
+\node [right, font=\tiny] at (C.bpin 5) {RESET};
+\node [right, font=\tiny] at (C.bpin 6) {SLEEP};
+\node [right, font=\tiny] at (C.bpin 7) {STEP};
+\node [right, font=\tiny] at (C.bpin 8) {DIR};
+\node [left, font=\tiny] at (C.bpin 16) {VMOT};
+\node [left, font=\tiny] at (C.bpin 15) {GND};
+\node [left, font=\tiny] at (C.bpin 14) {B2};
+\node [left, font=\tiny] at (C.bpin 13) {B1};
+\node [left, font=\tiny] at (C.bpin 12) {A1};
+\node [left, font=\tiny] at (C.bpin 11) {A2};
+\node [left, font=\tiny] at (C.bpin 10) {VDD};
+\node [left, font=\tiny] at (C.bpin 9) {GND};
+\draw (C.bpin 5) 	to[short] ++ (-1,0) node(n1) {};
+\draw (C.bpin 6) 	to[short] ++ (-1,0) 
+					to[short] (n1);
+\draw (C.bpin 7) 	to[short, -o] ++ (-2,0) node[anchor=east] {DIG 7}; % UPDATE
+\draw (C.bpin 8) 	to[short, -o] ++ (-2,0) node[anchor=east] {DIG 8}; % UPDATE
+\draw (C.bpin 9) 	to[short] ++ (1,0) 
+					to[short] ++ (0,-1) node(n2) {}
+					to[short] (n2 -| n1) 
+					to[short, -o] ++(-1,0) node[anchor=east] {5V}; % UPDATE
+\draw (C.bpin 10) 	to[short] ++ (1.6,0) node(n3) {}
+					to[short] (n3 |- n2)
+					to[short] ++(0,-.6) node(n4) {}
+					to[short] (n4 -| n1) 
+					to[short, -o] ++(-1,0) node[anchor=east] {GND}; % UPDATE
+\draw (C.bpin 11) 	to[short, -o] ++ (2,0) node[anchor=west] {PHASE /A};
+\draw (C.bpin 12) 	to[short, -o] ++ (2,0) node[anchor=west] {PHASE A};
+\draw (C.bpin 13) 	to[short, -o] ++ (2,0) node[anchor=west] {PHASE /B};
+\draw (C.bpin 14) 	to[short, -o] ++ (2,0) node[anchor=west] {PHASE B};
+\draw (C.bpin 15) 	to[short] ++ (4,0) 
+					to[short] ++ (0,2) node(n5) {}
+					to[short, -o] ++ (0,1) node[anchor=south] {GND};
+\draw (C.bpin 16) 	to[short] ++ (2,0) node(n6) {}
+					to[short] (n6 |- n5) node(n7) {}
+					to[C, l_=\SI{47}{\nano\farad}] (n5);
+\draw (n7)			to[short, -o] ++(0,1) node[anchor=south] {VDD};
+\end{circuitikz}
+\end{center}
+\caption{Circuit Diagram for Stepper Motor Drivers}
+\end{figure}
+
+
 \end{document}
