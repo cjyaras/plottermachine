@@ -1,1 +1,0 @@
-Warning (10268): Verilog HDL information at uart_wrapper.v(12): always construct contains both blocking and non-blocking assignments File: C:/Users/Can/Desktop/plottermachine/uart_wrapper.v Line: 12
