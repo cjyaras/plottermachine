@@ -131,21 +131,24 @@ Button & Result \\ \hline \hline
  & Leftward \\ \hline
  & Rightward \\ \hline
 \end{tabular}
+\caption{Manual Inputs}
 \end{table}
 
 These buttons can be combined in order to move the pen diagonally in any direction.
 
-To give instructions to the FPGA, a system similar to the one used by Logo is used:
+To give instructions to the FPGA, a system similar to the one used by Logo was implemented:
 
 \begin{table}[ht!]
 \centering
-\begin{tabular}{|c|c|c|c|c|c|c|c|c|} \hline
-OP & B7 & B6 & B5 & B4 & B3 & B2 & B1 & B0 \\ \hline
+\begin{tabular}{|c|c|c|c|} \hline
+OP & H2 & H1 & H0 \\ \hline
+\multicolumn{1}{c}{} & \multicolumn{3}{p{2cm}}{\raisebox{.5\baselineskip}{$\underbrace{\hspace{2.45cm}}$}} \\
+\multicolumn{1}{c}{} & \multicolumn{3}{c}{Hex Digits} \\
 \end{tabular}
 \caption{Instruction Format}
 \end{table}
 
-
+Here, {\tt OP} is an ascii character code for either {\tt F, B, L} or {\tt R}. If {\tt OP} is {\tt F} or {\tt B}, then the digits that follow are interpreted as a number of rotations of the stepper motor. If {\tt OP} is instead {\tt L} or {\tt R}, then the digits that follow are interpreted as degrees. This system was chosen for its short learning curve: anyone can easily give instructions to the XY-Plotter after a short explanation.
 
 \section{Changes to Processor}
 No changes to the processor were made. The only addition to the processor that would have been useful would have been the capability to do floating point math. However, adding support for floating points was deemed to be an irresponsible use of time given the time constraints, so we used a system of lookup tables (with significant multipliers) inserted into the DMEM in order to get around the need for floating point math.
@@ -154,8 +157,16 @@ No changes to the processor were made. The only addition to the processor that w
 % First chose an inverse speed system
 % Switched to using lookup tables
 
-\section{Testing}
+% Choosing an instruction Format
 
+% Building the kit (No instructions)
+
+\section{Testing}
+The first thing that was tested was the stepper motor. Since neither of us had ever worked with stepper motors before, we quickly prototyped a circuit using a breadboard, wrote some Arduino code, and messed around with the Stepper motor until we could understand how to communicate with it effectively. 
+
+After making sure the stepper motors worked on their own, we built the base of the XY-Plotter and plopped the stepper motors in position. Then, using the Arduino code and circuit from before, we tested the stepper motors on the base to make sure that the tracks were moving properly.
+
+Once we were sure the stepper motors and the tracks were working as expected, we moved on to trying to communicate with the stepper motors using the FPGA. At first, we wanted to communicate directly from the FPGA to the stepper motors, but we soon realized that a better design would be using the Arduino as a buffer between the FPGA and the stepper motors. This way, we could have the FPGA working to decode and interpret instructions as soon as they were received and send the decoded instructions to the Arduino without any need for stalling. The Arduino's built-in serial buffer could then be used as a queue of instructions for the the Arduino to convert to stepper motor movement without much hassle.
 \newpage
 \section{Programs/Code}
 
@@ -201,7 +212,7 @@ f.close()
 \begin{circuitikz}
 \ctikzset{multipoles/thickness=3}
 \ctikzset{multipoles/dipchip/width=2}
-\draw (0,0) node[dipchip, num pins=16, hide numbers, no topmark, external pins width=0](C){SMD};
+\draw (0,0) node[dipchip, num pins=16, hide numbers, no topmark, external pins width=0](C){};
 \node [right, font=\tiny] at (C.bpin 1) {ENABLE};
 \node [right, font=\tiny] at (C.bpin 2) {M0};
 \node [right, font=\tiny] at (C.bpin 3) {M1};
