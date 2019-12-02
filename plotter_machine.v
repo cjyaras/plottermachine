@@ -1,14 +1,12 @@
-module plotter_machine(clk, move_up, move_down, move_left, move_right, inverse_speed_x, inverse_speed_y, dir_out_x, dir_out_y, step_clk_x, step_clk_y);
-	input clk, move_up, move_down, move_left, move_right;
-	input [3:0] inverse_speed_x, inverse_speed_y;
-	output dir_out_x, dir_out_y, step_clk_x, step_clk_y;
+module plotter_machine(input clk, input not_enable, input dir_x_in, input dir_y_in, output step_clk_x, output step_clk_y, output dir_x, output dir_y);
 	
-	wire enable_x = ~move_left ^ ~move_right;
-	wire enable_y = ~move_up ^ ~move_down;
+	wire [31:0] counter_limit_x = 32'd144337;
+	wire [31:0] counter_limit_y = 32'd250000;
 	
-	stepper_controller y_stepper(clk, enable_x, inverse_speed_x, step_clk_x);
-	stepper_controller x_stepper(clk, enable_y, inverse_speed_y, step_clk_y);
+	assign dir_x = dir_x_in;
+	assign dir_y = dir_y_in;
 	
-	assign dir_out_x = ~move_left;
-	assign dir_out_y = ~move_up;
+	stepper_controller y_stepper(clk, ~not_enable, counter_limit_x, step_clk_x);
+	stepper_controller x_stepper(clk, ~not_enable, counter_limit_y, step_clk_y);
+	
 endmodule
