@@ -105,7 +105,7 @@
 \newpage
 
 \section{Project Design and Specifications}
-For the final project, we decided to build and implement an XY--Plotter, which is a device that can guide a pen along two axes in order to create an image on a piece of paper. For the hardware, we settled on the <KIT NAME> as a starting point. This kit included the mechanisms necessary to draw on two axes, and we would go on to add a mechanism to lift and lower our writing instrument.
+For the final project, we decided to build and implement an {\tt XY-Plotter}, which is a device that can guide a pen along two axes in order to create an image on a piece of paper. For the hardware, we settled on the <KIT NAME> as a starting point. This kit included the mechanisms necessary to draw on two axes, and we would go on to add a mechanism to lift and lower our writing instrument.
 
 \begin{table}[ht!]
 \centering
@@ -136,7 +136,7 @@ Button & Result \\ \hline \hline
 
 These buttons can be combined in order to move the pen diagonally in any direction.
 
-To give instructions to the FPGA, a system similar to the one used by Logo was implemented:
+To give instructions to the FPGA, a system similar to the one used by Logo's turtle graphics module was implemented:
 
 \begin{table}[ht!]
 \centering
@@ -148,7 +148,7 @@ OP & H2 & H1 & H0 \\ \hline
 \caption{Instruction Format}
 \end{table}
 
-Here, {\tt OP} is an ascii character code for either {\tt F, B, L} or {\tt R}. If {\tt OP} is {\tt F} or {\tt B}, then the digits that follow are interpreted as a number of rotations of the stepper motor. If {\tt OP} is instead {\tt L} or {\tt R}, then the digits that follow are interpreted as degrees. This system was chosen for its short learning curve: anyone can easily give instructions to the XY-Plotter after a short explanation.
+Here, {\tt OP} is an ascii character code for either {\tt F, B, L} or {\tt R}. If {\tt OP} is {\tt F} or {\tt B}, then the digits that follow are interpreted as a number of rotations of the stepper motor. If {\tt OP} is instead {\tt L} or {\tt R}, then the digits that follow are interpreted as degrees. This system where the pen moves with commands relative to its own position was chosen for two reasons: (1) the stepper motors and the tracks slowly decalibrate as they move, so a coordinate system would provide wonky images, and (2) turtle geometry has a short learning curve: anyone can easily control {\tt XY-Plotter} with minimal instruction---after all, Logo was designed as an educational programming language.
 
 \section{Changes to Processor}
 No changes to the processor were made. The only addition to the processor that would have been useful would have been the capability to do floating point math. However, adding support for floating points was deemed to be an irresponsible use of time given the time constraints, so we used a system of lookup tables (with significant multipliers) inserted into the DMEM in order to get around the need for floating point math.
@@ -164,7 +164,7 @@ No changes to the processor were made. The only addition to the processor that w
 \section{Testing}
 The first thing that was tested was the stepper motor. Since neither of us had ever worked with stepper motors before, we quickly prototyped a circuit using a breadboard, wrote some Arduino code, and messed around with the Stepper motor until we could understand how to communicate with it effectively. 
 
-After making sure the stepper motors worked on their own, we built the base of the XY-Plotter and plopped the stepper motors in position. Then, using the Arduino code and circuit from before, we tested the stepper motors on the base to make sure that the tracks were moving properly.
+After making sure the stepper motors worked on their own, we built the base of the {\tt XY-Plotter} and plopped the stepper motors in position. Then, using the Arduino code and circuit from before, we tested the stepper motors on the base to make sure that the tracks were moving properly.
 
 Once we were sure the stepper motors and the tracks were working as expected, we moved on to trying to communicate with the stepper motors using the FPGA. At first, we wanted to communicate directly from the FPGA to the stepper motors, but we soon realized that a better design would be using the Arduino as a buffer between the FPGA and the stepper motors. This way, we could have the FPGA working to decode and interpret instructions as soon as they were received and send the decoded instructions to the Arduino without any need for stalling. The Arduino's built-in serial buffer could then be used as a queue of instructions for the the Arduino to convert to stepper motor movement without much hassle.
 \newpage

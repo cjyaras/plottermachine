@@ -29,17 +29,17 @@ for i in range(360):
 	f.write("%d : %s ;\n"%(offsetCos+i,cosBin))
 
 for i in range(360):
-	if round(fm * math.sin(radi * i)) == 0 : # cannot divide by zero
-		fx="{0:032b}".format(abs(round(fm*math.sin(radi*i))))
+	if round(fm * math.cos(radi * i)) == 0 : # cannot divide by zero
+		fx="{0:032b}".format(abs(round(fm*math.cos(radi*i))))
 	else :
-		fx="{0:032b}".format(round(fc/(2*abs(fm*math.sin(radi*i)))))
+		fx="{0:032b}".format(round(fc/(2*abs(fm*math.cos(radi*i)))))
 	f.write("%d : %s ;\n"%(offsetFx+i,fx))
 
 for i in range(360):
-	if round(fm*math.cos(radi*i))==0: # cannot divide by zero
-		fy="{0:032b}".format(abs(round(fm*math.cos(radi*i))))
+	if round(fm*math.sin(radi*i))==0: # cannot divide by zero
+		fy="{0:032b}".format(abs(round(fm*math.sin(radi*i))))
 	else :
-		fy="{0:032b}".format(round(fc/(2*abs(fm*math.cos(radi*i)))))
+		fy="{0:032b}".format(round(fc/(2*abs(fm*math.sin(radi*i)))))
 	f.write("%d : %s ;\n"%(offsetFy+i,fy))
 
 counter = 0
