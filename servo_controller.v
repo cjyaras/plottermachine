@@ -1,19 +1,21 @@
 module servo_controller(input clk, input [31:0] counter_limit, output reg pwm);
-	// duty width is in ms
 	
 	reg [31:0] counter;
 	
 	initial begin
-		pwm <= 1;
+		pwm <= 0;
 		counter <= 32'b0;
 	end
 	
 	always @(posedge clk) begin
-		if (counter > 32'd1000000) begin
+		if (0 <= counter && counter <= counter_limit) begin
 			pwm <= 1;
-			counter <= 32'b0;
-		end else if (counter > counter_limit) begin
+			counter <= counter + 1;
+		end else if (counter_limit < counter && counter <= 1000000) begin
 			pwm <= 0;
+			counter <= counter + 1;
+		end else begin
+			counter <= 32'b0;
 		end
 	end
 	
