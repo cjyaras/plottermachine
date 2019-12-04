@@ -1,0 +1,153 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "h3[6]",
+					"strict" : false
+				},
+				{
+					"name" : "h3[5]",
+					"strict" : false
+				},
+				{
+					"name" : "h3[4]",
+					"strict" : false
+				},
+				{
+					"name" : "h3[3]",
+					"strict" : false
+				},
+				{
+					"name" : "h3[2]",
+					"strict" : false
+				},
+				{
+					"name" : "h3[1]",
+					"strict" : false
+				},
+				{
+					"name" : "h3[0]",
+					"strict" : false
+				},
+				{
+					"name" : "h2[6]",
+					"strict" : false
+				},
+				{
+					"name" : "h2[5]",
+					"strict" : false
+				},
+				{
+					"name" : "h2[4]",
+					"strict" : false
+				},
+				{
+					"name" : "h2[3]",
+					"strict" : false
+				},
+				{
+					"name" : "h2[2]",
+					"strict" : false
+				},
+				{
+					"name" : "h2[1]",
+					"strict" : false
+				},
+				{
+					"name" : "h2[0]",
+					"strict" : false
+				},
+				{
+					"name" : "h1[6]",
+					"strict" : false
+				},
+				{
+					"name" : "h1[5]",
+					"strict" : false
+				},
+				{
+					"name" : "h1[4]",
+					"strict" : false
+				},
+				{
+					"name" : "h1[3]",
+					"strict" : false
+				},
+				{
+					"name" : "h1[2]",
+					"strict" : false
+				},
+				{
+					"name" : "h1[1]",
+					"strict" : false
+				},
+				{
+					"name" : "h1[0]",
+					"strict" : false
+				},
+				{
+					"name" : "h0[6]",
+					"strict" : false
+				},
+				{
+					"name" : "h0[5]",
+					"strict" : false
+				},
+				{
+					"name" : "h0[4]",
+					"strict" : false
+				},
+				{
+					"name" : "h0[3]",
+					"strict" : false
+				},
+				{
+					"name" : "h0[2]",
+					"strict" : false
+				},
+				{
+					"name" : "h0[1]",
+					"strict" : false
+				},
+				{
+					"name" : "h0[0]",
+					"strict" : false
+				},
+				{
+					"name" : "reset",
+					"strict" : false
+				},
+				{
+					"name" : "x_step_clk",
+					"strict" : false
+				},
+				{
+					"name" : "x_dir",
+					"strict" : false
+				},
+				{
+					"name" : "y_step_clk",
+					"strict" : false
+				},
+				{
+					"name" : "y_dir",
+					"strict" : false
+				},
+				{
+					"name" : "error",
+					"strict" : false
+				},
+				{
+					"name" : "clk",
+					"strict" : false
+				},
+				{
+					"name" : "rx",
+					"strict" : false
+				}
+			]
+		}
+	]
+}
