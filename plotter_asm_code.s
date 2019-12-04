@@ -1,33 +1,38 @@
 # r1 is x-axis counter limit
 # r2 is y-axis counter limit
 # r3 contains 4-bit signal information in LSBs (x-y axis enable, x-y axis direction)
-# r4 is duration counter limit
+# r4 is counter limit for signal
 # r5 turns system on (begins movement)
-# r6 is counter limit for signal
+# r6 is error register
 # r7 stores the current angle
 # r8-11 stores the current instruction
 # r12 is pointer to beginning of current instruction
-# r13 is end of line (4)
+# r13 is end of line (11)
 # r14 stores the number from the instruction
 # r15 stores the current x coordinate
 # r16 stores the current y coordinate
-# r17 is error register
 
 
 # IMPORTANT DMEM ADDRESS OFFSETS
-# 0 - DRAWING INSTRUCTIONS
+# 1 - DRAWING INSTRUCTIONS
 # 1000 - sin table
 # 1360 - cos table
 # 1720 - x counter limit
 # 2080 - y counter limit
-# 2340 - 4-bit signal information
+# 2440 - 4-bit signal information
 
-# 2 indicates beginning of file, 4 indicates end of file
+# 10 indicates beginning of file, 11 indicates end of file
+
+# NOPs
+nop
+nop
+nop
 
 # TODO : set the above registers to proper initial values (once their positions in dmem are figured out)
-
+addi $r7, $r0, 0 # Initial angle is 0
+addi $r5, $r0, 0 # Make sure system turned off at beginning
 addi $r12, $r0, 1 # Because beginning of file is at position 0
-addi $r13, $r0, 4 # Load end of line (4)
+addi $r13, $r0, 11 # Load end of line (11)
 
 start_read_instruction:
 
@@ -66,13 +71,15 @@ lw $r1, 1720($r7)
 lw $r2, 2080($r7)
 
 # Load relevant 4-bit signal for current angle
-lw $r3, 2340($r7)
+lw $r3, 2440($r7)
 
 # Now set duration counter based on radius
 # Since clock runs at 50 MHz and it takes four clock cycles to increment counter, 
 # one second corresponds to 12.5e6 = 12500000
-addi $r6, $r0, 12500000
-mul $r6, $r6, $r14
+addi $r22, $r0, 1250
+mul $r22, $r22, $r14
+addi $r4, $r0, 10000
+mul $r4, $r4, $r22
 
 # Set counter variable to 0
 addi $r20, $r0, 0
@@ -81,7 +88,7 @@ addi $r20, $r0, 0
 addi $r5, $r0, 1
 
 loop: 
-blt $r6, $r20, turn_off_system
+blt $r4, $r20, turn_off_system
 addi $r20, $r20, 1
 j loop
 
@@ -128,7 +135,7 @@ j after_instruction
 
 invalid_instruction:
 # We have invalid instruction, set flag and abort
-addi $r17, $r17, 1
+addi $r6, $r0, 1
 j end
 
 after_instruction:
@@ -137,3 +144,4 @@ j start_read_instruction
 
 end:
 # Need to do something (like play noise) if error occured, check error register for flag set
+j end
