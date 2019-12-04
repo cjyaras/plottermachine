@@ -7,191 +7,67 @@ z2
 !i10e 25
 !i10f 100
 cModel Technology
-Z0 dC:/intelFPGA_lite/17.1/plottermachine/simulation/qsim
-vcharacter_reading
-!s110 1574825148
+Z0 dC:/Users/cy123/Desktop/plottermachine/simulation/qsim
+vhard_block
+Z1 !s110 1575262912
 !i10b 1
-!s100 :;I_iX6n9KcHPj_WBm;9_2
-I^`[nkWEoc^=HV9JC3<4>73
-Z1 VDg1SIo80bB@j0V0VzS_@n1
-Z2 dC:/plottermachine/simulation/qsim
-w1574825148
-Z3 8plottermachine.vo
-Z4 Fplottermachine.vo
-Z5 L0 31
+!s100 oLP3L``DJ1nZB`3LE:K]m3
+IgTehzONEYfL_03@7h9ca40
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z3 w1575262910
+Z4 8plottermachine.vo
+Z5 Fplottermachine.vo
+L0 118449
 Z6 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z7 !s108 1574825148.000000
+Z7 !s108 1575262911.000000
 Z8 !s107 plottermachine.vo|
 Z9 !s90 -work|work|plottermachine.vo|
 !i113 1
 Z10 o-work work
 Z11 tCvgOpt 0
-vcharacter_reading_vlg_vec_tst
-!s110 1574825149
-!i10b 1
-!s100 Jb[g`6S4SLR_P3j75FRVL2
-IYXdoiW69@Q;fIFS3E7lMC0
+vskeleton
 R1
+!i10b 1
+!s100 Yz1nNEilTm5S5OY7MhW<R0
+IFj;CL<HJPKHLBc4V5mnVI3
 R2
-w1574825146
-Z12 8Waveform.vwf.vt
-Z13 FWaveform.vwf.vt
-Z14 L0 29
+R0
+R3
+R4
+R5
+L0 31
 R6
 r1
 !s85 0
 31
 R7
-Z15 !s107 Waveform.vwf.vt|
-Z16 !s90 -work|work|Waveform.vwf.vt|
-!i113 1
-R10
-R11
-vcounter
-Z17 !s110 1574878451
-!i10b 1
-!s100 7f5zH;7=`d4[_4c;1n;5@2
-IH7_]fDd:ll=C6JH0?Ebk`3
-R1
-R2
-Z18 w1574878450
-R3
-R4
-R5
-R6
-r1
-!s85 0
-31
-Z19 !s108 1574878451.000000
 R8
 R9
 !i113 1
 R10
 R11
-vcounter_vlg_vec_tst
-R17
-!i10b 1
-!s100 ef@WhBJnFn54NX5iSEFEY2
-IcfJcnLL;D40==zQN=@_k>3
+vskeleton_vlg_vec_tst
 R1
+!i10b 1
+!s100 2zjO[X598Lz;_=N>PSXVC3
+IKbzLg:SlBhWbXJR_PPeL>1
 R2
-w1574878449
-R12
-R13
-R14
-R6
-r1
-!s85 0
-31
-R19
-R15
-R16
-!i113 1
-R10
-R11
-vhard_block
-R17
-!i10b 1
-!s100 XB?VQ2i^B3:A:QP_SbGTI3
-I`oMC:`1D00mJITVLfgGX:3
-R1
-R2
-R18
-R3
-R4
-L0 475
-R6
-r1
-!s85 0
-31
-R19
-R8
-R9
-!i113 1
-R10
-R11
-vstepper_controller
-Z20 !s110 1574529706
-!i10b 1
-!s100 AW9jz8Y57jo<<RMEFdcAD0
-IRRoIBn6RUE2a:bT?8T6I?1
-R1
 R0
-w1574529706
-R3
-R4
-R5
+w1575262909
+8Waveform.vwf.vt
+FWaveform.vwf.vt
+L0 29
 R6
 r1
 !s85 0
 31
-Z21 !s108 1574529706.000000
-R8
-R9
+!s108 1575262912.000000
+!s107 Waveform.vwf.vt|
+!s90 -work|work|Waveform.vwf.vt|
 !i113 1
 R10
 R11
-vstepper_controller_vlg_vec_tst
-R20
-!i10b 1
-!s100 goX6ANHZT2lRK0ML^j7SN3
-ILW4A]FQmKKO1GfATMXbfC2
-R1
-R0
-w1574529705
-R12
-R13
-R14
-R6
-r1
-!s85 0
-31
-R21
-R15
-R16
-!i113 1
-R10
-R11
-vtest_divide
-Z22 !s110 1575080461
-!i10b 1
-!s100 oZmLN7LA5]5c5GXVd?dE?0
-I?Z@k^8Xj:n28=moQ5aQ?B2
-R1
-Z23 dC:/Users/Can/OneDrive - Duke University/ECE350/plottermachine/simulation/qsim
-w1575080459
-R3
-R4
-L0 32
-Z24 OV;L;10.4d;61
-r1
-!s85 0
-31
-!s108 1575080460.000000
-R8
-R9
-!i113 1
-R10
-vtest_divide_vlg_vec_tst
-R22
-!i10b 1
-!s100 bZIWbAAjZZ9CCjO]2lOkb0
-Im5PzQ3<H`]TK?m3dVC>@U0
-R1
-R23
-w1575080457
-R12
-R13
-L0 30
-R24
-r1
-!s85 0
-31
-!s108 1575080461.000000
-R15
-R16
-!i113 1
-R10

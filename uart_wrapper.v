@@ -1,7 +1,9 @@
-module uart_wrapper(input clk, input rx, input [3:0] select, output [7:0] dmem_q, output reg done, output reg [11:0] index);
+module uart_wrapper(input clk, input rx, input wren, input [11:0] address_dmem, input [31:0] data, output [31:0] q_dmem, output reg done);
 	
 	wire data_ready;
 	wire [7:0] uart_q;
+	
+	reg [11:0] index;
 	
 	initial begin
 		done <= 0;
@@ -12,10 +14,10 @@ module uart_wrapper(input clk, input rx, input [3:0] select, output [7:0] dmem_q
 	reg [7:0] delay;
 
 	always @(posedge data_ready) begin
-		index <= (uart_q == 8'd2) ? 12'b0 : index + 1;
-		if (uart_q == 8'd4)
+		index <= (uart_q == 8'd10) ? 12'b0 : index + 1;
+		if (uart_q == 8'd11)
 			delay <= 1;
-		else if (uart_q == 8'd2)
+		else if (uart_q == 8'd10)
 			delay <= 0;
 	end
 	
@@ -25,13 +27,8 @@ module uart_wrapper(input clk, input rx, input [3:0] select, output [7:0] dmem_q
 			else if (delay == 0)
 				done <= 0;
 	end
-		
-	
-	wire [31:0] dmem_output;
-	
-	assign dmem_q = dmem_output[7:0];
 	
 	uart_rx receiver(clk, rx, data_ready, uart_q);
-	dmem my_dmem(done ? {8'b0, select} : index, ~clk, {24'b0, uart_q}, data_ready, dmem_output);
+	dmem my_dmem(done ? address_dmem : index, ~clk, done ? q_dmem : {24'b0, uart_q}, done ? wren : data_ready, q_dmem);
 	
 endmodule

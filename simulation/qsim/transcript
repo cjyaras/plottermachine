@@ -1,38 +1,46 @@
 # do plottermachine.do
-# ** Warning: (vlib-34) Library already exists at "work".
-# 
-# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
-# Start time: 21:21:00 on Nov 29,2019
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 00:01:51 on Dec 02,2019
 # vlog -work work plottermachine.vo 
-# -- Compiling module test_divide
+# -- Compiling module skeleton
+# -- Compiling module hard_block
 # 
 # Top level modules:
-# 	test_divide
-# End time: 21:21:01 on Nov 29,2019, Elapsed time: 0:00:01
+# 	skeleton
+# End time: 00:01:52 on Dec 02,2019, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
-# Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
-# Start time: 21:21:01 on Nov 29,2019
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 00:01:52 on Dec 02,2019
 # vlog -work work Waveform.vwf.vt 
-# -- Compiling module test_divide_vlg_vec_tst
+# -- Compiling module skeleton_vlg_vec_tst
 # 
 # Top level modules:
-# 	test_divide_vlg_vec_tst
-# End time: 21:21:01 on Nov 29,2019, Elapsed time: 0:00:00
+# 	skeleton_vlg_vec_tst
+# End time: 00:01:52 on Dec 02,2019, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vsim -novopt -c -t 1ps -L cycloneive_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate_ver -L altera_lnsim_ver work.test_divide_vlg_vec_tst -voptargs=""+acc"" 
-# Start time: 21:21:01 on Nov 29,2019
-# Loading work.test_divide_vlg_vec_tst
-# Loading work.test_divide
+# vsim -novopt -c -t 1ps -L cycloneive_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate_ver -L altera_lnsim_ver work.skeleton_vlg_vec_tst 
+# Start time: 00:01:52 on Dec 02,2019
+# Loading work.skeleton_vlg_vec_tst
+# Loading work.skeleton
+# Loading work.hard_block
 # Loading cycloneive_ver.cycloneive_io_obuf
 # Loading cycloneive_ver.cycloneive_io_ibuf
+# Loading cycloneive_ver.cycloneive_clkctrl
+# Loading cycloneive_ver.cycloneive_mux41
+# Loading cycloneive_ver.cycloneive_ena_reg
 # Loading cycloneive_ver.cycloneive_lcell_comb
-# SDF 10.4d Compiler 2015.12 Dec 30 2015
-# 
-# Loading instances from plottermachine_v.sdo
-# Loading timing data from plottermachine_v.sdo
-# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
-#    Time: 0 ps  Iteration: 0  Instance: /test_divide_vlg_vec_tst File: Waveform.vwf.vt
-# ** Note: $finish    : Waveform.vwf.vt(47)
-#    Time: 1 us  Iteration: 0  Instance: /test_divide_vlg_vec_tst
-# End time: 21:21:02 on Nov 29,2019, Elapsed time: 0:00:01
-# Errors: 0, Warnings: 0
+# Loading altera_ver.dffeas
+# Loading cycloneive_ver.cycloneive_ram_block
+# Loading cycloneive_ver.cycloneive_ram_register
+# Loading cycloneive_ver.cycloneive_ram_pulse_generator
+# Loading altera_ver.PRIM_GDFF_LOW
+# ** Warning: Design size of 15581 statements exceeds ModelSim-Intel FPGA Starter Edition recommended capacity.
+# Expect performance to be adversely affected.
+# after#24
+# Simulation time: 0 ps
+# ** Note: $stop    : Waveform.vwf.vt(46)
+#    Time: 1 us  Iteration: 0  Instance: /skeleton_vlg_vec_tst
+# Break in Module skeleton_vlg_vec_tst at Waveform.vwf.vt line 46
+# Stopped at Waveform.vwf.vt line 46
+# End time: 00:01:56 on Dec 02,2019, Elapsed time: 0:00:04
+# Errors: 0, Warnings: 1
