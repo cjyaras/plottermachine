@@ -8,6 +8,8 @@ module ascii_to_display(clk, in, out);
 			8'd102 : out <= ~7'b1000111; // f (forward)
 			8'd114 : out <= ~7'b0000101; // r (right)
 			8'd108 : out <= ~7'b0001110; // l (left)
+			8'd117 : out <= ~7'b0111110; // u (up)
+			8'd100 : out <= ~7'b0111101; // d (down)
 			8'd0   : out <= ~7'h7E; 	  // 0
 			8'd1   : out <= ~7'h30;      // 1
 			8'd2   : out <= ~7'h6D;      // 2

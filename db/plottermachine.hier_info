@@ -1,5 +1,5 @@
 |plotter_machine
-clk => clk.IN9
+clk => clk.IN10
 rx => rx.IN1
 h3[6] << ascii_to_display:hex3.port2
 h3[5] << ascii_to_display:hex3.port2
@@ -34,7 +34,8 @@ x_step_clk << stepper_controller:x_stepper.port3
 x_dir << regfile:my_regfile.port11
 y_step_clk << stepper_controller:y_stepper.port3
 y_dir << regfile:my_regfile.port11
-error << regfile:my_regfile.port13
+error << regfile:my_regfile.port18
+pwm << servo_controller:pen_mover.port2
 
 
 |plotter_machine|processor:comb_3
@@ -32249,6 +32250,38 @@ reg11[28] <= registers[11][28].DB_MAX_OUTPUT_PORT_TYPE
 reg11[29] <= registers[11][29].DB_MAX_OUTPUT_PORT_TYPE
 reg11[30] <= registers[11][30].DB_MAX_OUTPUT_PORT_TYPE
 reg11[31] <= registers[11][31].DB_MAX_OUTPUT_PORT_TYPE
+reg17[0] <= registers[17][0].DB_MAX_OUTPUT_PORT_TYPE
+reg17[1] <= registers[17][1].DB_MAX_OUTPUT_PORT_TYPE
+reg17[2] <= registers[17][2].DB_MAX_OUTPUT_PORT_TYPE
+reg17[3] <= registers[17][3].DB_MAX_OUTPUT_PORT_TYPE
+reg17[4] <= registers[17][4].DB_MAX_OUTPUT_PORT_TYPE
+reg17[5] <= registers[17][5].DB_MAX_OUTPUT_PORT_TYPE
+reg17[6] <= registers[17][6].DB_MAX_OUTPUT_PORT_TYPE
+reg17[7] <= registers[17][7].DB_MAX_OUTPUT_PORT_TYPE
+reg17[8] <= registers[17][8].DB_MAX_OUTPUT_PORT_TYPE
+reg17[9] <= registers[17][9].DB_MAX_OUTPUT_PORT_TYPE
+reg17[10] <= registers[17][10].DB_MAX_OUTPUT_PORT_TYPE
+reg17[11] <= registers[17][11].DB_MAX_OUTPUT_PORT_TYPE
+reg17[12] <= registers[17][12].DB_MAX_OUTPUT_PORT_TYPE
+reg17[13] <= registers[17][13].DB_MAX_OUTPUT_PORT_TYPE
+reg17[14] <= registers[17][14].DB_MAX_OUTPUT_PORT_TYPE
+reg17[15] <= registers[17][15].DB_MAX_OUTPUT_PORT_TYPE
+reg17[16] <= registers[17][16].DB_MAX_OUTPUT_PORT_TYPE
+reg17[17] <= registers[17][17].DB_MAX_OUTPUT_PORT_TYPE
+reg17[18] <= registers[17][18].DB_MAX_OUTPUT_PORT_TYPE
+reg17[19] <= registers[17][19].DB_MAX_OUTPUT_PORT_TYPE
+reg17[20] <= registers[17][20].DB_MAX_OUTPUT_PORT_TYPE
+reg17[21] <= registers[17][21].DB_MAX_OUTPUT_PORT_TYPE
+reg17[22] <= registers[17][22].DB_MAX_OUTPUT_PORT_TYPE
+reg17[23] <= registers[17][23].DB_MAX_OUTPUT_PORT_TYPE
+reg17[24] <= registers[17][24].DB_MAX_OUTPUT_PORT_TYPE
+reg17[25] <= registers[17][25].DB_MAX_OUTPUT_PORT_TYPE
+reg17[26] <= registers[17][26].DB_MAX_OUTPUT_PORT_TYPE
+reg17[27] <= registers[17][27].DB_MAX_OUTPUT_PORT_TYPE
+reg17[28] <= registers[17][28].DB_MAX_OUTPUT_PORT_TYPE
+reg17[29] <= registers[17][29].DB_MAX_OUTPUT_PORT_TYPE
+reg17[30] <= registers[17][30].DB_MAX_OUTPUT_PORT_TYPE
+reg17[31] <= registers[17][31].DB_MAX_OUTPUT_PORT_TYPE
 
 
 |plotter_machine|ascii_to_display:hex3
@@ -32553,5 +32586,74 @@ counter_limit[30] => Equal0.IN1
 counter_limit[31] => LessThan0.IN1
 counter_limit[31] => Equal0.IN0
 step_clk <= step_clk~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|plotter_machine|servo_controller:pen_mover
+clk => counter[0].CLK
+clk => counter[1].CLK
+clk => counter[2].CLK
+clk => counter[3].CLK
+clk => counter[4].CLK
+clk => counter[5].CLK
+clk => counter[6].CLK
+clk => counter[7].CLK
+clk => counter[8].CLK
+clk => counter[9].CLK
+clk => counter[10].CLK
+clk => counter[11].CLK
+clk => counter[12].CLK
+clk => counter[13].CLK
+clk => counter[14].CLK
+clk => counter[15].CLK
+clk => counter[16].CLK
+clk => counter[17].CLK
+clk => counter[18].CLK
+clk => counter[19].CLK
+clk => counter[20].CLK
+clk => counter[21].CLK
+clk => counter[22].CLK
+clk => counter[23].CLK
+clk => counter[24].CLK
+clk => counter[25].CLK
+clk => counter[26].CLK
+clk => counter[27].CLK
+clk => counter[28].CLK
+clk => counter[29].CLK
+clk => counter[30].CLK
+clk => counter[31].CLK
+clk => pwm~reg0.CLK
+counter_limit[0] => LessThan1.IN32
+counter_limit[1] => LessThan1.IN31
+counter_limit[2] => LessThan1.IN30
+counter_limit[3] => LessThan1.IN29
+counter_limit[4] => LessThan1.IN28
+counter_limit[5] => LessThan1.IN27
+counter_limit[6] => LessThan1.IN26
+counter_limit[7] => LessThan1.IN25
+counter_limit[8] => LessThan1.IN24
+counter_limit[9] => LessThan1.IN23
+counter_limit[10] => LessThan1.IN22
+counter_limit[11] => LessThan1.IN21
+counter_limit[12] => LessThan1.IN20
+counter_limit[13] => LessThan1.IN19
+counter_limit[14] => LessThan1.IN18
+counter_limit[15] => LessThan1.IN17
+counter_limit[16] => LessThan1.IN16
+counter_limit[17] => LessThan1.IN15
+counter_limit[18] => LessThan1.IN14
+counter_limit[19] => LessThan1.IN13
+counter_limit[20] => LessThan1.IN12
+counter_limit[21] => LessThan1.IN11
+counter_limit[22] => LessThan1.IN10
+counter_limit[23] => LessThan1.IN9
+counter_limit[24] => LessThan1.IN8
+counter_limit[25] => LessThan1.IN7
+counter_limit[26] => LessThan1.IN6
+counter_limit[27] => LessThan1.IN5
+counter_limit[28] => LessThan1.IN4
+counter_limit[29] => LessThan1.IN3
+counter_limit[30] => LessThan1.IN2
+counter_limit[31] => LessThan1.IN1
+pwm <= pwm~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 

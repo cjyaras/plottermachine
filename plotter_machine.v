@@ -1,6 +1,6 @@
 module plotter_machine(input clk, input rx, 
 	output [0:6] h3, output [0:6] h2, output [0:6] h1, output [0:6] h0, 
-	output reset, output x_step_clk, output x_dir, output y_step_clk, output y_dir, output error);
+	output reset, output x_step_clk, output x_dir, output y_step_clk, output y_dir, output error, output pwm);
 
 	processor (
     // Control signals
@@ -60,10 +60,10 @@ module plotter_machine(input clk, input rx,
         data_writeReg,
         data_readRegA,
         data_readRegB,
-		  reg1, reg2, reg3, reg5, reg6, reg8, reg9, reg10, reg11
+		  reg1, reg2, reg3, reg5, reg6, reg8, reg9, reg10, reg11, reg17
 	);
 	
-	wire [31:0] reg1, reg2, reg3, reg5, reg6, reg8, reg9, reg10, reg11;
+	wire [31:0] reg1, reg2, reg3, reg5, reg6, reg8, reg9, reg10, reg11, reg17;
 	
 	ascii_to_display hex3(clk, reg8[7:0], h3);
 	ascii_to_display hex2(clk, reg9[7:0], h2);
@@ -76,7 +76,14 @@ module plotter_machine(input clk, input rx,
 	assign x_dir = reg3[1];
 	assign y_dir = reg3[0];
 	
-	assign error = reg6[0];
+	assign error = reg17[0];
+	
+	wire [31:0] counter_limit_up, counter_limit_down;
+	
+	assign counter_limit_up = 32'd25000;
+	assign counter_limit_down = 32'd125000;
+	
+	servo_controller pen_mover(clk, reg6[0] ? counter_limit_down : counter_limit_up, pwm);
 	
 	
 	

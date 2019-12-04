@@ -1,7 +1,7 @@
 module regfile(
 	clock, ctrl_writeEnable, ctrl_reset, ctrl_writeReg,
 	ctrl_readRegA, ctrl_readRegB, data_writeReg, data_readRegA,
-	data_readRegB, reg1, reg2, reg3, reg5, reg6, reg8, reg9, reg10, reg11
+	data_readRegB, reg1, reg2, reg3, reg5, reg6, reg8, reg9, reg10, reg11, reg17
 );
 	input clock, ctrl_writeEnable, ctrl_reset;
 	input [4:0] ctrl_writeReg, ctrl_readRegA, ctrl_readRegB;
@@ -30,7 +30,7 @@ module regfile(
 	
 	// Expose more registers here
 	
-	output [31:0] reg1, reg2, reg3, reg5, reg6, reg8, reg9, reg10, reg11;
+	output [31:0] reg1, reg2, reg3, reg5, reg6, reg8, reg9, reg10, reg11, reg17;
 	
 	assign reg1 = registers[1];
 	assign reg2 = registers[2];
@@ -43,5 +43,7 @@ module regfile(
 	assign reg9 = registers[9];
 	assign reg10 = registers[10];
 	assign reg11 = registers[11];
+	
+	assign reg17 = registers[17];
 	
 endmodule

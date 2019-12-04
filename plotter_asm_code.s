@@ -3,7 +3,7 @@
 # r3 contains 4-bit signal information in LSBs (x-y axis enable, x-y axis direction)
 # r4 is counter limit for signal
 # r5 turns system on (begins movement)
-# r6 is error register
+# r6 is lift pen (0) or put down pen (1)
 # r7 stores the current angle
 # r8-11 stores the current instruction
 # r12 is pointer to beginning of current instruction
@@ -11,6 +11,7 @@
 # r14 stores the number from the instruction
 # r15 stores the current x coordinate
 # r16 stores the current y coordinate
+# r17 is error register
 
 
 # IMPORTANT DMEM ADDRESS OFFSETS
@@ -62,6 +63,38 @@ mul $r22, $r22, $r9
 add $r14, $r14, $r22
 
 # Determine the current instruction
+
+addi $r22, $r0, 117 # Up
+bne $r8, $r22, not_up
+# Instruction is up
+addi $r17, $r0, 0
+# Delay 1 second
+addi $r22, $r0, 1250
+addi $r23, $r0, 10000
+mul $r23, $r23, $r22
+addi $r20, $r0, 0
+loop_up: 
+blt $r23, $r20, after_instruction
+addi $r20, $r20, 1
+j loop_up
+
+not_up:
+addi $r22, $r0, 100 # Down
+bne $r8, $r22, not_down
+# Instruction is down
+addi $r17, $r0, 1
+# Delay 1 second
+addi $r22, $r0, 1250
+addi $r23, $r0, 10000
+mul $r23, $r23, $r22
+addi $r20, $r0, 0
+loop_down: 
+blt $r23, $r20, after_instruction
+addi $r20, $r20, 1
+j loop_down
+
+not_down:
+
 addi $r22, $r0, 102 # Forward
 bne $r8, $r22, not_forward
 
@@ -78,7 +111,7 @@ lw $r3, 2440($r7)
 # one second corresponds to 12.5e6 = 12500000
 addi $r22, $r0, 1250
 mul $r22, $r22, $r14
-addi $r4, $r0, 10000
+addi $r4, $r0, 100
 mul $r4, $r4, $r22
 
 # Set counter variable to 0
@@ -135,7 +168,7 @@ j after_instruction
 
 invalid_instruction:
 # We have invalid instruction, set flag and abort
-addi $r6, $r0, 1
+addi $r17, $r0, 1
 j end
 
 after_instruction:

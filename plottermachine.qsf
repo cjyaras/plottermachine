@@ -38,7 +38,7 @@
 
 set_global_assignment -name FAMILY "Cyclone IV E"
 set_global_assignment -name DEVICE EP4CE115F29C7
-set_global_assignment -name TOP_LEVEL_ENTITY servo_controller
+set_global_assignment -name TOP_LEVEL_ENTITY plotter_machine
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION 17.1.0
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "21:30:36  DECEMBER 01, 2019"
 set_global_assignment -name LAST_QUARTUS_VERSION "17.1.0 Lite Edition"
@@ -80,6 +80,14 @@ set_location_assignment PIN_AF23 -to h3[5]
 set_location_assignment PIN_Y19 -to h3[6]
 set_location_assignment PIN_AF16 -to rx
 set_location_assignment PIN_G19 -to reset
+set_location_assignment PIN_AF15 -to x_step_clk
+set_location_assignment PIN_AE21 -to x_dir
+set_location_assignment PIN_AC22 -to y_step_clk
+set_location_assignment PIN_AF21 -to y_dir
+set_location_assignment PIN_F19 -to error
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
 set_global_assignment -name MIF_FILE plotter_asm_code.mif
 set_global_assignment -name MIF_FILE test_asm_code.mif
 set_global_assignment -name VERILOG_FILE WD_bypass.v
@@ -135,13 +143,6 @@ set_global_assignment -name VERILOG_FILE plotter_machine.v
 set_global_assignment -name VERILOG_FILE dmem.v
 set_global_assignment -name VERILOG_FILE ascii_to_display.v
 set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform.vwf
-set_location_assignment PIN_AF15 -to x_step_clk
-set_location_assignment PIN_AE21 -to x_dir
-set_location_assignment PIN_AC22 -to y_step_clk
-set_location_assignment PIN_AF21 -to y_dir
-set_location_assignment PIN_F19 -to error
 set_global_assignment -name VERILOG_FILE servo_controller.v
-set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
-set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
-set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_location_assignment PIN_AD22 -to pwm
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

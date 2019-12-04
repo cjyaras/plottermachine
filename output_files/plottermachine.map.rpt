@@ -1,5 +1,5 @@
 Analysis & Synthesis report for plottermachine
-Mon Dec 02 15:46:24 2019
+Wed Dec 04 00:07:05 2019
 Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
 
 
@@ -17,96 +17,98 @@ Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
   9. State Machine - |plotter_machine|uart_wrapper:comb_5|delay
  10. State Machine - |plotter_machine|uart_wrapper:comb_5|uart_rx:receiver|r_SM_Main
  11. Registers Removed During Synthesis
- 12. General Register Statistics
- 13. Inverted Register Statistics
- 14. Registers Packed Into Inferred Megafunctions
- 15. Multiplexer Restructuring Statistics (Restructuring Performed)
- 16. Source assignments for uart_wrapper:comb_5|dmem:my_dmem|altsyncram:altsyncram_component|altsyncram_m4i1:auto_generated
- 17. Source assignments for imem:my_imem|altsyncram:altsyncram_component|altsyncram_dtb1:auto_generated
- 18. Source assignments for ascii_to_display:hex3|altsyncram:WideOr0_rtl_0|altsyncram_j511:auto_generated
- 19. Source assignments for ascii_to_display:hex2|altsyncram:WideOr0_rtl_0|altsyncram_k511:auto_generated
- 20. Source assignments for ascii_to_display:hex1|altsyncram:WideOr0_rtl_0|altsyncram_l511:auto_generated
- 21. Source assignments for ascii_to_display:hex0|altsyncram:WideOr0_rtl_0|altsyncram_m511:auto_generated
- 22. Parameter Settings for User Entity Instance: uart_wrapper:comb_5|uart_rx:receiver
- 23. Parameter Settings for User Entity Instance: uart_wrapper:comb_5|dmem:my_dmem|altsyncram:altsyncram_component
- 24. Parameter Settings for User Entity Instance: imem:my_imem|altsyncram:altsyncram_component
- 25. Parameter Settings for Inferred Entity Instance: ascii_to_display:hex3|altsyncram:WideOr0_rtl_0
- 26. Parameter Settings for Inferred Entity Instance: ascii_to_display:hex2|altsyncram:WideOr0_rtl_0
- 27. Parameter Settings for Inferred Entity Instance: ascii_to_display:hex1|altsyncram:WideOr0_rtl_0
- 28. Parameter Settings for Inferred Entity Instance: ascii_to_display:hex0|altsyncram:WideOr0_rtl_0
- 29. altsyncram Parameter Settings by Entity Instance
- 30. Port Connectivity Checks: "regfile:my_regfile"
- 31. Port Connectivity Checks: "imem:my_imem"
- 32. Port Connectivity Checks: "processor:comb_3|compare:comb_267"
- 33. Port Connectivity Checks: "processor:comb_3|mult:comb_266|cla_adder:final_add"
- 34. Port Connectivity Checks: "processor:comb_3|mult:comb_266|half_adder:comb_2150"
- 35. Port Connectivity Checks: "processor:comb_3|mult:comb_266|half_adder:comb_2149"
- 36. Port Connectivity Checks: "processor:comb_3|mult:comb_266|half_adder:comb_2148"
- 37. Port Connectivity Checks: "processor:comb_3|mult:comb_266|half_adder:comb_2147"
- 38. Port Connectivity Checks: "processor:comb_3|mult:comb_266|half_adder:comb_2146"
- 39. Port Connectivity Checks: "processor:comb_3|mult:comb_266|half_adder:comb_2145"
- 40. Port Connectivity Checks: "processor:comb_3|mult:comb_266|half_adder:comb_2144"
- 41. Port Connectivity Checks: "processor:comb_3|mult:comb_266|half_adder:comb_2143"
- 42. Port Connectivity Checks: "processor:comb_3|mult:comb_266|half_adder:comb_2142"
- 43. Port Connectivity Checks: "processor:comb_3|mult:comb_266|half_adder:comb_2141"
- 44. Port Connectivity Checks: "processor:comb_3|mult:comb_266|half_adder:comb_2140"
- 45. Port Connectivity Checks: "processor:comb_3|mult:comb_266|half_adder:comb_2139"
- 46. Port Connectivity Checks: "processor:comb_3|mult:comb_266|half_adder:comb_2138"
- 47. Port Connectivity Checks: "processor:comb_3|mult:comb_266|half_adder:comb_2137"
- 48. Port Connectivity Checks: "processor:comb_3|mult:comb_266|half_adder:comb_2136"
- 49. Port Connectivity Checks: "processor:comb_3|mult:comb_266|half_adder:comb_2135"
- 50. Port Connectivity Checks: "processor:comb_3|mult:comb_266|half_adder:comb_2134"
- 51. Port Connectivity Checks: "processor:comb_3|mult:comb_266|half_adder:comb_2133"
- 52. Port Connectivity Checks: "processor:comb_3|mult:comb_266|half_adder:comb_2132"
- 53. Port Connectivity Checks: "processor:comb_3|mult:comb_266|half_adder:comb_2131"
- 54. Port Connectivity Checks: "processor:comb_3|mult:comb_266|half_adder:comb_2130"
- 55. Port Connectivity Checks: "processor:comb_3|mult:comb_266|half_adder:comb_2129"
- 56. Port Connectivity Checks: "processor:comb_3|mult:comb_266|half_adder:comb_2128"
- 57. Port Connectivity Checks: "processor:comb_3|mult:comb_266|half_adder:comb_2127"
- 58. Port Connectivity Checks: "processor:comb_3|mult:comb_266|half_adder:comb_2126"
- 59. Port Connectivity Checks: "processor:comb_3|mult:comb_266|half_adder:comb_2125"
- 60. Port Connectivity Checks: "processor:comb_3|mult:comb_266|half_adder:comb_2124"
- 61. Port Connectivity Checks: "processor:comb_3|mult:comb_266|half_adder:comb_2123"
- 62. Port Connectivity Checks: "processor:comb_3|mult:comb_266|full_adder:comb_2122"
- 63. Port Connectivity Checks: "processor:comb_3|mult:comb_266|full_adder:comb_2121"
- 64. Port Connectivity Checks: "processor:comb_3|mult:comb_266|full_adder:comb_2120"
- 65. Port Connectivity Checks: "processor:comb_3|mult:comb_266|full_adder:comb_2119"
- 66. Port Connectivity Checks: "processor:comb_3|mult:comb_266|full_adder:comb_2118"
- 67. Port Connectivity Checks: "processor:comb_3|mult:comb_266|full_adder:comb_2117"
- 68. Port Connectivity Checks: "processor:comb_3|mult:comb_266|half_adder:comb_2116"
- 69. Port Connectivity Checks: "processor:comb_3|mult:comb_266|half_adder:comb_2092"
- 70. Port Connectivity Checks: "processor:comb_3|mult:comb_266|half_adder:comb_1768"
- 71. Port Connectivity Checks: "processor:comb_3|mult:comb_266|half_adder:comb_1213"
- 72. Port Connectivity Checks: "processor:comb_3|add_one:pc_adder|cla_adder:comb_3"
- 73. Port Connectivity Checks: "processor:comb_3|ra_writer:comb_264|compare:comb_68"
- 74. Port Connectivity Checks: "processor:comb_3|ra_writer:comb_264|decode_opcode:comb_3"
- 75. Port Connectivity Checks: "processor:comb_3|stall_logic:comb_262|decode_opcode:comb_127"
- 76. Port Connectivity Checks: "processor:comb_3|stall_logic:comb_262|decode_opcode:comb_107"
- 77. Port Connectivity Checks: "processor:comb_3|stall_logic:comb_262|compare:comb_41"
- 78. Port Connectivity Checks: "processor:comb_3|stall_logic:comb_262|compare:comb_40"
- 79. Port Connectivity Checks: "processor:comb_3|control_decoder:comb_261|compare:comb_80"
- 80. Port Connectivity Checks: "processor:comb_3|control_decoder:comb_261|compare:comb_79"
- 81. Port Connectivity Checks: "processor:comb_3|control_decoder:comb_261|compare:comb_78"
- 82. Port Connectivity Checks: "processor:comb_3|control_decoder:comb_261|cla_adder:comb_77|eight_bit_block_adder:block2"
- 83. Port Connectivity Checks: "processor:comb_3|control_decoder:comb_261|cla_adder:comb_77|eight_bit_block_adder:block1"
- 84. Port Connectivity Checks: "processor:comb_3|control_decoder:comb_261|cla_adder:comb_77|eight_bit_block_adder:block0"
- 85. Port Connectivity Checks: "processor:comb_3|control_decoder:comb_261|cla_adder:comb_77"
- 86. Port Connectivity Checks: "processor:comb_3|control_decoder:comb_261|decode_opcode:comb_6"
- 87. Port Connectivity Checks: "processor:comb_3|control_decoder:comb_261|decode_opcode:comb_5"
- 88. Port Connectivity Checks: "processor:comb_3|control_decoder:comb_261|decode_opcode:comb_4"
- 89. Port Connectivity Checks: "processor:comb_3|control_decoder:comb_261|decode_opcode:comb_3"
- 90. Port Connectivity Checks: "processor:comb_3|alu_decoder:comb_260|decode_opcode:comb_6"
- 91. Port Connectivity Checks: "processor:comb_3|alu_decoder:comb_260|decode_opcode:comb_5"
- 92. Port Connectivity Checks: "processor:comb_3|alu_decoder:comb_260|decode_opcode:comb_4"
- 93. Port Connectivity Checks: "processor:comb_3|WD_bypass:comb_259|compare:comb_6"
- 94. Port Connectivity Checks: "processor:comb_3|WD_bypass:comb_259|compare:comb_5"
- 95. Port Connectivity Checks: "processor:comb_3|WD_bypass:comb_259"
- 96. Port Connectivity Checks: "processor:comb_3|reg_file_decoder:comb_258|decode_opcode:comb_4"
- 97. Port Connectivity Checks: "processor:comb_3|reg_file_decoder:comb_258|decode_opcode:comb_3"
- 98. Post-Synthesis Netlist Statistics for Top Partition
- 99. Elapsed Time Per Partition
-100. Analysis & Synthesis Messages
-101. Analysis & Synthesis Suppressed Messages
+ 12. Removed Registers Triggering Further Register Optimizations
+ 13. General Register Statistics
+ 14. Inverted Register Statistics
+ 15. Registers Packed Into Inferred Megafunctions
+ 16. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 17. Source assignments for uart_wrapper:comb_5|dmem:my_dmem|altsyncram:altsyncram_component|altsyncram_m4i1:auto_generated
+ 18. Source assignments for imem:my_imem|altsyncram:altsyncram_component|altsyncram_dtb1:auto_generated
+ 19. Source assignments for ascii_to_display:hex3|altsyncram:WideOr0_rtl_0|altsyncram_j511:auto_generated
+ 20. Source assignments for ascii_to_display:hex2|altsyncram:WideOr0_rtl_0|altsyncram_k511:auto_generated
+ 21. Source assignments for ascii_to_display:hex1|altsyncram:WideOr0_rtl_0|altsyncram_l511:auto_generated
+ 22. Source assignments for ascii_to_display:hex0|altsyncram:WideOr0_rtl_0|altsyncram_m511:auto_generated
+ 23. Parameter Settings for User Entity Instance: uart_wrapper:comb_5|uart_rx:receiver
+ 24. Parameter Settings for User Entity Instance: uart_wrapper:comb_5|dmem:my_dmem|altsyncram:altsyncram_component
+ 25. Parameter Settings for User Entity Instance: imem:my_imem|altsyncram:altsyncram_component
+ 26. Parameter Settings for Inferred Entity Instance: ascii_to_display:hex3|altsyncram:WideOr0_rtl_0
+ 27. Parameter Settings for Inferred Entity Instance: ascii_to_display:hex2|altsyncram:WideOr0_rtl_0
+ 28. Parameter Settings for Inferred Entity Instance: ascii_to_display:hex1|altsyncram:WideOr0_rtl_0
+ 29. Parameter Settings for Inferred Entity Instance: ascii_to_display:hex0|altsyncram:WideOr0_rtl_0
+ 30. altsyncram Parameter Settings by Entity Instance
+ 31. Port Connectivity Checks: "servo_controller:pen_mover"
+ 32. Port Connectivity Checks: "regfile:my_regfile"
+ 33. Port Connectivity Checks: "imem:my_imem"
+ 34. Port Connectivity Checks: "processor:comb_3|compare:comb_267"
+ 35. Port Connectivity Checks: "processor:comb_3|mult:comb_266|cla_adder:final_add"
+ 36. Port Connectivity Checks: "processor:comb_3|mult:comb_266|half_adder:comb_2150"
+ 37. Port Connectivity Checks: "processor:comb_3|mult:comb_266|half_adder:comb_2149"
+ 38. Port Connectivity Checks: "processor:comb_3|mult:comb_266|half_adder:comb_2148"
+ 39. Port Connectivity Checks: "processor:comb_3|mult:comb_266|half_adder:comb_2147"
+ 40. Port Connectivity Checks: "processor:comb_3|mult:comb_266|half_adder:comb_2146"
+ 41. Port Connectivity Checks: "processor:comb_3|mult:comb_266|half_adder:comb_2145"
+ 42. Port Connectivity Checks: "processor:comb_3|mult:comb_266|half_adder:comb_2144"
+ 43. Port Connectivity Checks: "processor:comb_3|mult:comb_266|half_adder:comb_2143"
+ 44. Port Connectivity Checks: "processor:comb_3|mult:comb_266|half_adder:comb_2142"
+ 45. Port Connectivity Checks: "processor:comb_3|mult:comb_266|half_adder:comb_2141"
+ 46. Port Connectivity Checks: "processor:comb_3|mult:comb_266|half_adder:comb_2140"
+ 47. Port Connectivity Checks: "processor:comb_3|mult:comb_266|half_adder:comb_2139"
+ 48. Port Connectivity Checks: "processor:comb_3|mult:comb_266|half_adder:comb_2138"
+ 49. Port Connectivity Checks: "processor:comb_3|mult:comb_266|half_adder:comb_2137"
+ 50. Port Connectivity Checks: "processor:comb_3|mult:comb_266|half_adder:comb_2136"
+ 51. Port Connectivity Checks: "processor:comb_3|mult:comb_266|half_adder:comb_2135"
+ 52. Port Connectivity Checks: "processor:comb_3|mult:comb_266|half_adder:comb_2134"
+ 53. Port Connectivity Checks: "processor:comb_3|mult:comb_266|half_adder:comb_2133"
+ 54. Port Connectivity Checks: "processor:comb_3|mult:comb_266|half_adder:comb_2132"
+ 55. Port Connectivity Checks: "processor:comb_3|mult:comb_266|half_adder:comb_2131"
+ 56. Port Connectivity Checks: "processor:comb_3|mult:comb_266|half_adder:comb_2130"
+ 57. Port Connectivity Checks: "processor:comb_3|mult:comb_266|half_adder:comb_2129"
+ 58. Port Connectivity Checks: "processor:comb_3|mult:comb_266|half_adder:comb_2128"
+ 59. Port Connectivity Checks: "processor:comb_3|mult:comb_266|half_adder:comb_2127"
+ 60. Port Connectivity Checks: "processor:comb_3|mult:comb_266|half_adder:comb_2126"
+ 61. Port Connectivity Checks: "processor:comb_3|mult:comb_266|half_adder:comb_2125"
+ 62. Port Connectivity Checks: "processor:comb_3|mult:comb_266|half_adder:comb_2124"
+ 63. Port Connectivity Checks: "processor:comb_3|mult:comb_266|half_adder:comb_2123"
+ 64. Port Connectivity Checks: "processor:comb_3|mult:comb_266|full_adder:comb_2122"
+ 65. Port Connectivity Checks: "processor:comb_3|mult:comb_266|full_adder:comb_2121"
+ 66. Port Connectivity Checks: "processor:comb_3|mult:comb_266|full_adder:comb_2120"
+ 67. Port Connectivity Checks: "processor:comb_3|mult:comb_266|full_adder:comb_2119"
+ 68. Port Connectivity Checks: "processor:comb_3|mult:comb_266|full_adder:comb_2118"
+ 69. Port Connectivity Checks: "processor:comb_3|mult:comb_266|full_adder:comb_2117"
+ 70. Port Connectivity Checks: "processor:comb_3|mult:comb_266|half_adder:comb_2116"
+ 71. Port Connectivity Checks: "processor:comb_3|mult:comb_266|half_adder:comb_2092"
+ 72. Port Connectivity Checks: "processor:comb_3|mult:comb_266|half_adder:comb_1768"
+ 73. Port Connectivity Checks: "processor:comb_3|mult:comb_266|half_adder:comb_1213"
+ 74. Port Connectivity Checks: "processor:comb_3|add_one:pc_adder|cla_adder:comb_3"
+ 75. Port Connectivity Checks: "processor:comb_3|ra_writer:comb_264|compare:comb_68"
+ 76. Port Connectivity Checks: "processor:comb_3|ra_writer:comb_264|decode_opcode:comb_3"
+ 77. Port Connectivity Checks: "processor:comb_3|stall_logic:comb_262|decode_opcode:comb_127"
+ 78. Port Connectivity Checks: "processor:comb_3|stall_logic:comb_262|decode_opcode:comb_107"
+ 79. Port Connectivity Checks: "processor:comb_3|stall_logic:comb_262|compare:comb_41"
+ 80. Port Connectivity Checks: "processor:comb_3|stall_logic:comb_262|compare:comb_40"
+ 81. Port Connectivity Checks: "processor:comb_3|control_decoder:comb_261|compare:comb_80"
+ 82. Port Connectivity Checks: "processor:comb_3|control_decoder:comb_261|compare:comb_79"
+ 83. Port Connectivity Checks: "processor:comb_3|control_decoder:comb_261|compare:comb_78"
+ 84. Port Connectivity Checks: "processor:comb_3|control_decoder:comb_261|cla_adder:comb_77|eight_bit_block_adder:block2"
+ 85. Port Connectivity Checks: "processor:comb_3|control_decoder:comb_261|cla_adder:comb_77|eight_bit_block_adder:block1"
+ 86. Port Connectivity Checks: "processor:comb_3|control_decoder:comb_261|cla_adder:comb_77|eight_bit_block_adder:block0"
+ 87. Port Connectivity Checks: "processor:comb_3|control_decoder:comb_261|cla_adder:comb_77"
+ 88. Port Connectivity Checks: "processor:comb_3|control_decoder:comb_261|decode_opcode:comb_6"
+ 89. Port Connectivity Checks: "processor:comb_3|control_decoder:comb_261|decode_opcode:comb_5"
+ 90. Port Connectivity Checks: "processor:comb_3|control_decoder:comb_261|decode_opcode:comb_4"
+ 91. Port Connectivity Checks: "processor:comb_3|control_decoder:comb_261|decode_opcode:comb_3"
+ 92. Port Connectivity Checks: "processor:comb_3|alu_decoder:comb_260|decode_opcode:comb_6"
+ 93. Port Connectivity Checks: "processor:comb_3|alu_decoder:comb_260|decode_opcode:comb_5"
+ 94. Port Connectivity Checks: "processor:comb_3|alu_decoder:comb_260|decode_opcode:comb_4"
+ 95. Port Connectivity Checks: "processor:comb_3|WD_bypass:comb_259|compare:comb_6"
+ 96. Port Connectivity Checks: "processor:comb_3|WD_bypass:comb_259|compare:comb_5"
+ 97. Port Connectivity Checks: "processor:comb_3|WD_bypass:comb_259"
+ 98. Port Connectivity Checks: "processor:comb_3|reg_file_decoder:comb_258|decode_opcode:comb_4"
+ 99. Port Connectivity Checks: "processor:comb_3|reg_file_decoder:comb_258|decode_opcode:comb_3"
+100. Post-Synthesis Netlist Statistics for Top Partition
+101. Elapsed Time Per Partition
+102. Analysis & Synthesis Messages
+103. Analysis & Synthesis Suppressed Messages
 
 
 
@@ -132,16 +134,16 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Mon Dec 02 15:46:24 2019       ;
+; Analysis & Synthesis Status        ; Successful - Wed Dec 04 00:07:05 2019       ;
 ; Quartus Prime Version              ; 17.1.0 Build 590 10/25/2017 SJ Lite Edition ;
 ; Revision Name                      ; plottermachine                              ;
 ; Top-level Entity Name              ; plotter_machine                             ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; 5,896                                       ;
-;     Total combinational functions  ; 4,807                                       ;
+; Total logic elements               ; 5,886                                       ;
+;     Total combinational functions  ; 4,797                                       ;
 ;     Dedicated logic registers      ; 1,603                                       ;
 ; Total registers                    ; 1603                                        ;
-; Total pins                         ; 36                                          ;
+; Total pins                         ; 37                                          ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 269,312                                     ;
 ; Embedded Multiplier 9-bit elements ; 0                                           ;
@@ -311,6 +313,7 @@ refer to the applicable agreement for further details.
 ; plotter_machine.v                ; yes             ; User Verilog HDL File            ; C:/Users/cy123/Desktop/plottermachine/plotter_machine.v                      ;         ;
 ; dmem.v                           ; yes             ; User Wizard-Generated File       ; C:/Users/cy123/Desktop/plottermachine/dmem.v                                 ;         ;
 ; ascii_to_display.v               ; yes             ; User Verilog HDL File            ; C:/Users/cy123/Desktop/plottermachine/ascii_to_display.v                     ;         ;
+; servo_controller.v               ; yes             ; User Verilog HDL File            ; C:/Users/cy123/Desktop/plottermachine/servo_controller.v                     ;         ;
 ; altsyncram.tdf                   ; yes             ; Megafunction                     ; c:/intelfpga_lite/17.1/quartus/libraries/megafunctions/altsyncram.tdf        ;         ;
 ; stratix_ram_block.inc            ; yes             ; Megafunction                     ; c:/intelfpga_lite/17.1/quartus/libraries/megafunctions/stratix_ram_block.inc ;         ;
 ; lpm_mux.inc                      ; yes             ; Megafunction                     ; c:/intelfpga_lite/17.1/quartus/libraries/megafunctions/lpm_mux.inc           ;         ;
@@ -334,31 +337,31 @@ refer to the applicable agreement for further details.
 +---------------------------------------------+-----------+
 ; Resource                                    ; Usage     ;
 +---------------------------------------------+-----------+
-; Estimated Total logic elements              ; 5,896     ;
+; Estimated Total logic elements              ; 5,886     ;
 ;                                             ;           ;
-; Total combinational functions               ; 4807      ;
+; Total combinational functions               ; 4797      ;
 ; Logic element usage by number of LUT inputs ;           ;
-;     -- 4 input functions                    ; 3816      ;
-;     -- 3 input functions                    ; 679       ;
-;     -- <=2 input functions                  ; 312       ;
+;     -- 4 input functions                    ; 3859      ;
+;     -- 3 input functions                    ; 659       ;
+;     -- <=2 input functions                  ; 279       ;
 ;                                             ;           ;
 ; Logic elements by mode                      ;           ;
-;     -- normal mode                          ; 4641      ;
+;     -- normal mode                          ; 4631      ;
 ;     -- arithmetic mode                      ; 166       ;
 ;                                             ;           ;
 ; Total registers                             ; 1603      ;
 ;     -- Dedicated logic registers            ; 1603      ;
 ;     -- I/O registers                        ; 0         ;
 ;                                             ;           ;
-; I/O pins                                    ; 36        ;
+; I/O pins                                    ; 37        ;
 ; Total memory bits                           ; 269312    ;
 ;                                             ;           ;
 ; Embedded Multiplier 9-bit elements          ; 0         ;
 ;                                             ;           ;
 ; Maximum fan-out node                        ; clk~input ;
 ; Maximum fan-out                             ; 1682      ;
-; Total fan-out                               ; 25353     ;
-; Average fan-out                             ; 3.86      ;
+; Total fan-out                               ; 25400     ;
+; Average fan-out                             ; 3.87      ;
 +---------------------------------------------+-----------+
 
 
@@ -367,7 +370,7 @@ refer to the applicable agreement for further details.
 +----------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------------------------------------------------------------------------+-----------------------+--------------+
 ; Compilation Hierarchy Node                   ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                             ; Entity Name           ; Library Name ;
 +----------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------------------------------------------------------------------------------------------------+-----------------------+--------------+
-; |plotter_machine                             ; 4807 (0)            ; 1603 (0)                  ; 269312      ; 0            ; 0       ; 0         ; 36   ; 0            ; |plotter_machine                                                                                                                ; plotter_machine       ; work         ;
+; |plotter_machine                             ; 4797 (0)            ; 1603 (0)                  ; 269312      ; 0            ; 0       ; 0         ; 37   ; 0            ; |plotter_machine                                                                                                                ; plotter_machine       ; work         ;
 ;    |ascii_to_display:hex0|                   ; 0 (0)               ; 0 (0)                     ; 1792        ; 0            ; 0       ; 0         ; 0    ; 0            ; |plotter_machine|ascii_to_display:hex0                                                                                          ; ascii_to_display      ; work         ;
 ;       |altsyncram:WideOr0_rtl_0|             ; 0 (0)               ; 0 (0)                     ; 1792        ; 0            ; 0       ; 0         ; 0    ; 0            ; |plotter_machine|ascii_to_display:hex0|altsyncram:WideOr0_rtl_0                                                                 ; altsyncram            ; work         ;
 ;          |altsyncram_m511:auto_generated|    ; 0 (0)               ; 0 (0)                     ; 1792        ; 0            ; 0       ; 0         ; 0    ; 0            ; |plotter_machine|ascii_to_display:hex0|altsyncram:WideOr0_rtl_0|altsyncram_m511:auto_generated                                  ; altsyncram_m511       ; work         ;
@@ -383,7 +386,7 @@ refer to the applicable agreement for further details.
 ;    |imem:my_imem|                            ; 0 (0)               ; 0 (0)                     ; 131072      ; 0            ; 0       ; 0         ; 0    ; 0            ; |plotter_machine|imem:my_imem                                                                                                   ; imem                  ; work         ;
 ;       |altsyncram:altsyncram_component|      ; 0 (0)               ; 0 (0)                     ; 131072      ; 0            ; 0       ; 0         ; 0    ; 0            ; |plotter_machine|imem:my_imem|altsyncram:altsyncram_component                                                                   ; altsyncram            ; work         ;
 ;          |altsyncram_dtb1:auto_generated|    ; 0 (0)               ; 0 (0)                     ; 131072      ; 0            ; 0       ; 0         ; 0    ; 0            ; |plotter_machine|imem:my_imem|altsyncram:altsyncram_component|altsyncram_dtb1:auto_generated                                    ; altsyncram_dtb1       ; work         ;
-;    |processor:comb_3|                        ; 4464 (818)          ; 480 (0)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |plotter_machine|processor:comb_3                                                                                               ; processor             ; work         ;
+;    |processor:comb_3|                        ; 4457 (819)          ; 480 (0)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |plotter_machine|processor:comb_3                                                                                               ; processor             ; work         ;
 ;       |DX_latch:comb_60|                     ; 35 (0)              ; 128 (0)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |plotter_machine|processor:comb_3|DX_latch:comb_60                                                                              ; DX_latch              ; work         ;
 ;          |register:a|                        ; 35 (35)             ; 32 (32)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |plotter_machine|processor:comb_3|DX_latch:comb_60|register:a                                                                   ; register              ; work         ;
 ;          |register:b|                        ; 0 (0)               ; 32 (32)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |plotter_machine|processor:comb_3|DX_latch:comb_60|register:b                                                                   ; register              ; work         ;
@@ -441,18 +444,18 @@ refer to the applicable agreement for further details.
 ;                |single_bit_adder:bit5|       ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |plotter_machine|processor:comb_3|add_one:pc_adder|cla_adder:comb_3|eight_bit_block_adder:block3|single_bit_adder:bit5          ; single_bit_adder      ; work         ;
 ;                |single_bit_adder:bit6|       ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |plotter_machine|processor:comb_3|add_one:pc_adder|cla_adder:comb_3|eight_bit_block_adder:block3|single_bit_adder:bit6          ; single_bit_adder      ; work         ;
 ;                |single_bit_adder:bit7|       ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |plotter_machine|processor:comb_3|add_one:pc_adder|cla_adder:comb_3|eight_bit_block_adder:block3|single_bit_adder:bit7          ; single_bit_adder      ; work         ;
-;       |alu:comb_265|                         ; 578 (38)            ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |plotter_machine|processor:comb_3|alu:comb_265                                                                                  ; alu                   ; work         ;
+;       |alu:comb_265|                         ; 572 (34)            ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |plotter_machine|processor:comb_3|alu:comb_265                                                                                  ; alu                   ; work         ;
 ;          |and_gate:my_and|                   ; 4 (4)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |plotter_machine|processor:comb_3|alu:comb_265|and_gate:my_and                                                                  ; and_gate              ; work         ;
-;          |cla_adder:my_add_sub|              ; 171 (18)            ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |plotter_machine|processor:comb_3|alu:comb_265|cla_adder:my_add_sub                                                             ; cla_adder             ; work         ;
-;             |eight_bit_block_adder:block0|   ; 32 (24)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |plotter_machine|processor:comb_3|alu:comb_265|cla_adder:my_add_sub|eight_bit_block_adder:block0                                ; eight_bit_block_adder ; work         ;
+;          |cla_adder:my_add_sub|              ; 169 (19)            ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |plotter_machine|processor:comb_3|alu:comb_265|cla_adder:my_add_sub                                                             ; cla_adder             ; work         ;
+;             |eight_bit_block_adder:block0|   ; 25 (18)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |plotter_machine|processor:comb_3|alu:comb_265|cla_adder:my_add_sub|eight_bit_block_adder:block0                                ; eight_bit_block_adder ; work         ;
 ;                |single_bit_adder:bit1|       ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |plotter_machine|processor:comb_3|alu:comb_265|cla_adder:my_add_sub|eight_bit_block_adder:block0|single_bit_adder:bit1          ; single_bit_adder      ; work         ;
 ;                |single_bit_adder:bit2|       ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |plotter_machine|processor:comb_3|alu:comb_265|cla_adder:my_add_sub|eight_bit_block_adder:block0|single_bit_adder:bit2          ; single_bit_adder      ; work         ;
 ;                |single_bit_adder:bit3|       ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |plotter_machine|processor:comb_3|alu:comb_265|cla_adder:my_add_sub|eight_bit_block_adder:block0|single_bit_adder:bit3          ; single_bit_adder      ; work         ;
 ;                |single_bit_adder:bit4|       ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |plotter_machine|processor:comb_3|alu:comb_265|cla_adder:my_add_sub|eight_bit_block_adder:block0|single_bit_adder:bit4          ; single_bit_adder      ; work         ;
 ;                |single_bit_adder:bit5|       ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |plotter_machine|processor:comb_3|alu:comb_265|cla_adder:my_add_sub|eight_bit_block_adder:block0|single_bit_adder:bit5          ; single_bit_adder      ; work         ;
-;                |single_bit_adder:bit6|       ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |plotter_machine|processor:comb_3|alu:comb_265|cla_adder:my_add_sub|eight_bit_block_adder:block0|single_bit_adder:bit6          ; single_bit_adder      ; work         ;
+;                |single_bit_adder:bit6|       ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |plotter_machine|processor:comb_3|alu:comb_265|cla_adder:my_add_sub|eight_bit_block_adder:block0|single_bit_adder:bit6          ; single_bit_adder      ; work         ;
 ;                |single_bit_adder:bit7|       ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |plotter_machine|processor:comb_3|alu:comb_265|cla_adder:my_add_sub|eight_bit_block_adder:block0|single_bit_adder:bit7          ; single_bit_adder      ; work         ;
-;             |eight_bit_block_adder:block1|   ; 45 (34)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |plotter_machine|processor:comb_3|alu:comb_265|cla_adder:my_add_sub|eight_bit_block_adder:block1                                ; eight_bit_block_adder ; work         ;
+;             |eight_bit_block_adder:block1|   ; 46 (35)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |plotter_machine|processor:comb_3|alu:comb_265|cla_adder:my_add_sub|eight_bit_block_adder:block1                                ; eight_bit_block_adder ; work         ;
 ;                |single_bit_adder:bit0|       ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |plotter_machine|processor:comb_3|alu:comb_265|cla_adder:my_add_sub|eight_bit_block_adder:block1|single_bit_adder:bit0          ; single_bit_adder      ; work         ;
 ;                |single_bit_adder:bit1|       ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |plotter_machine|processor:comb_3|alu:comb_265|cla_adder:my_add_sub|eight_bit_block_adder:block1|single_bit_adder:bit1          ; single_bit_adder      ; work         ;
 ;                |single_bit_adder:bit2|       ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |plotter_machine|processor:comb_3|alu:comb_265|cla_adder:my_add_sub|eight_bit_block_adder:block1|single_bit_adder:bit2          ; single_bit_adder      ; work         ;
@@ -461,7 +464,7 @@ refer to the applicable agreement for further details.
 ;                |single_bit_adder:bit5|       ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |plotter_machine|processor:comb_3|alu:comb_265|cla_adder:my_add_sub|eight_bit_block_adder:block1|single_bit_adder:bit5          ; single_bit_adder      ; work         ;
 ;                |single_bit_adder:bit6|       ; 3 (3)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |plotter_machine|processor:comb_3|alu:comb_265|cla_adder:my_add_sub|eight_bit_block_adder:block1|single_bit_adder:bit6          ; single_bit_adder      ; work         ;
 ;                |single_bit_adder:bit7|       ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |plotter_machine|processor:comb_3|alu:comb_265|cla_adder:my_add_sub|eight_bit_block_adder:block1|single_bit_adder:bit7          ; single_bit_adder      ; work         ;
-;             |eight_bit_block_adder:block2|   ; 41 (33)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |plotter_machine|processor:comb_3|alu:comb_265|cla_adder:my_add_sub|eight_bit_block_adder:block2                                ; eight_bit_block_adder ; work         ;
+;             |eight_bit_block_adder:block2|   ; 42 (34)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |plotter_machine|processor:comb_3|alu:comb_265|cla_adder:my_add_sub|eight_bit_block_adder:block2                                ; eight_bit_block_adder ; work         ;
 ;                |single_bit_adder:bit0|       ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |plotter_machine|processor:comb_3|alu:comb_265|cla_adder:my_add_sub|eight_bit_block_adder:block2|single_bit_adder:bit0          ; single_bit_adder      ; work         ;
 ;                |single_bit_adder:bit1|       ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |plotter_machine|processor:comb_3|alu:comb_265|cla_adder:my_add_sub|eight_bit_block_adder:block2|single_bit_adder:bit1          ; single_bit_adder      ; work         ;
 ;                |single_bit_adder:bit2|       ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |plotter_machine|processor:comb_3|alu:comb_265|cla_adder:my_add_sub|eight_bit_block_adder:block2|single_bit_adder:bit2          ; single_bit_adder      ; work         ;
@@ -470,7 +473,7 @@ refer to the applicable agreement for further details.
 ;                |single_bit_adder:bit5|       ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |plotter_machine|processor:comb_3|alu:comb_265|cla_adder:my_add_sub|eight_bit_block_adder:block2|single_bit_adder:bit5          ; single_bit_adder      ; work         ;
 ;                |single_bit_adder:bit6|       ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |plotter_machine|processor:comb_3|alu:comb_265|cla_adder:my_add_sub|eight_bit_block_adder:block2|single_bit_adder:bit6          ; single_bit_adder      ; work         ;
 ;                |single_bit_adder:bit7|       ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |plotter_machine|processor:comb_3|alu:comb_265|cla_adder:my_add_sub|eight_bit_block_adder:block2|single_bit_adder:bit7          ; single_bit_adder      ; work         ;
-;             |eight_bit_block_adder:block3|   ; 35 (26)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |plotter_machine|processor:comb_3|alu:comb_265|cla_adder:my_add_sub|eight_bit_block_adder:block3                                ; eight_bit_block_adder ; work         ;
+;             |eight_bit_block_adder:block3|   ; 37 (28)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |plotter_machine|processor:comb_3|alu:comb_265|cla_adder:my_add_sub|eight_bit_block_adder:block3                                ; eight_bit_block_adder ; work         ;
 ;                |single_bit_adder:bit0|       ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |plotter_machine|processor:comb_3|alu:comb_265|cla_adder:my_add_sub|eight_bit_block_adder:block3|single_bit_adder:bit0          ; single_bit_adder      ; work         ;
 ;                |single_bit_adder:bit1|       ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |plotter_machine|processor:comb_3|alu:comb_265|cla_adder:my_add_sub|eight_bit_block_adder:block3|single_bit_adder:bit1          ; single_bit_adder      ; work         ;
 ;                |single_bit_adder:bit2|       ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |plotter_machine|processor:comb_3|alu:comb_265|cla_adder:my_add_sub|eight_bit_block_adder:block3|single_bit_adder:bit2          ; single_bit_adder      ; work         ;
@@ -491,12 +494,12 @@ refer to the applicable agreement for further details.
 ;             |mux_2:fourthmux|                ; 63 (63)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |plotter_machine|processor:comb_3|alu:comb_265|sra:my_sra|mux_2:fourthmux                                                       ; mux_2                 ; work         ;
 ;             |mux_2:secondmux|                ; 41 (41)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |plotter_machine|processor:comb_3|alu:comb_265|sra:my_sra|mux_2:secondmux                                                       ; mux_2                 ; work         ;
 ;             |mux_2:thirdmux|                 ; 20 (20)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |plotter_machine|processor:comb_3|alu:comb_265|sra:my_sra|mux_2:thirdmux                                                        ; mux_2                 ; work         ;
-;       |alu_decoder:comb_260|                 ; 283 (281)           ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |plotter_machine|processor:comb_3|alu_decoder:comb_260                                                                          ; alu_decoder           ; work         ;
+;       |alu_decoder:comb_260|                 ; 286 (284)           ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |plotter_machine|processor:comb_3|alu_decoder:comb_260                                                                          ; alu_decoder           ; work         ;
 ;          |compare:comb_25|                   ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |plotter_machine|processor:comb_3|alu_decoder:comb_260|compare:comb_25                                                          ; compare               ; work         ;
 ;          |compare:comb_28|                   ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |plotter_machine|processor:comb_3|alu_decoder:comb_260|compare:comb_28                                                          ; compare               ; work         ;
 ;       |compare:comb_267|                     ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |plotter_machine|processor:comb_3|compare:comb_267                                                                              ; compare               ; work         ;
-;       |control_decoder:comb_261|             ; 301 (223)           ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |plotter_machine|processor:comb_3|control_decoder:comb_261                                                                      ; control_decoder       ; work         ;
-;          |cla_adder:comb_77|                 ; 74 (11)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |plotter_machine|processor:comb_3|control_decoder:comb_261|cla_adder:comb_77                                                    ; cla_adder             ; work         ;
+;       |control_decoder:comb_261|             ; 301 (224)           ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |plotter_machine|processor:comb_3|control_decoder:comb_261                                                                      ; control_decoder       ; work         ;
+;          |cla_adder:comb_77|                 ; 74 (10)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |plotter_machine|processor:comb_3|control_decoder:comb_261|cla_adder:comb_77                                                    ; cla_adder             ; work         ;
 ;             |eight_bit_block_adder:block0|   ; 15 (8)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |plotter_machine|processor:comb_3|control_decoder:comb_261|cla_adder:comb_77|eight_bit_block_adder:block0                       ; eight_bit_block_adder ; work         ;
 ;                |single_bit_adder:bit1|       ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |plotter_machine|processor:comb_3|control_decoder:comb_261|cla_adder:comb_77|eight_bit_block_adder:block0|single_bit_adder:bit1 ; single_bit_adder      ; work         ;
 ;                |single_bit_adder:bit2|       ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |plotter_machine|processor:comb_3|control_decoder:comb_261|cla_adder:comb_77|eight_bit_block_adder:block0|single_bit_adder:bit2 ; single_bit_adder      ; work         ;
@@ -505,7 +508,7 @@ refer to the applicable agreement for further details.
 ;                |single_bit_adder:bit5|       ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |plotter_machine|processor:comb_3|control_decoder:comb_261|cla_adder:comb_77|eight_bit_block_adder:block0|single_bit_adder:bit5 ; single_bit_adder      ; work         ;
 ;                |single_bit_adder:bit6|       ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |plotter_machine|processor:comb_3|control_decoder:comb_261|cla_adder:comb_77|eight_bit_block_adder:block0|single_bit_adder:bit6 ; single_bit_adder      ; work         ;
 ;                |single_bit_adder:bit7|       ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |plotter_machine|processor:comb_3|control_decoder:comb_261|cla_adder:comb_77|eight_bit_block_adder:block0|single_bit_adder:bit7 ; single_bit_adder      ; work         ;
-;             |eight_bit_block_adder:block1|   ; 22 (15)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |plotter_machine|processor:comb_3|control_decoder:comb_261|cla_adder:comb_77|eight_bit_block_adder:block1                       ; eight_bit_block_adder ; work         ;
+;             |eight_bit_block_adder:block1|   ; 23 (16)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |plotter_machine|processor:comb_3|control_decoder:comb_261|cla_adder:comb_77|eight_bit_block_adder:block1                       ; eight_bit_block_adder ; work         ;
 ;                |single_bit_adder:bit0|       ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |plotter_machine|processor:comb_3|control_decoder:comb_261|cla_adder:comb_77|eight_bit_block_adder:block1|single_bit_adder:bit0 ; single_bit_adder      ; work         ;
 ;                |single_bit_adder:bit1|       ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |plotter_machine|processor:comb_3|control_decoder:comb_261|cla_adder:comb_77|eight_bit_block_adder:block1|single_bit_adder:bit1 ; single_bit_adder      ; work         ;
 ;                |single_bit_adder:bit2|       ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |plotter_machine|processor:comb_3|control_decoder:comb_261|cla_adder:comb_77|eight_bit_block_adder:block1|single_bit_adder:bit2 ; single_bit_adder      ; work         ;
@@ -529,30 +532,29 @@ refer to the applicable agreement for further details.
 ;                |single_bit_adder:bit3|       ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |plotter_machine|processor:comb_3|control_decoder:comb_261|cla_adder:comb_77|eight_bit_block_adder:block3|single_bit_adder:bit3 ; single_bit_adder      ; work         ;
 ;                |single_bit_adder:bit4|       ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |plotter_machine|processor:comb_3|control_decoder:comb_261|cla_adder:comb_77|eight_bit_block_adder:block3|single_bit_adder:bit4 ; single_bit_adder      ; work         ;
 ;                |single_bit_adder:bit7|       ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |plotter_machine|processor:comb_3|control_decoder:comb_261|cla_adder:comb_77|eight_bit_block_adder:block3|single_bit_adder:bit7 ; single_bit_adder      ; work         ;
-;          |compare:comb_249|                  ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |plotter_machine|processor:comb_3|control_decoder:comb_261|compare:comb_249                                                     ; compare               ; work         ;
 ;          |decode_opcode:comb_5|              ; 3 (3)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |plotter_machine|processor:comb_3|control_decoder:comb_261|decode_opcode:comb_5                                                 ; decode_opcode         ; work         ;
-;       |mult:comb_266|                        ; 1409 (329)          ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |plotter_machine|processor:comb_3|mult:comb_266                                                                                 ; mult                  ; work         ;
-;          |cla_adder:final_add|               ; 123 (5)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |plotter_machine|processor:comb_3|mult:comb_266|cla_adder:final_add                                                             ; cla_adder             ; work         ;
-;             |eight_bit_block_adder:block1|   ; 20 (17)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |plotter_machine|processor:comb_3|mult:comb_266|cla_adder:final_add|eight_bit_block_adder:block1                                ; eight_bit_block_adder ; work         ;
+;       |mult:comb_266|                        ; 1404 (329)          ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |plotter_machine|processor:comb_3|mult:comb_266                                                                                 ; mult                  ; work         ;
+;          |cla_adder:final_add|               ; 125 (5)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |plotter_machine|processor:comb_3|mult:comb_266|cla_adder:final_add                                                             ; cla_adder             ; work         ;
+;             |eight_bit_block_adder:block1|   ; 19 (16)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |plotter_machine|processor:comb_3|mult:comb_266|cla_adder:final_add|eight_bit_block_adder:block1                                ; eight_bit_block_adder ; work         ;
 ;                |single_bit_adder:bit2|       ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |plotter_machine|processor:comb_3|mult:comb_266|cla_adder:final_add|eight_bit_block_adder:block1|single_bit_adder:bit2          ; single_bit_adder      ; work         ;
 ;                |single_bit_adder:bit3|       ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |plotter_machine|processor:comb_3|mult:comb_266|cla_adder:final_add|eight_bit_block_adder:block1|single_bit_adder:bit3          ; single_bit_adder      ; work         ;
 ;                |single_bit_adder:bit5|       ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |plotter_machine|processor:comb_3|mult:comb_266|cla_adder:final_add|eight_bit_block_adder:block1|single_bit_adder:bit5          ; single_bit_adder      ; work         ;
-;             |eight_bit_block_adder:block2|   ; 31 (28)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |plotter_machine|processor:comb_3|mult:comb_266|cla_adder:final_add|eight_bit_block_adder:block2                                ; eight_bit_block_adder ; work         ;
+;             |eight_bit_block_adder:block2|   ; 33 (30)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |plotter_machine|processor:comb_3|mult:comb_266|cla_adder:final_add|eight_bit_block_adder:block2                                ; eight_bit_block_adder ; work         ;
 ;                |single_bit_adder:bit1|       ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |plotter_machine|processor:comb_3|mult:comb_266|cla_adder:final_add|eight_bit_block_adder:block2|single_bit_adder:bit1          ; single_bit_adder      ; work         ;
 ;                |single_bit_adder:bit2|       ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |plotter_machine|processor:comb_3|mult:comb_266|cla_adder:final_add|eight_bit_block_adder:block2|single_bit_adder:bit2          ; single_bit_adder      ; work         ;
 ;                |single_bit_adder:bit4|       ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |plotter_machine|processor:comb_3|mult:comb_266|cla_adder:final_add|eight_bit_block_adder:block2|single_bit_adder:bit4          ; single_bit_adder      ; work         ;
-;             |eight_bit_block_adder:block3|   ; 67 (24)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |plotter_machine|processor:comb_3|mult:comb_266|cla_adder:final_add|eight_bit_block_adder:block3                                ; eight_bit_block_adder ; work         ;
+;             |eight_bit_block_adder:block3|   ; 68 (24)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |plotter_machine|processor:comb_3|mult:comb_266|cla_adder:final_add|eight_bit_block_adder:block3                                ; eight_bit_block_adder ; work         ;
 ;                |single_bit_adder:bit0|       ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |plotter_machine|processor:comb_3|mult:comb_266|cla_adder:final_add|eight_bit_block_adder:block3|single_bit_adder:bit0          ; single_bit_adder      ; work         ;
 ;                |single_bit_adder:bit2|       ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |plotter_machine|processor:comb_3|mult:comb_266|cla_adder:final_add|eight_bit_block_adder:block3|single_bit_adder:bit2          ; single_bit_adder      ; work         ;
 ;                |single_bit_adder:bit3|       ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |plotter_machine|processor:comb_3|mult:comb_266|cla_adder:final_add|eight_bit_block_adder:block3|single_bit_adder:bit3          ; single_bit_adder      ; work         ;
 ;                |single_bit_adder:bit4|       ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |plotter_machine|processor:comb_3|mult:comb_266|cla_adder:final_add|eight_bit_block_adder:block3|single_bit_adder:bit4          ; single_bit_adder      ; work         ;
 ;                |single_bit_adder:bit6|       ; 5 (5)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |plotter_machine|processor:comb_3|mult:comb_266|cla_adder:final_add|eight_bit_block_adder:block3|single_bit_adder:bit6          ; single_bit_adder      ; work         ;
-;                |single_bit_adder:bit7|       ; 33 (33)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |plotter_machine|processor:comb_3|mult:comb_266|cla_adder:final_add|eight_bit_block_adder:block3|single_bit_adder:bit7          ; single_bit_adder      ; work         ;
+;                |single_bit_adder:bit7|       ; 34 (34)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |plotter_machine|processor:comb_3|mult:comb_266|cla_adder:final_add|eight_bit_block_adder:block3|single_bit_adder:bit7          ; single_bit_adder      ; work         ;
 ;          |full_adder:comb_1028|              ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |plotter_machine|processor:comb_3|mult:comb_266|full_adder:comb_1028                                                            ; full_adder            ; work         ;
 ;          |full_adder:comb_1029|              ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |plotter_machine|processor:comb_3|mult:comb_266|full_adder:comb_1029                                                            ; full_adder            ; work         ;
 ;          |full_adder:comb_1030|              ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |plotter_machine|processor:comb_3|mult:comb_266|full_adder:comb_1030                                                            ; full_adder            ; work         ;
 ;          |full_adder:comb_1032|              ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |plotter_machine|processor:comb_3|mult:comb_266|full_adder:comb_1032                                                            ; full_adder            ; work         ;
-;          |full_adder:comb_1033|              ; 4 (4)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |plotter_machine|processor:comb_3|mult:comb_266|full_adder:comb_1033                                                            ; full_adder            ; work         ;
+;          |full_adder:comb_1033|              ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |plotter_machine|processor:comb_3|mult:comb_266|full_adder:comb_1033                                                            ; full_adder            ; work         ;
 ;          |full_adder:comb_1034|              ; 3 (3)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |plotter_machine|processor:comb_3|mult:comb_266|full_adder:comb_1034                                                            ; full_adder            ; work         ;
 ;          |full_adder:comb_1035|              ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |plotter_machine|processor:comb_3|mult:comb_266|full_adder:comb_1035                                                            ; full_adder            ; work         ;
 ;          |full_adder:comb_1036|              ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |plotter_machine|processor:comb_3|mult:comb_266|full_adder:comb_1036                                                            ; full_adder            ; work         ;
@@ -711,7 +713,7 @@ refer to the applicable agreement for further details.
 ;          |full_adder:comb_1377|              ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |plotter_machine|processor:comb_3|mult:comb_266|full_adder:comb_1377                                                            ; full_adder            ; work         ;
 ;          |full_adder:comb_1378|              ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |plotter_machine|processor:comb_3|mult:comb_266|full_adder:comb_1378                                                            ; full_adder            ; work         ;
 ;          |full_adder:comb_1379|              ; 3 (3)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |plotter_machine|processor:comb_3|mult:comb_266|full_adder:comb_1379                                                            ; full_adder            ; work         ;
-;          |full_adder:comb_1380|              ; 4 (4)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |plotter_machine|processor:comb_3|mult:comb_266|full_adder:comb_1380                                                            ; full_adder            ; work         ;
+;          |full_adder:comb_1380|              ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |plotter_machine|processor:comb_3|mult:comb_266|full_adder:comb_1380                                                            ; full_adder            ; work         ;
 ;          |full_adder:comb_1381|              ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |plotter_machine|processor:comb_3|mult:comb_266|full_adder:comb_1381                                                            ; full_adder            ; work         ;
 ;          |full_adder:comb_1382|              ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |plotter_machine|processor:comb_3|mult:comb_266|full_adder:comb_1382                                                            ; full_adder            ; work         ;
 ;          |full_adder:comb_1383|              ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |plotter_machine|processor:comb_3|mult:comb_266|full_adder:comb_1383                                                            ; full_adder            ; work         ;
@@ -796,7 +798,7 @@ refer to the applicable agreement for further details.
 ;          |full_adder:comb_1468|              ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |plotter_machine|processor:comb_3|mult:comb_266|full_adder:comb_1468                                                            ; full_adder            ; work         ;
 ;          |full_adder:comb_1469|              ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |plotter_machine|processor:comb_3|mult:comb_266|full_adder:comb_1469                                                            ; full_adder            ; work         ;
 ;          |full_adder:comb_1470|              ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |plotter_machine|processor:comb_3|mult:comb_266|full_adder:comb_1470                                                            ; full_adder            ; work         ;
-;          |full_adder:comb_1472|              ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |plotter_machine|processor:comb_3|mult:comb_266|full_adder:comb_1472                                                            ; full_adder            ; work         ;
+;          |full_adder:comb_1472|              ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |plotter_machine|processor:comb_3|mult:comb_266|full_adder:comb_1472                                                            ; full_adder            ; work         ;
 ;          |full_adder:comb_1473|              ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |plotter_machine|processor:comb_3|mult:comb_266|full_adder:comb_1473                                                            ; full_adder            ; work         ;
 ;          |full_adder:comb_1474|              ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |plotter_machine|processor:comb_3|mult:comb_266|full_adder:comb_1474                                                            ; full_adder            ; work         ;
 ;          |full_adder:comb_1475|              ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |plotter_machine|processor:comb_3|mult:comb_266|full_adder:comb_1475                                                            ; full_adder            ; work         ;
@@ -863,8 +865,8 @@ refer to the applicable agreement for further details.
 ;          |full_adder:comb_1670|              ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |plotter_machine|processor:comb_3|mult:comb_266|full_adder:comb_1670                                                            ; full_adder            ; work         ;
 ;          |full_adder:comb_1671|              ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |plotter_machine|processor:comb_3|mult:comb_266|full_adder:comb_1671                                                            ; full_adder            ; work         ;
 ;          |full_adder:comb_1672|              ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |plotter_machine|processor:comb_3|mult:comb_266|full_adder:comb_1672                                                            ; full_adder            ; work         ;
-;          |full_adder:comb_1673|              ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |plotter_machine|processor:comb_3|mult:comb_266|full_adder:comb_1673                                                            ; full_adder            ; work         ;
-;          |full_adder:comb_1674|              ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |plotter_machine|processor:comb_3|mult:comb_266|full_adder:comb_1674                                                            ; full_adder            ; work         ;
+;          |full_adder:comb_1673|              ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |plotter_machine|processor:comb_3|mult:comb_266|full_adder:comb_1673                                                            ; full_adder            ; work         ;
+;          |full_adder:comb_1674|              ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |plotter_machine|processor:comb_3|mult:comb_266|full_adder:comb_1674                                                            ; full_adder            ; work         ;
 ;          |full_adder:comb_1675|              ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |plotter_machine|processor:comb_3|mult:comb_266|full_adder:comb_1675                                                            ; full_adder            ; work         ;
 ;          |full_adder:comb_1676|              ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |plotter_machine|processor:comb_3|mult:comb_266|full_adder:comb_1676                                                            ; full_adder            ; work         ;
 ;          |full_adder:comb_1772|              ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |plotter_machine|processor:comb_3|mult:comb_266|full_adder:comb_1772                                                            ; full_adder            ; work         ;
@@ -874,7 +876,7 @@ refer to the applicable agreement for further details.
 ;          |full_adder:comb_1776|              ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |plotter_machine|processor:comb_3|mult:comb_266|full_adder:comb_1776                                                            ; full_adder            ; work         ;
 ;          |full_adder:comb_1777|              ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |plotter_machine|processor:comb_3|mult:comb_266|full_adder:comb_1777                                                            ; full_adder            ; work         ;
 ;          |full_adder:comb_1778|              ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |plotter_machine|processor:comb_3|mult:comb_266|full_adder:comb_1778                                                            ; full_adder            ; work         ;
-;          |full_adder:comb_1779|              ; 3 (3)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |plotter_machine|processor:comb_3|mult:comb_266|full_adder:comb_1779                                                            ; full_adder            ; work         ;
+;          |full_adder:comb_1779|              ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |plotter_machine|processor:comb_3|mult:comb_266|full_adder:comb_1779                                                            ; full_adder            ; work         ;
 ;          |full_adder:comb_1781|              ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |plotter_machine|processor:comb_3|mult:comb_266|full_adder:comb_1781                                                            ; full_adder            ; work         ;
 ;          |full_adder:comb_1783|              ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |plotter_machine|processor:comb_3|mult:comb_266|full_adder:comb_1783                                                            ; full_adder            ; work         ;
 ;          |full_adder:comb_1785|              ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |plotter_machine|processor:comb_3|mult:comb_266|full_adder:comb_1785                                                            ; full_adder            ; work         ;
@@ -970,7 +972,7 @@ refer to the applicable agreement for further details.
 ;          |half_adder:comb_1118|              ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |plotter_machine|processor:comb_3|mult:comb_266|half_adder:comb_1118                                                            ; half_adder            ; work         ;
 ;          |half_adder:comb_1143|              ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |plotter_machine|processor:comb_3|mult:comb_266|half_adder:comb_1143                                                            ; half_adder            ; work         ;
 ;          |half_adder:comb_1171|              ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |plotter_machine|processor:comb_3|mult:comb_266|half_adder:comb_1171                                                            ; half_adder            ; work         ;
-;          |half_adder:comb_1374|              ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |plotter_machine|processor:comb_3|mult:comb_266|half_adder:comb_1374                                                            ; half_adder            ; work         ;
+;          |half_adder:comb_1374|              ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |plotter_machine|processor:comb_3|mult:comb_266|half_adder:comb_1374                                                            ; half_adder            ; work         ;
 ;          |half_adder:comb_1376|              ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |plotter_machine|processor:comb_3|mult:comb_266|half_adder:comb_1376                                                            ; half_adder            ; work         ;
 ;          |half_adder:comb_1385|              ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |plotter_machine|processor:comb_3|mult:comb_266|half_adder:comb_1385                                                            ; half_adder            ; work         ;
 ;          |half_adder:comb_1398|              ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |plotter_machine|processor:comb_3|mult:comb_266|half_adder:comb_1398                                                            ; half_adder            ; work         ;
@@ -986,7 +988,7 @@ refer to the applicable agreement for further details.
 ;          |half_adder:comb_1629|              ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |plotter_machine|processor:comb_3|mult:comb_266|half_adder:comb_1629                                                            ; half_adder            ; work         ;
 ;          |half_adder:comb_1648|              ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |plotter_machine|processor:comb_3|mult:comb_266|half_adder:comb_1648                                                            ; half_adder            ; work         ;
 ;          |half_adder:comb_1652|              ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |plotter_machine|processor:comb_3|mult:comb_266|half_adder:comb_1652                                                            ; half_adder            ; work         ;
-;          |half_adder:comb_1677|              ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |plotter_machine|processor:comb_3|mult:comb_266|half_adder:comb_1677                                                            ; half_adder            ; work         ;
+;          |half_adder:comb_1677|              ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |plotter_machine|processor:comb_3|mult:comb_266|half_adder:comb_1677                                                            ; half_adder            ; work         ;
 ;          |half_adder:comb_1770|              ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |plotter_machine|processor:comb_3|mult:comb_266|half_adder:comb_1770                                                            ; half_adder            ; work         ;
 ;          |half_adder:comb_1771|              ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |plotter_machine|processor:comb_3|mult:comb_266|half_adder:comb_1771                                                            ; half_adder            ; work         ;
 ;          |half_adder:comb_1780|              ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |plotter_machine|processor:comb_3|mult:comb_266|half_adder:comb_1780                                                            ; half_adder            ; work         ;
@@ -1038,7 +1040,7 @@ refer to the applicable agreement for further details.
 ;          |half_adder:comb_2111|              ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |plotter_machine|processor:comb_3|mult:comb_266|half_adder:comb_2111                                                            ; half_adder            ; work         ;
 ;          |half_adder:comb_2113|              ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |plotter_machine|processor:comb_3|mult:comb_266|half_adder:comb_2113                                                            ; half_adder            ; work         ;
 ;          |half_adder:comb_2114|              ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |plotter_machine|processor:comb_3|mult:comb_266|half_adder:comb_2114                                                            ; half_adder            ; work         ;
-;          |half_adder:comb_2115|              ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |plotter_machine|processor:comb_3|mult:comb_266|half_adder:comb_2115                                                            ; half_adder            ; work         ;
+;          |half_adder:comb_2115|              ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |plotter_machine|processor:comb_3|mult:comb_266|half_adder:comb_2115                                                            ; half_adder            ; work         ;
 ;       |ra_writer:comb_264|                   ; 2 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |plotter_machine|processor:comb_3|ra_writer:comb_264                                                                            ; ra_writer             ; work         ;
 ;          |decode_opcode:comb_3|              ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |plotter_machine|processor:comb_3|ra_writer:comb_264|decode_opcode:comb_3                                                       ; decode_opcode         ; work         ;
 ;       |reg_file_decoder:comb_258|            ; 92 (86)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |plotter_machine|processor:comb_3|reg_file_decoder:comb_258                                                                     ; reg_file_decoder      ; work         ;
@@ -1048,7 +1050,7 @@ refer to the applicable agreement for further details.
 ;       |stall_logic:comb_262|                 ; 112 (108)           ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |plotter_machine|processor:comb_3|stall_logic:comb_262                                                                          ; stall_logic           ; work         ;
 ;          |compare:comb_108|                  ; 3 (3)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |plotter_machine|processor:comb_3|stall_logic:comb_262|compare:comb_108                                                         ; compare               ; work         ;
 ;          |decode_opcode:comb_127|            ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |plotter_machine|processor:comb_3|stall_logic:comb_262|decode_opcode:comb_127                                                   ; decode_opcode         ; work         ;
-;    |regfile:my_regfile|                      ; 42 (42)             ; 992 (992)                 ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |plotter_machine|regfile:my_regfile                                                                                             ; regfile               ; work         ;
+;    |regfile:my_regfile|                      ; 39 (39)             ; 992 (992)                 ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |plotter_machine|regfile:my_regfile                                                                                             ; regfile               ; work         ;
 ;    |stepper_controller:x_stepper|            ; 77 (77)             ; 33 (33)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |plotter_machine|stepper_controller:x_stepper                                                                                   ; stepper_controller    ; work         ;
 ;    |stepper_controller:y_stepper|            ; 77 (77)             ; 33 (33)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |plotter_machine|stepper_controller:y_stepper                                                                                   ; stepper_controller    ; work         ;
 ;    |uart_wrapper:comb_5|                     ; 147 (62)            ; 65 (14)                   ; 131072      ; 0            ; 0       ; 0         ; 0    ; 0            ; |plotter_machine|uart_wrapper:comb_5                                                                                            ; uart_wrapper          ; work         ;
@@ -1104,6 +1106,8 @@ Encoding Type:  One-Hot
 +--------------------------------------------------+---------------------------------------------+
 ; Register name                                    ; Reason for Removal                          ;
 +--------------------------------------------------+---------------------------------------------+
+; servo_controller:pen_mover|counter[0..31]        ; Stuck at GND due to stuck port data_in      ;
+; servo_controller:pen_mover|pwm                   ; Stuck at VCC due to stuck port data_in      ;
 ; regfile:my_regfile|registers[0][23]              ; Stuck at GND due to stuck port clock_enable ;
 ; regfile:my_regfile|registers[0][22]              ; Stuck at GND due to stuck port clock_enable ;
 ; regfile:my_regfile|registers[0][21]              ; Stuck at GND due to stuck port clock_enable ;
@@ -1145,8 +1149,18 @@ Encoding Type:  One-Hot
 ; uart_wrapper:comb_5|delay~11                     ; Lost fanout                                 ;
 ; uart_wrapper:comb_5|uart_rx:receiver|r_SM_Main~2 ; Lost fanout                                 ;
 ; uart_wrapper:comb_5|uart_rx:receiver|r_SM_Main~3 ; Lost fanout                                 ;
-; Total Number of Removed Registers = 41           ;                                             ;
+; Total Number of Removed Registers = 74           ;                                             ;
 +--------------------------------------------------+---------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------+
+; Removed Registers Triggering Further Register Optimizations                                                ;
++---------------------------------------+---------------------------+----------------------------------------+
+; Register name                         ; Reason for Removal        ; Registers Removed due to This Register ;
++---------------------------------------+---------------------------+----------------------------------------+
+; servo_controller:pen_mover|counter[0] ; Stuck at GND              ; servo_controller:pen_mover|pwm         ;
+;                                       ; due to stuck port data_in ;                                        ;
++---------------------------------------+---------------------------+----------------------------------------+
 
 
 +------------------------------------------------------+
@@ -1725,6 +1739,21 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-------------------------------------------+------------------------------------------------------------------+
 
 
++---------------------------------------------------------+
+; Port Connectivity Checks: "servo_controller:pen_mover"  ;
++-----------------------+-------+----------+--------------+
+; Port                  ; Type  ; Severity ; Details      ;
++-----------------------+-------+----------+--------------+
+; counter_limit[14..13] ; Input ; Info     ; Stuck at VCC ;
+; counter_limit[31..17] ; Input ; Info     ; Stuck at GND ;
+; counter_limit[10..9]  ; Input ; Info     ; Stuck at GND ;
+; counter_limit[2..0]   ; Input ; Info     ; Stuck at GND ;
+; counter_limit[12]     ; Input ; Info     ; Stuck at GND ;
+; counter_limit[4]      ; Input ; Info     ; Stuck at GND ;
+; counter_limit[3]      ; Input ; Info     ; Stuck at VCC ;
++-----------------------+-------+----------+--------------+
+
+
 +------------------------------------------------------------------------------------------------------------------------+
 ; Port Connectivity Checks: "regfile:my_regfile"                                                                         ;
 +--------------+--------+----------+-------------------------------------------------------------------------------------+
@@ -1737,6 +1766,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; reg9[31..8]  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
 ; reg10[31..8] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
 ; reg11[31..8] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; reg17[31..1] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
 +--------------+--------+----------+-------------------------------------------------------------------------------------+
 
 
@@ -2464,7 +2494,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; boundary_port         ; 36                          ;
+; boundary_port         ; 37                          ;
 ; cycloneiii_ff         ; 1603                        ;
 ;     CLR               ; 320                         ;
 ;     CLR SCLR          ; 3                           ;
@@ -2474,19 +2504,20 @@ Note: In order to hide this table in the UI and the text report file, please set
 ;     ENA SCLR          ; 96                          ;
 ;     SCLR              ; 12                          ;
 ;     plain             ; 23                          ;
-; cycloneiii_lcell_comb ; 4808                        ;
+; cycloneiii_lcell_comb ; 4799                        ;
 ;     arith             ; 166                         ;
 ;         2 data inputs ; 104                         ;
 ;         3 data inputs ; 62                          ;
-;     normal            ; 4642                        ;
+;     normal            ; 4633                        ;
+;         0 data inputs ; 1                           ;
 ;         1 data inputs ; 7                           ;
-;         2 data inputs ; 202                         ;
-;         3 data inputs ; 617                         ;
-;         4 data inputs ; 3816                        ;
+;         2 data inputs ; 169                         ;
+;         3 data inputs ; 597                         ;
+;         4 data inputs ; 3859                        ;
 ; cycloneiii_ram_block  ; 92                          ;
 ;                       ;                             ;
 ; Max LUT depth         ; 27.00                       ;
-; Average LUT depth     ; 14.75                       ;
+; Average LUT depth     ; 14.90                       ;
 +-----------------------+-----------------------------+
 
 
@@ -2495,7 +2526,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:15     ;
+; Top            ; 00:00:14     ;
 +----------------+--------------+
 
 
@@ -2505,7 +2536,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
-    Info: Processing started: Mon Dec 02 15:45:55 2019
+    Info: Processing started: Wed Dec 04 00:06:36 2019
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off plottermachine -c plottermachine
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
@@ -2613,6 +2644,8 @@ Info (12021): Found 1 design units, including 1 entities, in source file dmem.v
     Info (12023): Found entity 1: dmem File: C:/Users/cy123/Desktop/plottermachine/dmem.v Line: 40
 Info (12021): Found 1 design units, including 1 entities, in source file ascii_to_display.v
     Info (12023): Found entity 1: ascii_to_display File: C:/Users/cy123/Desktop/plottermachine/ascii_to_display.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file servo_controller.v
+    Info (12023): Found entity 1: servo_controller File: C:/Users/cy123/Desktop/plottermachine/servo_controller.v Line: 1
 Critical Warning (10846): Verilog HDL Instantiation warning at WD_bypass.v(7): instance has no name File: C:/Users/cy123/Desktop/plottermachine/WD_bypass.v Line: 7
 Critical Warning (10846): Verilog HDL Instantiation warning at WD_bypass.v(8): instance has no name File: C:/Users/cy123/Desktop/plottermachine/WD_bypass.v Line: 8
 Critical Warning (10846): Verilog HDL Instantiation warning at WD_bypass.v(11): instance has no name File: C:/Users/cy123/Desktop/plottermachine/WD_bypass.v Line: 11
@@ -3891,6 +3924,7 @@ Info (12128): Elaborating entity "altsyncram_dtb1" for hierarchy "imem:my_imem|a
 Info (12128): Elaborating entity "regfile" for hierarchy "regfile:my_regfile" File: C:/Users/cy123/Desktop/plottermachine/plotter_machine.v Line: 64
 Info (12128): Elaborating entity "ascii_to_display" for hierarchy "ascii_to_display:hex3" File: C:/Users/cy123/Desktop/plottermachine/plotter_machine.v Line: 68
 Info (12128): Elaborating entity "stepper_controller" for hierarchy "stepper_controller:x_stepper" File: C:/Users/cy123/Desktop/plottermachine/plotter_machine.v Line: 73
+Info (12128): Elaborating entity "servo_controller" for hierarchy "servo_controller:pen_mover" File: C:/Users/cy123/Desktop/plottermachine/plotter_machine.v Line: 86
 Warning (13046): Tri-state node(s) do not directly drive top-level pin(s)
     Warning (13049): Converted tri-state buffer "regfile:my_regfile|data_readRegA[31]" feeding internal logic into a wire File: C:/Users/cy123/Desktop/plottermachine/regfile.v Line: 9
     Warning (13049): Converted tri-state buffer "regfile:my_regfile|data_readRegA[30]" feeding internal logic into a wire File: C:/Users/cy123/Desktop/plottermachine/regfile.v Line: 9
@@ -4034,21 +4068,23 @@ Info (12133): Instantiated megafunction "ascii_to_display:hex0|altsyncram:WideOr
 Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_m511.tdf
     Info (12023): Found entity 1: altsyncram_m511 File: C:/Users/cy123/Desktop/plottermachine/db/altsyncram_m511.tdf Line: 27
 Warning (12241): 7 hierarchies have connectivity warnings - see the Connectivity Checks report folder
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "pwm" is stuck at VCC File: C:/Users/cy123/Desktop/plottermachine/plotter_machine.v Line: 3
 Info (286030): Timing-Driven Synthesis is running
 Info (17049): 9 registers lost all their fanouts during netlist optimizations.
 Info (144001): Generated suppressed messages file C:/Users/cy123/Desktop/plottermachine/output_files/plottermachine.map.smsg
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 6056 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 6047 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 2 input pins
-    Info (21059): Implemented 34 output pins
-    Info (21061): Implemented 5928 logic cells
+    Info (21059): Implemented 35 output pins
+    Info (21061): Implemented 5918 logic cells
     Info (21064): Implemented 92 RAM segments
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 1256 warnings
-    Info: Peak virtual memory: 4853 megabytes
-    Info: Processing ended: Mon Dec 02 15:46:24 2019
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 1258 warnings
+    Info: Peak virtual memory: 4851 megabytes
+    Info: Processing ended: Wed Dec 04 00:07:05 2019
     Info: Elapsed time: 00:00:29
-    Info: Total CPU time (on all processors): 00:00:40
+    Info: Total CPU time (on all processors): 00:00:39
 
 
 +------------------------------------------+
