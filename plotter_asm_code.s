@@ -66,8 +66,9 @@ add $r14, $r14, $r22
 
 addi $r22, $r0, 117 # Up
 bne $r8, $r22, not_up
+
 # Instruction is up
-addi $r17, $r0, 0
+addi $r6, $r0, 0
 # Delay 1 second
 addi $r22, $r0, 1250
 addi $r23, $r0, 10000
@@ -81,8 +82,9 @@ j loop_up
 not_up:
 addi $r22, $r0, 100 # Down
 bne $r8, $r22, not_down
+
 # Instruction is down
-addi $r17, $r0, 1
+addi $r6, $r0, 1
 # Delay 1 second
 addi $r22, $r0, 1250
 addi $r23, $r0, 10000

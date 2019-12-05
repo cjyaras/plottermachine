@@ -1,4 +1,4 @@
-module plotter_machine(input clk, input rx, 
+module plotter_machine(input clk, input rx, input switch,
 	output [0:6] h3, output [0:6] h2, output [0:6] h1, output [0:6] h0, 
 	output reset, output x_step_clk, output x_dir, output y_step_clk, output y_dir, output error, output pwm);
 
@@ -80,8 +80,8 @@ module plotter_machine(input clk, input rx,
 	
 	wire [31:0] counter_limit_up, counter_limit_down;
 	
-	assign counter_limit_up = 32'd25000;
-	assign counter_limit_down = 32'd35000;
+	assign counter_limit_down = 32'd44000;
+	assign counter_limit_up = 32'd54000;
 	
 	servo_controller pen_mover(clk, reg6[0] ? counter_limit_down : counter_limit_up, pwm);
 	
