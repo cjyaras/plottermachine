@@ -3,15 +3,15 @@ TimeQuest Timing Analyzer Summary
 ------------------------------------------------------------
 
 Type  : Slow 1200mV 85C Model Setup 'clk'
-Slack : -17.091
-TNS   : -13389.985
+Slack : -16.664
+TNS   : -13575.488
 
 Type  : Slow 1200mV 85C Model Setup 'uart_wrapper:comb_5|uart_rx:receiver|r_Rx_DV'
-Slack : -2.968
-TNS   : -35.637
+Slack : -2.460
+TNS   : -30.181
 
 Type  : Slow 1200mV 85C Model Hold 'clk'
-Slack : 0.384
+Slack : 0.385
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Hold 'uart_wrapper:comb_5|uart_rx:receiver|r_Rx_DV'
@@ -19,80 +19,80 @@ Slack : 0.402
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Recovery 'clk'
-Slack : -2.603
-TNS   : -3274.563
+Slack : -2.448
+TNS   : -3083.823
 
 Type  : Slow 1200mV 85C Model Removal 'clk'
-Slack : 2.549
+Slack : 2.365
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'clk'
 Slack : -3.000
-TNS   : -2229.274
+TNS   : -2271.679
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'uart_wrapper:comb_5|uart_rx:receiver|r_Rx_DV'
 Slack : -1.285
 TNS   : -16.705
 
 Type  : Slow 1200mV 0C Model Setup 'clk'
-Slack : -15.604
-TNS   : -12199.265
+Slack : -15.285
+TNS   : -12379.704
 
 Type  : Slow 1200mV 0C Model Setup 'uart_wrapper:comb_5|uart_rx:receiver|r_Rx_DV'
-Slack : -2.710
-TNS   : -32.471
+Slack : -2.223
+TNS   : -27.216
 
 Type  : Slow 1200mV 0C Model Hold 'clk'
-Slack : 0.338
+Slack : 0.339
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Hold 'uart_wrapper:comb_5|uart_rx:receiver|r_Rx_DV'
-Slack : 0.354
+Slack : 0.353
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Recovery 'clk'
-Slack : -2.245
-TNS   : -2796.409
+Slack : -2.074
+TNS   : -2579.721
 
 Type  : Slow 1200mV 0C Model Removal 'clk'
-Slack : 2.258
+Slack : 2.110
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'clk'
 Slack : -3.000
-TNS   : -2226.282
+TNS   : -2268.687
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'uart_wrapper:comb_5|uart_rx:receiver|r_Rx_DV'
 Slack : -1.285
 TNS   : -16.705
 
 Type  : Fast 1200mV 0C Model Setup 'clk'
-Slack : -8.079
-TNS   : -5959.361
+Slack : -7.923
+TNS   : -6157.603
 
 Type  : Fast 1200mV 0C Model Setup 'uart_wrapper:comb_5|uart_rx:receiver|r_Rx_DV'
-Slack : -1.001
-TNS   : -11.534
+Slack : -0.770
+TNS   : -9.240
 
 Type  : Fast 1200mV 0C Model Hold 'clk'
 Slack : 0.173
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Hold 'uart_wrapper:comb_5|uart_rx:receiver|r_Rx_DV'
-Slack : 0.179
+Slack : 0.181
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Recovery 'clk'
-Slack : -0.929
-TNS   : -1099.675
+Slack : -0.846
+TNS   : -996.837
 
 Type  : Fast 1200mV 0C Model Removal 'clk'
-Slack : 1.342
+Slack : 1.259
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'clk'
 Slack : -3.000
-TNS   : -1794.235
+TNS   : -1827.406
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'uart_wrapper:comb_5|uart_rx:receiver|r_Rx_DV'
 Slack : -1.000
