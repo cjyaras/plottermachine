@@ -1,0 +1,62 @@
+\documentclass[12pt]{article}
+
+\usepackage[letterpaper, margin=1.0in]{geometry}
+\usepackage{appendix}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{siunitx}
+\usepackage{caption}
+\usepackage{moreverb}
+\usepackage{parskip}
+\usepackage{multirow}
+\usepackage{adjustbox}
+\usepackage{enumerate}
+\usepackage{listings}
+\usepackage{graphicx}
+\usepackage[american,straightlabels]{circuitikz}
+\usepackage{fancyhdr}
+\usepackage[explicit]{titlesec}
+\usepackage{xcolor}
+\usepackage[many]{tcolorbox}
+\usepackage{eqparbox}
+\usepackage{hyperref}
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=black,
+    filecolor=magenta,      
+    urlcolor=blue,
+}
+
+\pagestyle{fancy}
+
+\renewcommand{\headrulewidth}{0.5mm}
+\renewcommand{\footrulewidth}{0.5mm}
+
+\fancyhead[L]{ECE350}
+\fancyhead[R]{\today}
+\fancyfoot[L]{Final Project}
+\fancyfoot[C]{Carreiro, Yaras}
+\fancyfoot[R]{Page \thepage}
+
+\begin{document}
+
+\author{Januario Carreiro \& John Yaras}
+\date{\today}
+\title{ECE350 Final Project}
+
+\maketitle
+
+\thispagestyle{fancy}
+
+\newpage
+\section{Stepper Drivers}
+\begin{figure}[ht!]
+\centering
+\begin{circuitikz}
+\draw (0,0)	to[short, o-] ++ (1,0)
+;\end{circuitikz}
+\caption{Stepper Driver}
+\end{figure}
+
+\end{document}
