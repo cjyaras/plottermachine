@@ -342,7 +342,7 @@ Several changes were made to the processor. The first changes made were exposing
 
 Another change was adding support for a custom turtle-graphics-like language we designed for communicating with the Raspberry Pi and the motors.
 
-Lastly, we % HERE, MENTION COOL TIMING THING 
+Lastly, we also used stalls in the assembly code to let each line be drawn for the correct duration. This was done by setting a counter limit and incrementing the counter by one until it hit the correct value. This action tricked the FPGA into stalling for the exact time necessary and was reliant on the fact that the FPGA had a 50 MHz clock. Different counter limits would have had to have been calculated using Equation (1) if the speed of the motors and frequency of the FPGA had been different.
 
 Otherwise, the only addition to the processor that would have been useful would have been the capability to do floating point math. However, adding support for floating points was deemed to be an irresponsible use of time given the time constraints, so we used a system of lookup tables (with significant multipliers) inserted into the DMEM in order to get around the need for floating point math.
 
@@ -492,6 +492,8 @@ module plotter_machine(input clk, input rx, input switch,
 	assign counter_limit_up = 32'd54000;
 endmodule
 \end{lstlisting}
+
+The next code excerpt is for the main driver. It is used to parse the instructions byte by byte and uses lookup tables to find the correct motor settings for each angle. Then, the settings are placed in registers that are exposed to the top level module that will then be used to generate the step clock and the PWM signal. Finally, it also calculates the delay required for each instructions and turns the motors on and off between each instruction.
 
 \begin{lstlisting}[style=myMips, caption={Assembly Code for the Main Driver}]
 # r1 is x-axis counter limit
@@ -677,20 +679,33 @@ end:
 j end
 \end{lstlisting}
 
+\begin{figure}[ht!]
+\begin{center}
+\includegraphics[width=0.9\textwidth]{IMG_0475.jpg}
+\end{center}
+\caption{Arial View with ECE350 Drawn}
+\end{figure}
+
 \section{Images}
+\begin{figure}[ht!]
+\begin{center}
+\includegraphics[width=0.9\textwidth]{IMG_0468.jpg}
+\end{center}
+\caption{Front View}
+\end{figure}
 
-%A PDF on Gradescope
-%Kind of like a lab report but longer
-%Expecting about 8 to 10 pages
-%Describe the overall project design and specifications
-%Describe input and output
-%Changes you had to make to your processor
-%Challenges you faced and how you overcame them
-%Any circuit diagrams, how you constructed them, and the rationale behind them
-%Describe how you tested your project
-%Describe your assembly programs or code
-%What improvements you would make / new features you would add if you had more time
-%Pictures of your project
+\begin{figure}[ht!]
+\begin{center}
+\includegraphics[width=0.9\textwidth]{IMG_0471.jpg}
+\end{center}
+\caption{Front View of Y-Axis Stepper Motor and Servo Motor}
+\end{figure}
 
+\begin{figure}[ht!]
+\begin{center}
+\includegraphics[width=0.9\textwidth]{IMG_0470.jpg}
+\end{center}
+\caption{Close Up of X-Axis Stepper Motor and Servo Motor}
+\end{figure}
 
 \end{document}
