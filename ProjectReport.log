@@ -1,7 +1,7 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7200 64-bit) (preloaded format=pdflatex 2019.10.27)  6 DEC 2019 03:04
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7200 64-bit) (preloaded format=pdflatex 2019.10.27)  23 NOV 2019 15:50
 entering extended mode
-**./CarreiroYarasReport.tex
-(CarreiroYarasReport.tex
+**./ProjectReport.tex
+(ProjectReport.tex
 LaTeX2e <2019-10-01> patch level 1
 ("C:\Program Files\MiKTeX 2.9\tex/latex/base\article.cls"
 Document Class: article 2019/08/27 v1.4j Standard LaTeX document class
@@ -474,60 +474,6 @@ File: listings.cfg 2019/09/10 1.8c listings configuration
 ))
 Package: listings 2019/09/10 1.8c (Carsten Heinz)
 
-(C:\Users\janua\AppData\Roaming\MiKTeX\2.9\tex/latex/pdfpages\pdfpages.sty
-Package: pdfpages 2019/09/21 v0.5n Insert pages of external PDF documents (AM)
-
-("C:\Program Files\MiKTeX 2.9\tex/latex/base\ifthen.sty"
-Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
-)
-("C:\Program Files\MiKTeX 2.9\tex/latex/tools\calc.sty"
-Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
-\calc@Acount=\count287
-\calc@Bcount=\count288
-\calc@Adimen=\dimen186
-\calc@Bdimen=\dimen187
-\calc@Askip=\skip57
-\calc@Bskip=\skip58
-LaTeX Info: Redefining \setlength on input line 80.
-LaTeX Info: Redefining \addtolength on input line 81.
-\calc@Ccount=\count289
-\calc@Cskip=\skip59
-)
-(C:\Users\janua\AppData\Roaming\MiKTeX\2.9\tex/latex/eso-pic\eso-pic.sty
-Package: eso-pic 2018/04/12 v2.0h eso-pic (RN)
-
-("C:\Program Files\MiKTeX 2.9\tex/generic/oberdiek\atbegshi.sty"
-Package: atbegshi 2016/06/09 v1.18 At begin shipout hook (HO)
-)
-(C:\Users\janua\AppData\Roaming\MiKTeX\2.9\tex/latex/xcolor\xcolor.sty
-Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
-
-("C:\Program Files\MiKTeX 2.9\tex/latex/graphics-cfg\color.cfg"
-File: color.cfg 2016/01/02 v1.6 sample color configuration
-)
-Package xcolor Info: Driver file: pdftex.def on input line 225.
-Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
-Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1352.
-Package xcolor Info: Model `RGB' extended on input line 1364.
-Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1366.
-Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1367.
-Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1368.
-Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
-Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
-Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
-))
-\AM@pagewidth=\dimen188
-\AM@pageheight=\dimen189
-
-(C:\Users\janua\AppData\Roaming\MiKTeX\2.9\tex/latex/pdfpages\pppdftex.def
-File: pppdftex.def 2019/09/21 v0.5n Pdfpages driver for pdfTeX (AM)
-)
-\AM@pagebox=\box59
-\AM@global@opts=\toks26
-\AM@toc@title=\toks27
-\c@AM@survey=\count290
-\AM@templatesizebox=\box60
-)
 (C:\Users\janua\AppData\Roaming\MiKTeX\2.9\tex/latex/circuitikz\circuitikz.sty
 Package: circuitikz 2019/10/12{} The CircuiTikz circuit drawing package version
  0.9.5
@@ -537,15 +483,15 @@ Package: circuitikz 2019/10/12{} The CircuiTikz circuit drawing package version
 (C:\Users\janua\AppData\Roaming\MiKTeX\2.9\tex/latex/pgf/utilities\pgfrcs.sty
 (C:\Users\janua\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/utilities\pgfutil-co
 mmon.tex
-\pgfutil@everybye=\toks28
-\pgfutil@tempdima=\dimen190
-\pgfutil@tempdimb=\dimen191
+\pgfutil@everybye=\toks26
+\pgfutil@tempdima=\dimen186
+\pgfutil@tempdimb=\dimen187
 
 (C:\Users\janua\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/utilities\pgfutil-co
 mmon-lists.tex))
 (C:\Users\janua\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/utilities\pgfutil-la
 tex.def
-\pgfutil@abb=\box61
+\pgfutil@abb=\box59
  (C:\Users\janua\AppData\Roaming\MiKTeX\2.9\tex/latex/ms\everyshi.sty
 Package: everyshi 2001/05/15 v3.00 EveryShipout Package (MS)
 ))
@@ -566,33 +512,33 @@ Package: pgfsys 2019/08/03 v3.1.4b (3.1.4b)
 
 (C:\Users\janua\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/utilities\pgfkeys.co
 de.tex
-\pgfkeys@pathtoks=\toks29
-\pgfkeys@temptoks=\toks30
+\pgfkeys@pathtoks=\toks27
+\pgfkeys@temptoks=\toks28
 
 (C:\Users\janua\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/utilities\pgfkeysfil
 tered.code.tex
-\pgfkeys@tmptoks=\toks31
+\pgfkeys@tmptoks=\toks29
 ))
-\pgf@x=\dimen192
-\pgf@y=\dimen193
-\pgf@xa=\dimen194
-\pgf@ya=\dimen195
-\pgf@xb=\dimen196
-\pgf@yb=\dimen197
-\pgf@xc=\dimen198
-\pgf@yc=\dimen199
-\pgf@xd=\dimen256
-\pgf@yd=\dimen257
+\pgf@x=\dimen188
+\pgf@y=\dimen189
+\pgf@xa=\dimen190
+\pgf@ya=\dimen191
+\pgf@xb=\dimen192
+\pgf@yb=\dimen193
+\pgf@xc=\dimen194
+\pgf@yc=\dimen195
+\pgf@xd=\dimen196
+\pgf@yd=\dimen197
 \w@pgf@writea=\write3
 \r@pgf@reada=\read3
-\c@pgf@counta=\count291
-\c@pgf@countb=\count292
-\c@pgf@countc=\count293
-\c@pgf@countd=\count294
-\t@pgf@toka=\toks32
-\t@pgf@tokb=\toks33
-\t@pgf@tokc=\toks34
-\pgf@sys@id@count=\count295
+\c@pgf@counta=\count287
+\c@pgf@countb=\count288
+\c@pgf@countc=\count289
+\c@pgf@countd=\count290
+\t@pgf@toka=\toks30
+\t@pgf@tokb=\toks31
+\t@pgf@tokc=\toks32
+\pgf@sys@id@count=\count291
 
 (C:\Users\janua\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/systemlayer\pgf.cfg
 File: pgf.cfg 2019/08/03 v3.1.4b (3.1.4b)
@@ -610,13 +556,30 @@ File: pgfsys-common-pdf.def 2019/08/03 v3.1.4b (3.1.4b)
 (C:\Users\janua\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/systemlayer\pgfsysso
 ftpath.code.tex
 File: pgfsyssoftpath.code.tex 2019/08/03 v3.1.4b (3.1.4b)
-\pgfsyssoftpath@smallbuffer@items=\count296
-\pgfsyssoftpath@bigbuffer@items=\count297
+\pgfsyssoftpath@smallbuffer@items=\count292
+\pgfsyssoftpath@bigbuffer@items=\count293
 )
 (C:\Users\janua\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/systemlayer\pgfsyspr
 otocol.code.tex
 File: pgfsysprotocol.code.tex 2019/08/03 v3.1.4b (3.1.4b)
 ))
+(C:\Users\janua\AppData\Roaming\MiKTeX\2.9\tex/latex/xcolor\xcolor.sty
+Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
+
+("C:\Program Files\MiKTeX 2.9\tex/latex/graphics-cfg\color.cfg"
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 225.
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1352.
+Package xcolor Info: Model `RGB' extended on input line 1364.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1366.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1367.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
+)
 (C:\Users\janua\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/basiclayer\pgfcore.c
 ode.tex
 Package: pgfcore 2019/08/03 v3.1.4b (3.1.4b)
@@ -629,12 +592,12 @@ e.tex
 e.tex)
 (C:\Users\janua\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/math\pgfmathparser.c
 ode.tex
-\pgfmath@dimen=\dimen258
-\pgfmath@count=\count298
-\pgfmath@box=\box62
-\pgfmath@toks=\toks35
-\pgfmath@stack@operand=\toks36
-\pgfmath@stack@operation=\toks37
+\pgfmath@dimen=\dimen198
+\pgfmath@count=\count294
+\pgfmath@box=\box60
+\pgfmath@toks=\toks33
+\pgfmath@stack@operand=\toks34
+\pgfmath@stack@operation=\toks35
 )
 (C:\Users\janua\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/math\pgfmathfunction
 s.code.tex
@@ -656,59 +619,59 @@ s.misc.code.tex)
 s.integerarithmetics.code.tex)))
 (C:\Users\janua\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/math\pgfmathfloat.co
 de.tex
-\c@pgfmathroundto@lastzeros=\count299
+\c@pgfmathroundto@lastzeros=\count295
 ))
 (C:\Users\janua\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/math\pgfint.code.tex
 )
 (C:\Users\janua\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/basiclayer\pgfcorepo
 ints.code.tex
 File: pgfcorepoints.code.tex 2019/08/03 v3.1.4b (3.1.4b)
-\pgf@picminx=\dimen259
-\pgf@picmaxx=\dimen260
-\pgf@picminy=\dimen261
-\pgf@picmaxy=\dimen262
-\pgf@pathminx=\dimen263
-\pgf@pathmaxx=\dimen264
-\pgf@pathminy=\dimen265
-\pgf@pathmaxy=\dimen266
-\pgf@xx=\dimen267
-\pgf@xy=\dimen268
-\pgf@yx=\dimen269
-\pgf@yy=\dimen270
-\pgf@zx=\dimen271
-\pgf@zy=\dimen272
+\pgf@picminx=\dimen199
+\pgf@picmaxx=\dimen256
+\pgf@picminy=\dimen257
+\pgf@picmaxy=\dimen258
+\pgf@pathminx=\dimen259
+\pgf@pathmaxx=\dimen260
+\pgf@pathminy=\dimen261
+\pgf@pathmaxy=\dimen262
+\pgf@xx=\dimen263
+\pgf@xy=\dimen264
+\pgf@yx=\dimen265
+\pgf@yy=\dimen266
+\pgf@zx=\dimen267
+\pgf@zy=\dimen268
 )
 (C:\Users\janua\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/basiclayer\pgfcorepa
 thconstruct.code.tex
 File: pgfcorepathconstruct.code.tex 2019/08/03 v3.1.4b (3.1.4b)
-\pgf@path@lastx=\dimen273
-\pgf@path@lasty=\dimen274
+\pgf@path@lastx=\dimen269
+\pgf@path@lasty=\dimen270
 )
 (C:\Users\janua\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/basiclayer\pgfcorepa
 thusage.code.tex
 File: pgfcorepathusage.code.tex 2019/08/03 v3.1.4b (3.1.4b)
-\pgf@shorten@end@additional=\dimen275
-\pgf@shorten@start@additional=\dimen276
+\pgf@shorten@end@additional=\dimen271
+\pgf@shorten@start@additional=\dimen272
 )
 (C:\Users\janua\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/basiclayer\pgfcoresc
 opes.code.tex
 File: pgfcorescopes.code.tex 2019/08/03 v3.1.4b (3.1.4b)
-\pgfpic=\box63
-\pgf@hbox=\box64
-\pgf@layerbox@main=\box65
-\pgf@picture@serial@count=\count300
+\pgfpic=\box61
+\pgf@hbox=\box62
+\pgf@layerbox@main=\box63
+\pgf@picture@serial@count=\count296
 )
 (C:\Users\janua\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/basiclayer\pgfcoregr
 aphicstate.code.tex
 File: pgfcoregraphicstate.code.tex 2019/08/03 v3.1.4b (3.1.4b)
-\pgflinewidth=\dimen277
+\pgflinewidth=\dimen273
 )
 (C:\Users\janua\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/basiclayer\pgfcoretr
 ansformations.code.tex
 File: pgfcoretransformations.code.tex 2019/08/03 v3.1.4b (3.1.4b)
-\pgf@pt@x=\dimen278
-\pgf@pt@y=\dimen279
-\pgf@pt@temp=\dimen280
+\pgf@pt@x=\dimen274
+\pgf@pt@y=\dimen275
+\pgf@pt@temp=\dimen276
 )
 (C:\Users\janua\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/basiclayer\pgfcorequ
 ick.code.tex
@@ -725,14 +688,14 @@ File: pgfcorepathprocessing.code.tex 2019/08/03 v3.1.4b (3.1.4b)
 (C:\Users\janua\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/basiclayer\pgfcorear
 rows.code.tex
 File: pgfcorearrows.code.tex 2019/08/03 v3.1.4b (3.1.4b)
-\pgfarrowsep=\dimen281
+\pgfarrowsep=\dimen277
 )
 (C:\Users\janua\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/basiclayer\pgfcoresh
 ade.code.tex
 File: pgfcoreshade.code.tex 2019/08/03 v3.1.4b (3.1.4b)
-\pgf@max=\dimen282
-\pgf@sys@shading@range@num=\count301
-\pgf@shadingcount=\count302
+\pgf@max=\dimen278
+\pgf@sys@shading@range@num=\count297
+\pgf@shadingcount=\count298
 )
 (C:\Users\janua\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/basiclayer\pgfcoreim
 age.code.tex
@@ -741,7 +704,7 @@ File: pgfcoreimage.code.tex 2019/08/03 v3.1.4b (3.1.4b)
 (C:\Users\janua\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/basiclayer\pgfcoreex
 ternal.code.tex
 File: pgfcoreexternal.code.tex 2019/08/03 v3.1.4b (3.1.4b)
-\pgfexternal@startupbox=\box66
+\pgfexternal@startupbox=\box64
 ))
 (C:\Users\janua\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/basiclayer\pgfcorela
 yers.code.tex
@@ -762,7 +725,7 @@ File: pgfcorerdf.code.tex 2019/08/03 v3.1.4b (3.1.4b)
 (C:\Users\janua\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/modules\pgfmodulesha
 pes.code.tex
 File: pgfmoduleshapes.code.tex 2019/08/03 v3.1.4b (3.1.4b)
-\pgfnodeparttextbox=\box67
+\pgfnodeparttextbox=\box65
 )
 (C:\Users\janua\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/modules\pgfmoduleplo
 t.code.tex
@@ -771,8 +734,8 @@ File: pgfmoduleplot.code.tex 2019/08/03 v3.1.4b (3.1.4b)
 (C:\Users\janua\AppData\Roaming\MiKTeX\2.9\tex/latex/pgf/compatibility\pgfcomp-
 version-0-65.sty
 Package: pgfcomp-version-0-65 2019/08/03 v3.1.4b (3.1.4b)
-\pgf@nodesepstart=\dimen283
-\pgf@nodesepend=\dimen284
+\pgf@nodesepstart=\dimen279
+\pgf@nodesepend=\dimen280
 )
 (C:\Users\janua\AppData\Roaming\MiKTeX\2.9\tex/latex/pgf/compatibility\pgfcomp-
 version-1-18.sty
@@ -791,10 +754,10 @@ Package: pgffor 2019/08/03 v3.1.4b (3.1.4b)
 
 (C:\Users\janua\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/math\pgfmath.code.te
 x)
-\pgffor@iter=\dimen285
-\pgffor@skip=\dimen286
-\pgffor@stack=\toks38
-\pgffor@toks=\toks39
+\pgffor@iter=\dimen281
+\pgffor@skip=\dimen282
+\pgffor@stack=\toks36
+\pgffor@toks=\toks37
 ))
 (C:\Users\janua\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/frontendlayer/tikz\t
 ikz.code.tex
@@ -803,34 +766,34 @@ Package: tikz 2019/08/03 v3.1.4b (3.1.4b)
 (C:\Users\janua\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/libraries\pgflibrary
 plothandlers.code.tex
 File: pgflibraryplothandlers.code.tex 2019/08/03 v3.1.4b (3.1.4b)
-\pgf@plot@mark@count=\count303
-\pgfplotmarksize=\dimen287
+\pgf@plot@mark@count=\count299
+\pgfplotmarksize=\dimen283
 )
-\tikz@lastx=\dimen288
-\tikz@lasty=\dimen289
-\tikz@lastxsaved=\dimen290
-\tikz@lastysaved=\dimen291
-\tikz@lastmovetox=\dimen292
-\tikz@lastmovetoy=\dimen293
-\tikzleveldistance=\dimen294
-\tikzsiblingdistance=\dimen295
-\tikz@figbox=\box68
-\tikz@figbox@bg=\box69
-\tikz@tempbox=\box70
-\tikz@tempbox@bg=\box71
-\tikztreelevel=\count304
-\tikznumberofchildren=\count305
-\tikznumberofcurrentchild=\count306
-\tikz@fig@count=\count307
+\tikz@lastx=\dimen284
+\tikz@lasty=\dimen285
+\tikz@lastxsaved=\dimen286
+\tikz@lastysaved=\dimen287
+\tikz@lastmovetox=\dimen288
+\tikz@lastmovetoy=\dimen289
+\tikzleveldistance=\dimen290
+\tikzsiblingdistance=\dimen291
+\tikz@figbox=\box66
+\tikz@figbox@bg=\box67
+\tikz@tempbox=\box68
+\tikz@tempbox@bg=\box69
+\tikztreelevel=\count300
+\tikznumberofchildren=\count301
+\tikznumberofcurrentchild=\count302
+\tikz@fig@count=\count303
 
 (C:\Users\janua\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/modules\pgfmodulemat
 rix.code.tex
 File: pgfmodulematrix.code.tex 2019/08/03 v3.1.4b (3.1.4b)
-\pgfmatrixcurrentrow=\count308
-\pgfmatrixcurrentcolumn=\count309
-\pgf@matrix@numberofcolumns=\count310
+\pgfmatrixcurrentrow=\count304
+\pgfmatrixcurrentcolumn=\count305
+\pgf@matrix@numberofcolumns=\count306
 )
-\tikz@expandcount=\count311
+\tikz@expandcount=\count307
 
 (C:\Users\janua\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/frontendlayer/tikz/l
 ibraries\tikzlibrarytopaths.code.tex
@@ -843,10 +806,10 @@ File: tikzlibrarycalc.code.tex 2019/08/03 v3.1.4b (3.1.4b)
 (C:\Users\janua\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/libraries\pgflibrary
 arrows.meta.code.tex
 File: pgflibraryarrows.meta.code.tex 2019/08/03 v3.1.4b (3.1.4b)
-\pgfarrowinset=\dimen296
-\pgfarrowlength=\dimen297
-\pgfarrowwidth=\dimen298
-\pgfarrowlinewidth=\dimen299
+\pgfarrowinset=\dimen292
+\pgfarrowlength=\dimen293
+\pgfarrowwidth=\dimen294
+\pgfarrowlinewidth=\dimen295
 )
 (C:\Users\janua\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/frontendlayer/tikz/l
 ibraries\tikzlibrarybending.code.tex
@@ -859,35 +822,35 @@ File: pgfmodulebending.code.tex 2019/08/03 v3.1.4b (3.1.4b)
 (C:\Users\janua\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/modules\pgfmodulenon
 lineartransformations.code.tex
 File: pgfmodulenonlineartransformations.code.tex 2019/08/03 v3.1.4b (3.1.4b)
-\pgftransformnonlinearflatness=\dimen300
+\pgftransformnonlinearflatness=\dimen296
 )
 (C:\Users\janua\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/libraries\pgflibrary
 curvilinear.code.tex
 File: pgflibrarycurvilinear.code.tex 2019/08/03 v3.1.4b (3.1.4b)
-\pgf@curvilinear@time@a=\dimen301
-\pgf@curvilinear@length@a=\dimen302
-\pgf@curvilinear@length@b=\dimen303
-\pgf@curvilinear@length@c=\dimen304
-\pgf@curvilinear@length@d=\dimen305
+\pgf@curvilinear@time@a=\dimen297
+\pgf@curvilinear@length@a=\dimen298
+\pgf@curvilinear@length@b=\dimen299
+\pgf@curvilinear@length@c=\dimen300
+\pgf@curvilinear@length@d=\dimen301
 )
-\pgf@arrows@the@rigidity=\dimen306
+\pgf@arrows@the@rigidity=\dimen302
 ))
 (C:\Users\janua\AppData\Roaming\MiKTeX\2.9\tex/generic/circuitikz\pgfcirc.defin
 es.tex
-\pgf@circ@count@a=\count312
-\pgf@circ@count@b=\count313
-\pgf@circ@count@c=\count314
-\pgf@circ@res@up=\dimen307
-\pgf@circ@res@down=\dimen308
-\pgf@circ@res@zero=\dimen309
-\pgf@circ@res@left=\dimen310
-\pgf@circ@res@right=\dimen311
-\pgf@circ@res@other=\dimen312
-\pgf@circ@res@step=\dimen313
-\pgf@circ@res@temp=\dimen314
-\pgfstartlinewidth=\dimen315
-\pgf@circ@Rlen=\dimen316
-\pgf@circ@scaled@Rlen=\dimen317
+\pgf@circ@count@a=\count308
+\pgf@circ@count@b=\count309
+\pgf@circ@count@c=\count310
+\pgf@circ@res@up=\dimen303
+\pgf@circ@res@down=\dimen304
+\pgf@circ@res@zero=\dimen305
+\pgf@circ@res@left=\dimen306
+\pgf@circ@res@right=\dimen307
+\pgf@circ@res@other=\dimen308
+\pgf@circ@res@step=\dimen309
+\pgf@circ@res@temp=\dimen310
+\pgfstartlinewidth=\dimen311
+\pgf@circ@Rlen=\dimen312
+\pgf@circ@scaled@Rlen=\dimen313
 )
 (C:\Users\janua\AppData\Roaming\MiKTeX\2.9\tex/generic/circuitikz\pgfcircutils.
 tex)
@@ -899,7 +862,7 @@ les.tex)
 s.tex)
 (C:\Users\janua\AppData\Roaming\MiKTeX\2.9\tex/generic/circuitikz\pgfcirctripol
 es.tex
-\pgf@circ@res@count=\count315
+\pgf@circ@res@count=\count311
 )
 (C:\Users\janua\AppData\Roaming\MiKTeX\2.9\tex/generic/circuitikz\pgfcircquadpo
 les.tex)
@@ -925,27 +888,27 @@ Package circuitikz Warning: You did not specify one of the voltage directions:
 ) (C:\Users\janua\AppData\Roaming\MiKTeX\2.9\tex/latex/fancyhdr\fancyhdr.sty
 Package: fancyhdr 2019/01/31 v3.10 Extensive control of page headers and footer
 s
-\f@nch@headwidth=\skip60
-\f@nch@O@elh=\skip61
-\f@nch@O@erh=\skip62
-\f@nch@O@olh=\skip63
-\f@nch@O@orh=\skip64
-\f@nch@O@elf=\skip65
-\f@nch@O@erf=\skip66
-\f@nch@O@olf=\skip67
-\f@nch@O@orf=\skip68
+\f@nch@headwidth=\skip57
+\f@nch@O@elh=\skip58
+\f@nch@O@erh=\skip59
+\f@nch@O@olh=\skip60
+\f@nch@O@orh=\skip61
+\f@nch@O@elf=\skip62
+\f@nch@O@erf=\skip63
+\f@nch@O@olf=\skip64
+\f@nch@O@orf=\skip65
 )
 (C:\Users\janua\AppData\Roaming\MiKTeX\2.9\tex/latex/titlesec\titlesec.sty
 Package: titlesec 2019/10/16 v2.13 Sectioning titles
-\ttl@box=\box72
-\beforetitleunit=\skip69
-\aftertitleunit=\skip70
-\ttl@plus=\dimen318
-\ttl@minus=\dimen319
-\ttl@toksa=\toks40
-\titlewidth=\dimen320
-\titlewidthlast=\dimen321
-\titlewidthfirst=\dimen322
+\ttl@box=\box70
+\beforetitleunit=\skip66
+\aftertitleunit=\skip67
+\ttl@plus=\dimen314
+\ttl@minus=\dimen315
+\ttl@toksa=\toks38
+\titlewidth=\dimen316
+\titlewidthlast=\dimen317
+\titlewidthfirst=\dimen318
 )
 (C:\Users\janua\AppData\Roaming\MiKTeX\2.9\tex/latex/tcolorbox\tcolorbox.sty
 Package: tcolorbox 2019/09/19 version 4.21 text color boxes
@@ -956,33 +919,33 @@ Package: environ 2014/05/04 v0.3 A new way to define environments
 (C:\Users\janua\AppData\Roaming\MiKTeX\2.9\tex/latex/trimspaces\trimspaces.sty
 Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
 )
-\@envbody=\toks41
+\@envbody=\toks39
 )
-\tcb@titlebox=\box73
-\tcb@upperbox=\box74
-\tcb@lowerbox=\box75
-\tcb@phantombox=\box76
-\c@tcbbreakpart=\count316
-\c@tcblayer=\count317
-\tcolorbox@number=\count318
+\tcb@titlebox=\box71
+\tcb@upperbox=\box72
+\tcb@lowerbox=\box73
+\tcb@phantombox=\box74
+\c@tcbbreakpart=\count312
+\c@tcblayer=\count313
+\tcolorbox@number=\count314
+\tcb@temp=\box75
+\tcb@temp=\box76
 \tcb@temp=\box77
 \tcb@temp=\box78
-\tcb@temp=\box79
-\tcb@temp=\box80
 \tcb@out=\write4
 \tcb@record@out=\write5
 
 (C:\Users\janua\AppData\Roaming\MiKTeX\2.9\tex/latex/tcolorbox\tcbraster.code.t
 ex
 Library (tcolorbox): 'tcbraster.code.tex' version '4.21'
-\c@tcbrastercolumn=\count319
-\c@tcbrasterrow=\count320
-\c@tcbraster=\count321
+\c@tcbrastercolumn=\count315
+\c@tcbrasterrow=\count316
+\c@tcbraster=\count317
 )
 (C:\Users\janua\AppData\Roaming\MiKTeX\2.9\tex/latex/tcolorbox\tcbskins.code.te
 x
 Library (tcolorbox): 'tcbskins.code.tex' version '4.21'
-\tcb@waterbox=\box81
+\tcb@waterbox=\box79
 
 (C:\Users\janua\AppData\Roaming\MiKTeX\2.9\tex/latex/tcolorbox\tcbskinsjigsaw.c
 ode.tex
@@ -991,9 +954,9 @@ Library (tcolorbox): 'tcbskinsjigsaw.code.tex' version '4.21'
 (C:\Users\janua\AppData\Roaming\MiKTeX\2.9\tex/latex/tcolorbox\tcbbreakable.cod
 e.tex
 Library (tcolorbox): 'tcbbreakable.code.tex' version '4.21'
-\tcb@testbox=\box82
-\tcb@totalupperbox=\box83
-\tcb@totallowerbox=\box84
+\tcb@testbox=\box80
+\tcb@totalupperbox=\box81
+\tcb@totallowerbox=\box82
 )
 (C:\Users\janua\AppData\Roaming\MiKTeX\2.9\tex/latex/tcolorbox\tcbhooks.code.te
 x
@@ -1004,72 +967,72 @@ Library (tcolorbox): 'tcbhooks.code.tex' version '4.21'
 Library (tcolorbox): 'tcbtheorems.code.tex' version '4.21'
 ("C:\Program Files\MiKTeX 2.9\tex/latex/amsmath\amsmath.sty"
 Package: amsmath 2019/04/01 v2.17c AMS math features
-\@mathmargin=\skip71
+\@mathmargin=\skip68
 
 For additional information on amsmath, use the `?' option.
 ("C:\Program Files\MiKTeX 2.9\tex/latex/amsmath\amsbsy.sty"
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
-\pmbraise@=\dimen323
+\pmbraise@=\dimen319
 )
 ("C:\Program Files\MiKTeX 2.9\tex/latex/amsmath\amsopn.sty"
 Package: amsopn 2016/03/08 v2.02 operator names
 )
-\inf@bad=\count322
+\inf@bad=\count318
 LaTeX Info: Redefining \frac on input line 227.
-\uproot@=\count323
-\leftroot@=\count324
+\uproot@=\count319
+\leftroot@=\count320
 LaTeX Info: Redefining \overline on input line 389.
-\classnum@=\count325
-\DOTSCASE@=\count326
+\classnum@=\count321
+\DOTSCASE@=\count322
 LaTeX Info: Redefining \ldots on input line 486.
 LaTeX Info: Redefining \dots on input line 489.
 LaTeX Info: Redefining \cdots on input line 610.
-\Mathstrutbox@=\box85
-\strutbox@=\box86
-\big@size=\dimen324
+\Mathstrutbox@=\box83
+\strutbox@=\box84
+\big@size=\dimen320
 LaTeX Font Info:    Redeclaring font encoding OML on input line 733.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 734.
-\macc@depth=\count327
-\c@MaxMatrixCols=\count328
+\macc@depth=\count323
+\c@MaxMatrixCols=\count324
 \dotsspace@=\muskip16
-\c@parentequation=\count329
-\dspbrk@lvl=\count330
-\tag@help=\toks42
-\row@=\count331
-\column@=\count332
-\maxfields@=\count333
-\andhelp@=\toks43
-\eqnshift@=\dimen325
-\alignsep@=\dimen326
-\tagshift@=\dimen327
-\tagwidth@=\dimen328
-\totwidth@=\dimen329
-\lineht@=\dimen330
-\@envbody=\toks44
-\multlinegap=\skip72
-\multlinetaggap=\skip73
-\mathdisplay@stack=\toks45
+\c@parentequation=\count325
+\dspbrk@lvl=\count326
+\tag@help=\toks40
+\row@=\count327
+\column@=\count328
+\maxfields@=\count329
+\andhelp@=\toks41
+\eqnshift@=\dimen321
+\alignsep@=\dimen322
+\tagshift@=\dimen323
+\tagwidth@=\dimen324
+\totwidth@=\dimen325
+\lineht@=\dimen326
+\@envbody=\toks42
+\multlinegap=\skip69
+\multlinetaggap=\skip70
+\mathdisplay@stack=\toks43
 LaTeX Info: Redefining \[ on input line 2855.
 LaTeX Info: Redefining \] on input line 2856.
 ))
 (C:\Users\janua\AppData\Roaming\MiKTeX\2.9\tex/latex/tcolorbox\tcbfitting.code.
 tex
 Library (tcolorbox): 'tcbfitting.code.tex' version '4.21'
-\tcbfitdim=\dimen331
-\tcb@lowerfitdim=\dimen332
-\tcb@upperfitdim=\dimen333
-\tcb@cur@hbadness=\count334
+\tcbfitdim=\dimen327
+\tcb@lowerfitdim=\dimen328
+\tcb@upperfitdim=\dimen329
+\tcb@cur@hbadness=\count330
 )
 (C:\Users\janua\AppData\Roaming\MiKTeX\2.9\tex/latex/tcolorbox\tcbxparse.code.t
 ex
 Library (tcolorbox): 'tcbxparse.code.tex' version '4.21'
 )) (C:\Users\janua\AppData\Roaming\MiKTeX\2.9\tex/latex/eqparbox\eqparbox.sty
 Package: eqparbox 2017/09/03 v4.1 Create equal-widthed boxes
-\eqp@tempdima=\skip74
-\eqp@tempdimb=\skip75
-\eqp@tabular@box=\box87
-\eqp@list@box=\box88
-\eqp@list@indent=\skip76
+\eqp@tempdima=\skip71
+\eqp@tempdimb=\skip72
+\eqp@tabular@box=\box85
+\eqp@list@box=\box86
+\eqp@list@indent=\skip73
 )
 ("C:\Program Files\MiKTeX 2.9\tex/latex/hyperref\hyperref.sty"
 Package: hyperref 2019/09/28 v7.00a Hypertext links for LaTeX
@@ -1107,23 +1070,23 @@ Package: letltxmacro 2016/05/16 v1.5 Let assignment for LaTeX macros (HO)
 Package: hopatch 2016/05/16 v1.3 Wrapper for package hooks (HO)
 Package: xcolor-patch 2016/05/16 xcolor patch
 Package: atveryend 2016/05/16 v1.9 Hooks at the very end of document (HO)
-Package hobsub Info: Skipping package `atbegshi' (already loaded).
+Package: atbegshi 2016/06/09 v1.18 At begin shipout hook (HO)
 Package: refcount 2016/05/16 v3.5 Data extraction from label references (HO)
 Package: hycolor 2016/05/16 v1.8 Color options for hyperref/bookmark (HO)
 )
 ("C:\Program Files\MiKTeX 2.9\tex/latex/oberdiek\auxhook.sty"
 Package: auxhook 2016/05/16 v1.4 Hooks for auxiliary files (HO)
 )
-\@linkdim=\dimen334
-\Hy@linkcounter=\count335
-\Hy@pagecounter=\count336
+\@linkdim=\dimen330
+\Hy@linkcounter=\count331
+\Hy@pagecounter=\count332
 
 ("C:\Program Files\MiKTeX 2.9\tex/latex/hyperref\pd1enc.def"
 File: pd1enc.def 2019/09/28 v7.00a Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
 ... no UTF-8 mapping file for font encoding PD1
 )
-\Hy@SavedSpaceFactor=\count337
+\Hy@SavedSpaceFactor=\count333
 
 ("C:\Program Files\MiKTeX 2.9\tex/latex/00miktex\hyperref.cfg"
 File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
@@ -1135,17 +1098,17 @@ Package hyperref Info: Plain pages OFF on input line 4555.
 Package hyperref Info: Backreferencing OFF on input line 4560.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4793.
-\c@Hy@tempcnt=\count338
+\c@Hy@tempcnt=\count334
 
 (C:\Users\janua\AppData\Roaming\MiKTeX\2.9\tex/latex/url\url.sty
 \Urlmuskip=\muskip17
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
 LaTeX Info: Redefining \url on input line 5152.
-\XeTeXLinkMargin=\dimen335
-\Fld@menulength=\count339
-\Field@Width=\dimen336
-\Fld@charsize=\dimen337
+\XeTeXLinkMargin=\dimen331
+\Fld@menulength=\count335
+\Field@Width=\dimen332
+\Fld@charsize=\dimen333
 Package hyperref Info: Hyper figures OFF on input line 6423.
 Package hyperref Info: Link nesting OFF on input line 6428.
 Package hyperref Info: Hyper index ON on input line 6431.
@@ -1155,43 +1118,43 @@ Package hyperref Info: Link coloring with OCG OFF on input line 6448.
 Package hyperref Info: PDF/A mode OFF on input line 6453.
 LaTeX Info: Redefining \ref on input line 6493.
 LaTeX Info: Redefining \pageref on input line 6497.
-\Hy@abspage=\count340
-\c@Item=\count341
-\c@Hfootnote=\count342
+\Hy@abspage=\count336
+\c@Item=\count337
+\c@Hfootnote=\count338
 )
 Package hyperref Info: Driver (autodetected): hpdftex.
 
 ("C:\Program Files\MiKTeX 2.9\tex/latex/hyperref\hpdftex.def"
 File: hpdftex.def 2019/09/28 v7.00a Hyperref driver for pdfTeX
-\Fld@listcount=\count343
-\c@bookmark@seq@number=\count344
+\Fld@listcount=\count339
+\c@bookmark@seq@number=\count340
 
 ("C:\Program Files\MiKTeX 2.9\tex/latex/oberdiek\rerunfilecheck.sty"
 Package: rerunfilecheck 2016/05/16 v1.8 Rerun checks for auxiliary files (HO)
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 82.
 )
-\Hy@SectionHShift=\skip77
+\Hy@SectionHShift=\skip74
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 81.
+Package hyperref Info: Option `colorlinks' set `true' on input line 29.
 
-(CarreiroYarasReport.aux)
-\openout1 = `CarreiroYarasReport.aux'.
+(ProjectReport.aux)
+\openout1 = `ProjectReport.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 96.
-LaTeX Font Info:    ... okay on input line 96.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 96.
-LaTeX Font Info:    ... okay on input line 96.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 96.
-LaTeX Font Info:    ... okay on input line 96.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 96.
-LaTeX Font Info:    ... okay on input line 96.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 96.
-LaTeX Font Info:    ... okay on input line 96.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 96.
-LaTeX Font Info:    ... okay on input line 96.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 96.
-LaTeX Font Info:    ... okay on input line 96.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 42.
+LaTeX Font Info:    ... okay on input line 42.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 42.
+LaTeX Font Info:    ... okay on input line 42.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 42.
+LaTeX Font Info:    ... okay on input line 42.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 42.
+LaTeX Font Info:    ... okay on input line 42.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 42.
+LaTeX Font Info:    ... okay on input line 42.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 42.
+LaTeX Font Info:    ... okay on input line 42.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 42.
+LaTeX Font Info:    ... okay on input line 42.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -1319,17 +1282,17 @@ Package caption Info: End \AtBeginDocument code.
 
 (C:\Users\janua\AppData\Roaming\MiKTeX\2.9\tex/context/base/mkii\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count345
-\scratchdimen=\dimen338
-\scratchbox=\box89
-\nofMPsegments=\count346
-\nofMParguments=\count347
-\everyMPshowfont=\toks46
-\MPscratchCnt=\count348
-\MPscratchDim=\dimen339
-\MPnumerator=\count349
-\makeMPintoPDFobject=\count350
-\everyMPtoPDFconversion=\toks47
+\scratchcounter=\count341
+\scratchdimen=\dimen334
+\scratchbox=\box87
+\nofMPsegments=\count342
+\nofMParguments=\count343
+\everyMPshowfont=\toks44
+\MPscratchCnt=\count344
+\MPscratchDim=\dimen335
+\MPnumerator=\count345
+\makeMPintoPDFobject=\count346
+\everyMPtoPDFconversion=\toks45
 ) ("C:\Program Files\MiKTeX 2.9\tex/latex/oberdiek\epstopdf-base.sty"
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
 
@@ -1343,19 +1306,11 @@ Package grfext Info: Graphics extension search list:
 G,.JBIG2,.JB2,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 456.
 )
-\c@lstlisting=\count351
-\AtBeginShipoutBox=\box90
+\c@lstlisting=\count347
 
-("C:\Program Files\MiKTeX 2.9\tex/latex/oberdiek\pdflscape.sty"
-Package: pdflscape 2016/05/14 v0.11 Display of landscape pages in PDF (HO)
-
-("C:\Program Files\MiKTeX 2.9\tex/latex/graphics\lscape.sty"
-Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
-)
-Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
-)
 ABD: EveryShipout initializing macros
-Package hyperref Info: Link coloring ON on input line 96.
+\AtBeginShipoutBox=\box88
+Package hyperref Info: Link coloring ON on input line 42.
 
 ("C:\Program Files\MiKTeX 2.9\tex/latex/hyperref\nameref.sty"
 Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
@@ -1363,15 +1318,15 @@ Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
 ("C:\Program Files\MiKTeX 2.9\tex/generic/oberdiek\gettitlestring.sty"
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count352
+\c@section@level=\count348
 )
-LaTeX Info: Redefining \ref on input line 96.
-LaTeX Info: Redefining \pageref on input line 96.
-LaTeX Info: Redefining \nameref on input line 96.
+LaTeX Info: Redefining \ref on input line 42.
+LaTeX Info: Redefining \pageref on input line 42.
+LaTeX Info: Redefining \nameref on input line 42.
 
-(CarreiroYarasReport.out) (CarreiroYarasReport.out)
+(ProjectReport.out) (ProjectReport.out)
 \@outlinefile=\write6
-\openout6 = `CarreiroYarasReport.out'.
+\openout6 = `ProjectReport.out'.
 
 
 
@@ -1382,67 +1337,32 @@ This may cause the page layout to be inconsistent, however.
 
 [1{C:/Users/janua/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}
 
-]
-LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 1
-08.
+] [2]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 62.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 62.
 
-("C:\Program Files\MiKTeX 2.9\tex/latex/base\t1cmtt.fd"
-File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
-)
-Overfull \hbox (12.80365pt too wide) in paragraph at lines 142--142
-[]|[]| 
- []
-
-[2] (C:\Users\janua\AppData\Roaming\MiKTeX\2.9\tex/latex/listings\lstlang1.sty
-File: lstlang1.sty 2019/09/10 1.8c listings language file
-) (C:\Users\janua\AppData\Roaming\MiKTeX\2.9\tex/latex/listings\lstlang2.sty
-File: lstlang2.sty 2019/09/10 1.8c listings language file
-)
-(C:\Users\janua\AppData\Roaming\MiKTeX\2.9\tex/latex/listings\lstlang3.sty
-File: lstlang3.sty 2019/09/10 1.8c listings language file
-)
-[3]
-\realshift=\dimen340
- [4] [5] [6]
-Overfull \hbox (6.91075pt too wide) in paragraph at lines 365--366
-[]\T1/cmr/m/n/12 After mak-ing sure the step-per mo-tors worked on their own, w
-e built the base of the \T1/cmtt/m/n/12 XY-Plotter
- []
-
-[7] [8] [9] [10] [11] [12]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 696.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 696.
- (CarreiroYarasReport.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 696.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 696.
-Package rerunfilecheck Info: File `CarreiroYarasReport.out' has not changed.
-(rerunfilecheck)             Checksum: A0F65FF7EA3AACA8D90058AF9933C0C9;412.
+(ProjectReport.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 62.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 62.
+Package rerunfilecheck Info: File `ProjectReport.out' has not changed.
+(rerunfilecheck)             Checksum: 837589AD9A64C4AB97DFCD8C53A17004;50.
  ) 
 Here is how much of TeX's memory you used:
- 50737 strings out of 492453
- 1123963 string characters out of 3129819
- 1506479 words of memory out of 3000000
- 54141 multiletter control sequences out of 15000+200000
- 547032 words of font info for 65 fonts, out of 3000000 for 9000
+ 47456 strings out of 492453
+ 1067711 string characters out of 3129819
+ 1242319 words of memory out of 3000000
+ 51294 multiletter control sequences out of 15000+200000
+ 543790 words of font info for 58 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 68i,20n,97p,1210b,2587s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 68i,11n,95p,1204b,787s stack positions out of 5000i,500n,10000p,200000b,50000s
  <C:\Users\janua\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\
-ecti0600.pk> <C:\Users\janua\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/
-ec/dpi600\ecrm0600.pk> <C:\Users\janua\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour
-/jknappen/ec/dpi600\ecbx0600.pk> <C:\Users\janua\AppData\Local\MiKTeX\2.9\fonts
-/pk/ljfour/jknappen/ec/dpi600\ectt1200.pk> <C:\Users\janua\AppData\Local\MiKTeX
-\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecbx1728.pk> <C:\Users\janua\AppData\Lo
-cal\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1440.pk> <C:\Users\janua\
-AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm2074.pk> <C:\Us
-ers\janua\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/ec/dpi600\ecrm1200.
-pk><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/P
-rogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program F
-iles/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files/MiKT
-eX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/fo
-nts/type1/public/amsfonts/cm/cmsy6.pfb>
-Output written on CarreiroYarasReport.pdf (12 pages, 247636 bytes).
+ecbx1728.pk> <C:\Users\janua\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour/jknappen/
+ec/dpi600\ecrm1440.pk> <C:\Users\janua\AppData\Local\MiKTeX\2.9\fonts/pk/ljfour
+/jknappen/ec/dpi600\ecrm2074.pk> <C:\Users\janua\AppData\Local\MiKTeX\2.9\fonts
+/pk/ljfour/jknappen/ec/dpi600\ecrm1200.pk>
+Output written on ProjectReport.pdf (2 pages, 35679 bytes).
 PDF statistics:
- 920 PDF objects out of 1000 (max. 8388607)
- 395 named destinations out of 1000 (max. 500000)
- 77 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 123 PDF objects out of 1000 (max. 8388607)
+ 5 named destinations out of 1000 (max. 500000)
+ 21 words of extra memory for PDF output out of 10000 (max. 10000000)
 
